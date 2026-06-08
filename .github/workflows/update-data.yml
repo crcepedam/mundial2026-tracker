@@ -2,10 +2,10 @@ name: Actualizar datos Mundial 2026
 
 on:
   schedule:
-    # 8:00 AM hora Chile (UTC-4 en verano) = 12:00 UTC
-    - cron: '0 12 * * *'
-    # 8:00 PM hora Chile = 00:00 UTC (día siguiente)
-    - cron: '0 0 * * *'
+    # 13:00 hrs Chile (UTC-4 en invierno) = 17:00 UTC
+    - cron: '0 17 * * *'
+    # 22:00 hrs Chile (UTC-4 en invierno) = 02:00 UTC día siguiente
+    - cron: '0 2 * * *'
   # Permite correrlo manualmente desde GitHub
   workflow_dispatch:
 
@@ -41,7 +41,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "Mundial 2026 Bot"
           git add public/data/mundial-data.json
-          git diff --staged --quiet || git commit -m "🤖 Actualización automática $(date +'%Y-%m-%d %H:%M') Chile"
+          git diff --staged --quiet || git commit -m "🤖 Actualización automática $(date +'%Y-%m-%d %H:%M') UTC"
           git push
 
       - name: Trigger redeploy en Vercel
