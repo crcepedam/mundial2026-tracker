@@ -1,0 +1,256 @@
+{
+  "lastUpdated": "lunes, 8 de junio de 2026",
+  "headline": "Mundial 2026 arranca el 11 de junio — México vs Sudáfrica en el Azteca",
+  "globalFavorite": "Francia 🇫🇷",
+  "globalFavoriteChange": "estable",
+  "topNews": [
+    {
+      "title": "Rodrygo BAJA definitiva de Brasil — rotura de ligamento cruzado y menisco",
+      "impact": "alto",
+      "team": "Brasil 🇧🇷",
+      "type": "lesión",
+      "detail": "El delantero del Real Madrid no jugará el Mundial. Brasil debe reorganizar su ataque con Vinicius y Endrick."
+    },
+    {
+      "title": "Éder Militão también baja de Brasil — lesión muscular grave",
+      "impact": "alto",
+      "team": "Brasil 🇧🇷",
+      "type": "lesión",
+      "detail": "Doble golpe para Ancelotti. La defensa central brasileña queda debilitada antes del debut."
+    },
+    {
+      "title": "Lamine Yamal llega con dudas a España — lesión en abril",
+      "impact": "alto",
+      "team": "España 🇪🇸",
+      "type": "lesión",
+      "detail": "El Barça indica tratamiento conservador. Sin ritmo competitivo desde el 22 de abril."
+    },
+    {
+      "title": "Jack Grealish fuera del Mundial — fractura por estrés en pie izquierdo",
+      "impact": "medio",
+      "team": "Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "type": "lesión",
+      "detail": "Operado en febrero, confirmó su ausencia. Southgate reorganiza el carril izquierdo."
+    },
+    {
+      "title": "Josko Gvardiol baja de Croacia — cirugía por fractura en pierna derecha",
+      "impact": "alto",
+      "team": "Croacia 🇭🇷",
+      "type": "lesión",
+      "detail": "Baja durísima. El zaguero del City era titular indiscutido. La defensa croata pierde su mejor hombre."
+    },
+    {
+      "title": "Malagón (México) baja — rotura de tendón de Aquiles, operado en marzo",
+      "impact": "alto",
+      "team": "México 🇲🇽",
+      "type": "lesión",
+      "detail": "El arquero titular del Tri no llegará al Mundial jugando de local."
+    },
+    {
+      "title": "Colombia venció 2-0 a Jordania en último amistoso — Jhon Arias doble",
+      "impact": "medio",
+      "team": "Colombia 🇨🇴",
+      "type": "resultado",
+      "detail": "El equipo de Lorenzo llega con confianza. Jhon Arias en racha goleadora."
+    },
+    {
+      "title": "Argentina entrena en Texas — Foyth y Panichelli bajas confirmadas",
+      "impact": "medio",
+      "team": "Argentina 🇦🇷",
+      "type": "táctica",
+      "detail": "Cuti Romero es duda. Scaloni ajusta la defensa antes del debut vs Argelia."
+    }
+  ],
+  "groups": {
+    "A": {
+      "teams": ["México 🇲🇽", "Corea del Sur 🇰🇷", "Sudáfrica 🇿🇦", "Rep. Checa 🇨🇿"],
+      "favorite": "México 🇲🇽",
+      "favoriteOdds": 68,
+      "trend": "bajó",
+      "keyNews": "México pierde a su arquero titular Malagón. Gran impacto en el debut del 11 de junio.",
+      "alert": "🤕 Malagón BAJA DEFINITIVA — rotura tendón de Aquiles",
+      "standings": [
+        { "team": "México 🇲🇽", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Corea del Sur 🇰🇷", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Rep. Checa 🇨🇿", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Sudáfrica 🇿🇦", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "México 🇲🇽 vs Sudáfrica 🇿🇦 · 11 Jun · Estadio Azteca"
+    },
+    "B": {
+      "teams": ["Canadá 🇨🇦", "Suiza 🇨🇭", "Bosnia y Herz. 🇧🇦", "Catar 🇶🇦"],
+      "favorite": "Suiza 🇨🇭",
+      "favoriteOdds": 62,
+      "trend": "estable",
+      "keyNews": "Grupo abierto entre Suiza y Canadá. Sin novedades de lesiones críticas.",
+      "alert": null,
+      "standings": [
+        { "team": "Suiza 🇨🇭", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Canadá 🇨🇦", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Bosnia y Herz. 🇧🇦", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Catar 🇶🇦", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Canadá 🇨🇦 vs Bosnia y Herz. 🇧🇦 · 12 Jun · Toronto"
+    },
+    "C": {
+      "teams": ["Brasil 🇧🇷", "Marruecos 🇲🇦", "Escocia 🏴󠁧󠁢󠁳󠁣󠁴󠁿", "Haití 🇭🇹"],
+      "favorite": "Brasil 🇧🇷",
+      "favoriteOdds": 70,
+      "trend": "bajó",
+      "keyNews": "Brasil pierde a Rodrygo y Militão. Vinicius carga solo el ataque ante Marruecos el 13 jun.",
+      "alert": "🤕 Rodrygo BAJA (LCA+menisco) · 🤕 Militão BAJA (muscular)",
+      "standings": [
+        { "team": "Brasil 🇧🇷", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Marruecos 🇲🇦", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Escocia 🏴󠁧󠁢󠁳󠁣󠁴󠁿", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Haití 🇭🇹", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Brasil 🇧🇷 vs Marruecos 🇲🇦 · 13 Jun · MetLife, Nueva Jersey"
+    },
+    "D": {
+      "teams": ["EE.UU. 🇺🇸", "Paraguay 🇵🇾", "Australia 🇦🇺", "Turquía 🇹🇷"],
+      "favorite": "EE.UU. 🇺🇸",
+      "favoriteOdds": 58,
+      "trend": "estable",
+      "keyNews": "EE.UU. juega en Los Ángeles el 12 jun. Turquía es el rival más peligroso del grupo.",
+      "alert": null,
+      "standings": [
+        { "team": "EE.UU. 🇺🇸", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Turquía 🇹🇷", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Australia 🇦🇺", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Paraguay 🇵🇾", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "EE.UU. 🇺🇸 vs Paraguay 🇵🇾 · 12 Jun · SoFi Stadium, Los Ángeles"
+    },
+    "E": {
+      "teams": ["Alemania 🇩🇪", "C. Marfil 🇨🇮", "Ecuador 🇪🇨", "Curazao 🇨🇼"],
+      "favorite": "Alemania 🇩🇪",
+      "favoriteOdds": 80,
+      "trend": "estable",
+      "keyNews": "Gnabry baja pero Wirtz y Musiala intactos. Alemania es el favorito más claro de todos los grupos.",
+      "alert": "🤕 Gnabry BAJA definitiva",
+      "standings": [
+        { "team": "Alemania 🇩🇪", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "C. Marfil 🇨🇮", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Ecuador 🇪🇨", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Curazao 🇨🇼", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Alemania 🇩🇪 vs Curazao 🇨🇼 · 14 Jun · Houston"
+    },
+    "F": {
+      "teams": ["Países Bajos 🇳🇱", "Japón 🇯🇵", "Suecia 🇸🇪", "Túnez 🇹🇳"],
+      "favorite": "Países Bajos 🇳🇱",
+      "favoriteOdds": 66,
+      "trend": "estable",
+      "keyNews": "Xavi Simons baja para Países Bajos. Japón es el rival más temible con sus europeos.",
+      "alert": "🤕 Xavi Simons BAJA",
+      "standings": [
+        { "team": "Países Bajos 🇳🇱", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Japón 🇯🇵", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Suecia 🇸🇪", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Túnez 🇹🇳", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Países Bajos 🇳🇱 vs Japón 🇯🇵 · 14 Jun · Dallas"
+    },
+    "G": {
+      "teams": ["Bélgica 🇧🇪", "Irán 🇮🇷", "Egipto 🇪🇬", "Nueva Zelanda 🇳🇿"],
+      "favorite": "Bélgica 🇧🇪",
+      "favoriteOdds": 72,
+      "trend": "estable",
+      "keyNews": "Bélgica nueva generación con De Bruyne (34) como capitán. Grupo favorable.",
+      "alert": null,
+      "standings": [
+        { "team": "Bélgica 🇧🇪", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Irán 🇮🇷", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Egipto 🇪🇬", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Nueva Zelanda 🇳🇿", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Bélgica 🇧🇪 vs Egipto 🇪🇬 · 15 Jun · Seattle"
+    },
+    "H": {
+      "teams": ["España 🇪🇸", "Uruguay 🇺🇾", "Arabia Saudita 🇸🇦", "Cabo Verde 🇨🇻"],
+      "favorite": "España 🇪🇸",
+      "favoriteOdds": 82,
+      "trend": "bajó",
+      "keyNews": "Yamal, Rodri y Pedri llegan con dudas físicas. España sigue favorita pero genera incertidumbre.",
+      "alert": "⚠️ Yamal, Rodri y Pedri con dudas físicas",
+      "standings": [
+        { "team": "España 🇪🇸", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Uruguay 🇺🇾", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Arabia Saudita 🇸🇦", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Cabo Verde 🇨🇻", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "España 🇪🇸 vs Cabo Verde 🇨🇻 · 15 Jun · Atlanta"
+    },
+    "I": {
+      "teams": ["Francia 🇫🇷", "Senegal 🇸🇳", "Noruega 🇳🇴", "Irak 🇮🇶"],
+      "favorite": "Francia 🇫🇷",
+      "favoriteOdds": 76,
+      "trend": "subió",
+      "keyNews": "Francia sin lesiones graves. Mbappé en forma. El duelo Francia-Noruega/Haaland será el partido del grupo.",
+      "alert": null,
+      "standings": [
+        { "team": "Francia 🇫🇷", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Noruega 🇳🇴", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Senegal 🇸🇳", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Irak 🇮🇶", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Francia 🇫🇷 vs Senegal 🇸🇳 · 16 Jun · MetLife, Nueva Jersey"
+    },
+    "J": {
+      "teams": ["Argentina 🇦🇷", "Austria 🇦🇹", "Argelia 🇩🇿", "Jordania 🇯🇴"],
+      "favorite": "Argentina 🇦🇷",
+      "favoriteOdds": 74,
+      "trend": "bajó",
+      "keyNews": "Foyth y Panichelli BAJAS. Cuti Romero DUDA. Messi lidera igual al campeón defensor.",
+      "alert": "🤕 Foyth BAJA · 🤕 Panichelli BAJA · ⚠️ Cuti Romero DUDA",
+      "standings": [
+        { "team": "Argentina 🇦🇷", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Austria 🇦🇹", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Argelia 🇩🇿", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Jordania 🇯🇴", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Argentina 🇦🇷 vs Argelia 🇩🇿 · 16 Jun · Kansas City"
+    },
+    "K": {
+      "teams": ["Portugal 🇵🇹", "Colombia 🇨🇴", "Uzbekistán 🇺🇿", "RD Congo 🇨🇩"],
+      "favorite": "Portugal 🇵🇹",
+      "favoriteOdds": 65,
+      "trend": "estable",
+      "keyNews": "Colombia venció 2-0 a Jordania. Jhon Arias en racha. CR7 a los 41 años busca su último Mundial.",
+      "alert": null,
+      "standings": [
+        { "team": "Portugal 🇵🇹", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Colombia 🇨🇴", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "RD Congo 🇨🇩", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Uzbekistán 🇺🇿", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Portugal 🇵🇹 vs RD Congo 🇨🇩 · 17 Jun · Houston"
+    },
+    "L": {
+      "teams": ["Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿", "Croacia 🇭🇷", "Ghana 🇬🇭", "Panamá 🇵🇦"],
+      "favorite": "Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "favoriteOdds": 65,
+      "trend": "estable",
+      "keyNews": "Grealish BAJA. Gvardiol BAJA para Croacia. Inglaterra sigue favorita con Bellingham y Kane.",
+      "alert": "🤕 Grealish BAJA (Inglaterra) · 🤕 Gvardiol BAJA (Croacia)",
+      "standings": [
+        { "team": "Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Croacia 🇭🇷", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Ghana 🇬🇭", "pts": 0, "gf": 0, "gc": 0, "gd": 0 },
+        { "team": "Panamá 🇵🇦", "pts": 0, "gf": 0, "gc": 0, "gd": 0 }
+      ],
+      "nextMatch": "Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs Croacia 🇭🇷 · 17 Jun · Dallas"
+    }
+  },
+  "titleContenders": [
+    { "team": "Francia 🇫🇷", "odds": 20, "trend": "subió", "reason": "Sin lesiones graves. Mbappé en forma. Generación de oro completa." },
+    { "team": "España 🇪🇸", "odds": 18, "trend": "bajó", "reason": "Campeona Eurocopa 2024, pero Yamal, Rodri y Pedri con dudas físicas." },
+    { "team": "Argentina 🇦🇷", "odds": 16, "trend": "bajó", "reason": "Campeona vigente. Messi lidera pero múltiples bajas en defensa." },
+    { "team": "Brasil 🇧🇷", "odds": 13, "trend": "bajó", "reason": "Rodrygo y Militão BAJAS. Vinicius debe cargar el equipo." },
+    { "team": "Alemania 🇩🇪", "odds": 11, "trend": "estable", "reason": "Wirtz y Musiala intactos. Gnabry de baja pero equipo sólido." },
+    { "team": "Inglaterra 🏴󠁧󠁢󠁥󠁮󠁧󠁿", "odds": 10, "trend": "estable", "reason": "Bellingham + Kane. Grealish de baja pero plantel profundo." },
+    { "team": "Portugal 🇵🇹", "odds": 8, "trend": "estable", "reason": "CR7 a los 41. Bernardo Silva y Bruno Fernandes son la columna." },
+    { "team": "Países Bajos 🇳🇱", "odds": 6, "trend": "estable", "reason": "Xavi Simons BAJA. De Jong y Gakpo compensan. Van Dijk sólido." }
+  ]
+}
