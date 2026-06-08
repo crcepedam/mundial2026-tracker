@@ -1,0 +1,48 @@
+name: Actualizar datos Mundial 2026
+
+on:
+  schedule:
+    # 8:00 AM hora Chile (UTC-4 en verano) = 12:00 UTC
+    - cron: '0 12 * * *'
+    # 8:00 PM hora Chile = 00:00 UTC (día siguiente)
+    - cron: '0 0 * * *'
+  # Permite correrlo manualmente desde GitHub
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependencias del script
+        run: |
+          cd scripts
+          npm init -y
+          npm install node-fetch@3
+
+      - name: Ejecutar script de actualización
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/update-data.js
+
+      - name: Commit y push de datos actualizados
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Mundial 2026 Bot"
+          git add public/data/mundial-data.json
+          git diff --staged --quiet || git commit -m "🤖 Actualización automática $(date +'%Y-%m-%d %H:%M') Chile"
+          git push
+
+      - name: Trigger redeploy en Vercel
+        run: echo "Vercel detectará el push y redepoyará automáticamente"
