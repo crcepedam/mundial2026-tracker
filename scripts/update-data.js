@@ -156,6 +156,7 @@ async function getKalshiOdds() {
 // ── FUENTE 3: TheOddsAPI ──────────────────────────────────────────────────────
 async function getOddsData() {
   console.log("🎲 Obteniendo cuotas de casas de apuestas (TheOddsAPI)...");
+  console.log("  ODDS_API_KEY existe:", !!ODDS_API_KEY, "| longitud:", ODDS_API_KEY?.length || 0, "| primeros 8 chars:", ODDS_API_KEY?.substring(0,8) || "VACÍA");
   try {
     const sportsRes = await fetch(
       `https://api.the-odds-api.com/v4/sports/?apiKey=${ODDS_API_KEY}`
