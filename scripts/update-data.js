@@ -93,15 +93,41 @@ async function getKalshiOdds() {
         console.log("  Primeros items:", wcItems.slice(0,3).map(m=>m.ticker+"|"+m.title).join(", "));
 
         // Extraer probabilidades implícitas de los mercados disponibles
+        // Extraer probabilidades de Kalshi
+        // El precio en Kalshi = probabilidad implícita en dólares (0.17 = 17%)
         const teamOdds = {};
+        const teamNames = {
+          "FRA":"Francia", "ESP":"España", "ENG":"Inglaterra", "ARG":"Argentina",
+          "BRA":"Brasil", "POR":"Portugal", "GER":"Alemania", "NED":"Países Bajos",
+          "BEL":"Bélgica", "URU":"Uruguay", "COL":"Colombia", "MEX":"México",
+          "MAR":"Marruecos", "JPN":"Japón", "SEN":"Senegal", "KOR":"Corea del Sur",
+          "USA":"EE.UU.", "SUI":"Suiza", "CRO":"Croacia", "NOR":"Noruega",
+          "TUR":"Turquía", "AUS":"Australia", "ECU":"Ecuador", "CAN":"Canadá",
+          "AUT":"Austria", "SWE":"Suecia", "CIV":"C. Marfil", "CZE":"Rep. Checa",
+          "GHA":"Ghana", "IRN":"Irán", "KSA":"Arabia Saudita", "SCO":"Escocia",
+          "ALG":"Argelia", "EGY":"Egipto", "BIH":"Bosnia y Herz.", "UZB":"Uzbekistán",
+          "COD":"RD Congo", "JOR":"Jordania", "PAR":"Paraguay", "CPV":"Cabo Verde",
+          "PAN":"Panamá", "HAI":"Haití", "CUW":"Curazao", "RSA":"Sudáfrica",
+          "NZL":"Nueva Zelanda", "QAT":"Catar", "IRQ":"Irak",
+        };
+
         wcItems.forEach(m => {
-          if (m.yes_ask && m.title) {
-            // yes_ask es la probabilidad implícita en Kalshi (0-1)
-            const price = parseFloat(m.yes_ask) || parseFloat(m.last_price) || 0;
-            teamOdds[m.title] = Math.round(price * 100);
+          // Ticker formato: KXMENWORLDCUP-26-XXX donde XXX es código de país
+          const code = m.ticker?.split("-").pop();
+          const teamName = teamNames[code] || code;
+          // Precio en Kalshi = probabilidad (0.17 = 17%)
+          const price = parseFloat(m.last_price_dollars) ||
+                        parseFloat(m.yes_bid) ||
+                        parseFloat(m.yes_ask) ||
+                        parseFloat(m.last_price) || 0;
+          if (price > 0 && teamName) {
+            teamOdds[teamName] = Math.round(price * 100);
           }
         });
-        console.log("  Team odds sample:", JSON.stringify(teamOdds).slice(0, 300));
+
+        // Mostrar top 8 favoritos según Kalshi
+        const sorted = Object.entries(teamOdds).sort((a,b) => b[1]-a[1]).slice(0,8);
+        console.log("  🏆 Top Kalshi:", sorted.map(([t,p]) => t+":"+p+"%").join(", "));
         return { available: true, markets: wcItems, teamOdds };
       }
     }
@@ -492,13 +518,28 @@ async function main() {
     getGroups(["I","J","K","L"], today, footballData),
   ]);
 
-  // Meta
+  // Meta con datos de Kalshi integrados
   console.log("📰 Generando noticias y candidatos...");
+  const kalshiTop = kalshiData.available && Object.keys(kalshiData.teamOdds||{}).length > 0
+    ? Object.entries(kalshiData.teamOdds).sort((a,b)=>b[1]-a[1]).slice(0,10)
+      .map(([t,p]) => t+":"+p+"%").join(", ")
+    : "No disponible";
+
   const meta = await callClaude(`Mundial 2026, hoy ${today}.
-ELO top 5: Francia(2083), Argentina(2142), España(2048), Brasil(2034), Inglaterra(2021).
-Lesiones: Rodrygo(Brasil), Militao(Brasil), Grealish(Inglaterra), Gvardiol(Croacia), Malagón(México), Foyth(Argentina), Panichelli(Argentina). Colombia ganó 2-0 a Jordania.
-JSON:{"headline":"titular","globalFavorite":"Argentina","globalFavoriteChange":"estable","topNews":[{"title":"t","impact":"alto","team":"p","type":"lesión","detail":"d"}],"titleContenders":[{"team":"p","odds":20,"trend":"estable","reason":"r"}]}
-Nota: Argentina tiene el ELO más alto (2142). Max 6 noticias, 6 candidatos. Solo JSON.`, 1500);
+
+DATOS DE MERCADOS DE PREDICCIÓN (Kalshi — 48 contratos activos):
+${kalshiTop}
+
+ELO RATINGS top: Argentina(2142), Francia(2083), España(2048), Brasil(2034), Inglaterra(2021), Croacia(1882), Suiza(1862), Países Bajos(1976).
+
+Lesiones: Rodrygo(Brasil,LCA), Militao(Brasil,muscular), Grealish(Inglaterra,pie), Gvardiol(Croacia,pierna), Malagón(México,Aquiles), Foyth(Argentina,Aquiles), Panichelli(Argentina,LCA), Yamal(España,duda).
+
+Noticias recientes: Colombia ganó 2-0 a Jordania (Jhon Arias x2). EE.UU. cayó 2-1 ante Alemania. Canadá empató 1-1 con Irlanda. Argentina venció 2-0 a Honduras con Messi en banca por fatiga muscular.
+
+INSTRUCCIÓN: Usa los precios de Kalshi como probabilidades reales del mercado. Combínalos con ELO para los titleContenders. Los odds en titleContenders deben reflejar los precios de Kalshi si están disponibles.
+
+JSON:{"headline":"titular impactante","globalFavorite":"nombre","globalFavoriteChange":"subió|bajó|estable","topNews":[{"title":"t","impact":"alto","team":"p","type":"lesión|resultado|táctica|otro","detail":"d"}],"titleContenders":[{"team":"p","odds":20,"trend":"estable","reason":"r","kalshiPrice":17}]}
+Max 6 noticias, 8 candidatos. Solo JSON.`, 1800);
 
   const oddsCount = allPredictions.filter(p => p.hasBookmakerOdds).length;
   const dataSourcesSummary = sourcesAvailable.join(" | ");
