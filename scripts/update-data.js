@@ -5,101 +5,9 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const FOOTBALL_API_KEY  = process.env.FOOTBALL_API_KEY;
 
-// ── 1. API-Football ───────────────────────────────────────────────────────────
-async function getFootballData() {
-  console.log("📡 Obteniendo datos de API-Football...");
-  const headers = { "x-apisports-key": FOOTBALL_API_KEY };
-
-  try {
-    // Buscar el Mundial 2026 por nombre y temporada
-    const leagueRes = await fetch(
-      "https://v3.football.api-sports.io/leagues?type=cup&season=2026",
-      { headers }
-    );
-    const leagueData = await leagueRes.json();
-    const wc = (leagueData?.response || []).find(l =>
-      l.league?.name?.toLowerCase().includes("world cup") ||
-      l.league?.name?.toLowerCase().includes("mundial")
-    );
-    const leagueId = wc?.league?.id;
-    console.log("Liga encontrada:", wc?.league?.name, "ID:", leagueId);
-
-    if (!leagueId) {
-      console.log("⚠️ Mundial 2026 aún no disponible en API-Football — usando datos base");
-      return { groups: {}, recentResults: [], upcomingFixtures: [], apiAvailable: false };
-    }
-
-    const [standingsRes, finishedRes, upcomingRes] = await Promise.all([
-      fetch(`https://v3.football.api-sports.io/standings?league=${leagueId}&season=2026`, { headers }),
-      fetch(`https://v3.football.api-sports.io/fixtures?league=${leagueId}&season=2026&status=FT`, { headers }),
-      fetch(`https://v3.football.api-sports.io/fixtures?league=${leagueId}&season=2026&status=NS&next=8`, { headers }),
-    ]);
-
-    const [sd, fd, ud] = await Promise.all([
-      standingsRes.json(), finishedRes.json(), upcomingRes.json()
-    ]);
-
-    const groups = {};
-    for (const group of (sd?.response?.[0]?.league?.standings || [])) {
-      if (!group.length) continue;
-      const name = group[0]?.group?.replace(/^Group\s*/i, "") || "?";
-      groups[name] = group.map(t => ({
-        team: t.team.name, pts: t.points,
-        gf: t.all.goals.for, gc: t.all.goals.against, gd: t.goalsDiff,
-        form: t.form?.slice(-1) || "?",
-      }));
-    }
-
-    const recentResults = (fd?.response || []).slice(-10).map(f => ({
-      date: f.fixture.date?.split("T")[0],
-      home: f.teams.home.name, away: f.teams.away.name,
-      score: `${f.goals.home}-${f.goals.away}`, round: f.league.round,
-    }));
-
-    const upcomingFixtures = (ud?.response || []).slice(0, 6).map(f => ({
-      date: f.fixture.date?.split("T")[0],
-      home: f.teams.home.name, away: f.teams.away.name,
-      venue: f.fixture.venue?.city, round: f.league.round,
-    }));
-
-    console.log(`✅ Grupos: ${Object.keys(groups).length} | Resultados: ${recentResults.length} | Próximos: ${upcomingFixtures.length}`);
-    return { groups, recentResults, upcomingFixtures, apiAvailable: true };
-
-  } catch (err) {
-    console.error("⚠️ API-Football error:", err.message);
-    return { groups: {}, recentResults: [], upcomingFixtures: [], apiAvailable: false };
-  }
-}
-
-// ── 2. Claude AI ──────────────────────────────────────────────────────────────
-async function generateAnalysis(footballData) {
-  console.log("🤖 Generando análisis con Claude...");
-
-  const today = new Date().toLocaleDateString("es-CL", {
-    weekday:"long", year:"numeric", month:"long", day:"numeric"
-  });
-
-  const hasData = footballData.apiAvailable && footballData.recentResults.length > 0;
-
-  const system = `Eres analista experto del Mundial FIFA 2026 (USA, México, Canadá).
-Hoy: ${today}. El torneo empezó el 11 de junio de 2026. 48 equipos, 12 grupos A-L.
-${hasData ? "Recibirás datos reales de la API." : "No hay datos de API aún — usa tu conocimiento actualizado."}
-Devuelve ÚNICAMENTE JSON válido y compacto. Sin markdown. Sin texto extra.
-Usa nombres cortos para los equipos (máximo 20 chars). Máximo 6 noticias. Máximo 8 candidatos.
-Estructura:
-{"lastUpdated":"${today}","headline":"string","globalFavorite":"string","globalFavoriteChange":"subió|bajó|estable","topNews":[{"title":"string","impact":"alto|medio|bajo","team":"string","type":"lesión|resultado|táctica|otro","detail":"string"}],"groups":{"A":{"teams":["s","s","s","s"],"favorite":"s","favoriteOdds":65,"trend":"estable","keyNews":"s","alert":null,"standings":[{"team":"s","pts":0,"gf":0,"gc":0,"gd":0}],"nextMatch":"s"}},"titleContenders":[{"team":"s","odds":20,"trend":"estable","reason":"s"}]}
-Completa los 12 grupos A-L. Sé conciso.`;
-
-  const userMsg = hasData
-    ? `Datos reales: ${JSON.stringify({
-        resultados: footballData.recentResults,
-        proximos: footballData.upcomingFixtures,
-        standings: footballData.groups
-      })}\nGenera JSON completo. Incluye lesiones: Rodrygo(Brasil), Militão(Brasil), Grealish(Inglaterra), Gvardiol(Croacia), Malagón(México).`
-    : `Mundial inicia 11 jun. Genera análisis pre-torneo con lesiones confirmadas: Rodrygo y Militão(Brasil), Grealish(Inglaterra), Gvardiol(Croacia), Malagón(México), Gnabry(Alemania), Foyth y Panichelli(Argentina). Solo JSON.`;
-
+// ── Claude call helper ────────────────────────────────────────────────────────
+async function callClaude(prompt) {
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
@@ -109,15 +17,14 @@ Completa los 12 grupos A-L. Sé conciso.`;
     },
     body: JSON.stringify({
       model: "claude-haiku-4-5-20251001",
-      max_tokens: 3000,
-      system,
-      messages: [{ role: "user", content: userMsg }],
+      max_tokens: 2000,
+      messages: [{ role: "user", content: prompt }],
     }),
   });
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`Claude API ${res.status}: ${err.slice(0,200)}`);
+    throw new Error(`Claude API ${res.status}: ${err.slice(0, 200)}`);
   }
 
   const raw = await res.json();
@@ -132,30 +39,137 @@ Completa los 12 grupos A-L. Sé conciso.`;
     .trim();
 
   const start = text.indexOf("{");
-  const end   = text.lastIndexOf("}");
+  const end = text.lastIndexOf("}");
   if (start === -1) throw new Error("No JSON en respuesta");
-
   return JSON.parse(text.slice(start, end + 1));
 }
 
-// ── 3. Main ───────────────────────────────────────────────────────────────────
+// ── Prompt base para grupos ───────────────────────────────────────────────────
+function makeGroupPrompt(groups) {
+  const today = new Date().toLocaleDateString("es-CL", {
+    weekday: "long", year: "numeric", month: "long", day: "numeric"
+  });
+
+  const groupList = groups.join(", ");
+  const fixtures = {
+    A: "Mexico vs Sudafrica 11jun, Corea vs RepCheca 11jun",
+    B: "Canada vs Bosnia 12jun, Qatar vs Suiza 13jun",
+    C: "Brasil vs Marruecos 13jun, Haiti vs Escocia 13jun",
+    D: "EEUU vs Paraguay 12jun, Australia vs Turquia 13jun",
+    E: "Alemania vs Curazao 14jun, CMarfil vs Ecuador 14jun",
+    F: "PBajos vs Japon 14jun, Suecia vs Tunez 14jun",
+    G: "Belgica vs Egipto 15jun, Iran vs NZelanda 15jun",
+    H: "Espana vs CaboVerde 15jun, ArabSaudita vs Uruguay 15jun",
+    I: "Francia vs Senegal 16jun, Irak vs Noruega 16jun",
+    J: "Argentina vs Argelia 16jun, Austria vs Jordania 16jun",
+    K: "Portugal vs RDCongo 17jun, Uzbekistan vs Colombia 17jun",
+    L: "Inglaterra vs Croacia 17jun, Ghana vs Panama 17jun",
+  };
+
+  const injuries = "Lesiones: Rodrygo(Brasil,LCA), Militao(Brasil,muscular), Grealish(Inglaterra,pie), Gvardiol(Croacia,pierna), Malagon(Mexico,Aquiles), Gnabry(Alemania), Foyth(Argentina,Aquiles), Panichelli(Argentina,LCA)";
+
+  const selected = groups.reduce((acc, g) => {
+    acc[g] = fixtures[g] || "";
+    return acc;
+  }, {});
+
+  return `Mundial FIFA 2026, hoy ${today}. Torneo inicia 11 junio.
+${injuries}
+
+Genera JSON con SOLO estos grupos: ${groupList}
+Partidos: ${JSON.stringify(selected)}
+
+Formato EXACTO (sin espacios extra, sin emojis en keys):
+{
+  ${groups.map(g => `"${g}": {
+    "teams": ["Pais1","Pais2","Pais3","Pais4"],
+    "favorite": "Pais",
+    "favoriteOdds": 65,
+    "trend": "estable",
+    "keyNews": "texto corto",
+    "alert": null,
+    "standings": [
+      {"team":"Pais1","pts":0,"gf":0,"gc":0,"gd":0},
+      {"team":"Pais2","pts":0,"gf":0,"gc":0,"gd":0},
+      {"team":"Pais3","pts":0,"gf":0,"gc":0,"gd":0},
+      {"team":"Pais4","pts":0,"gf":0,"gc":0,"gd":0}
+    ],
+    "nextMatch": "EquipoA vs EquipoB - DD/MM"
+  }`).join(",\n  ")}
+}
+
+Solo JSON valido. Sin texto adicional.`;
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
   console.log("🚀 Iniciando actualización...");
   console.log("⏰", new Date().toLocaleString("es-CL"));
 
-  const footballData = await getFootballData();
-  const analysis     = await generateAnalysis(footballData);
+  const today = new Date().toLocaleDateString("es-CL", {
+    weekday: "long", year: "numeric", month: "long", day: "numeric"
+  });
 
-  const outputDir  = path.join(__dirname, "..", "public", "data");
+  // Generar grupos en 3 lotes de 4
+  console.log("📊 Generando grupos A-D...");
+  const groupsAD = await callClaude(makeGroupPrompt(["A","B","C","D"]));
+  console.log("✅ Grupos A-D OK");
+
+  console.log("📊 Generando grupos E-H...");
+  const groupsEH = await callClaude(makeGroupPrompt(["E","F","G","H"]));
+  console.log("✅ Grupos E-H OK");
+
+  console.log("📊 Generando grupos I-L...");
+  const groupsIL = await callClaude(makeGroupPrompt(["I","J","K","L"]));
+  console.log("✅ Grupos I-L OK");
+
+  // Generar noticias y candidatos
+  console.log("📰 Generando noticias y candidatos...");
+  const meta = await callClaude(`Mundial 2026, hoy ${today}.
+Lesiones: Rodrygo(Brasil,LCA), Militao(Brasil), Grealish(Inglaterra), Gvardiol(Croacia), Malagon(Mexico), Gnabry(Alemania), Foyth(Argentina), Panichelli(Argentina).
+Colombia gano 2-0 a Jordania (Jhon Arias x2). Argentina entrena en Texas.
+
+Genera JSON con:
+{
+  "headline": "titular impactante del dia",
+  "globalFavorite": "Francia",
+  "globalFavoriteChange": "estable",
+  "topNews": [
+    {"title":"texto","impact":"alto","team":"pais","type":"lesion","detail":"contexto"}
+  ],
+  "titleContenders": [
+    {"team":"pais","odds":20,"trend":"estable","reason":"razon corta"}
+  ]
+}
+Maximo 6 noticias, 6 candidatos. Solo JSON.`);
+  console.log("✅ Meta OK");
+
+  // Combinar todo
+  const analysis = {
+    lastUpdated: today,
+    headline: meta.headline || "Mundial 2026 inicia el 11 de junio",
+    globalFavorite: meta.globalFavorite || "Francia",
+    globalFavoriteChange: meta.globalFavoriteChange || "estable",
+    topNews: meta.topNews || [],
+    groups: {
+      ...groupsAD,
+      ...groupsEH,
+      ...groupsIL,
+    },
+    titleContenders: meta.titleContenders || [],
+  };
+
+  // Guardar
+  const outputDir = path.join(__dirname, "..", "public", "data");
   if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
   const outputPath = path.join(outputDir, "mundial-data.json");
   fs.writeFileSync(outputPath, JSON.stringify(analysis, null, 2), "utf8");
 
   console.log("✅ Guardado en public/data/mundial-data.json");
-  console.log("📊 Grupos:", Object.keys(analysis.groups || {}).length);
-  console.log("📰 Noticias:", analysis.topNews?.length || 0);
-  console.log("🏆 Candidatos:", analysis.titleContenders?.length || 0);
+  console.log("📊 Grupos:", Object.keys(analysis.groups).join(", "));
+  console.log("📰 Noticias:", analysis.topNews.length);
+  console.log("🏆 Candidatos:", analysis.titleContenders.length);
 }
 
 main().catch(err => {
