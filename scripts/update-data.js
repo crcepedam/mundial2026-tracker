@@ -25,10 +25,12 @@ async function getOddsData() {
     const sportsRes = await fetch(
       `https://api.the-odds-api.com/v4/sports/?apiKey=${ODDS_API_KEY}`
     );
-    const sports = await sportsRes.json();
+    const sportsRaw = await sportsRes.json();
+    const sports = Array.isArray(sportsRaw) ? sportsRaw : [];
+    console.log("Sports disponibles:", sports.length);
     const wcSport = sports.find(s =>
       s.key?.includes("world_cup") || s.title?.toLowerCase().includes("world cup") ||
-      s.title?.toLowerCase().includes("mundial")
+      s.title?.toLowerCase().includes("mundial") || s.key?.includes("fifa")
     );
 
     if (!wcSport) {
