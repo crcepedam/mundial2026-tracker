@@ -97,6 +97,7 @@ async function getKalshiOdds() {
         // El precio en Kalshi = probabilidad implícita en dólares (0.17 = 17%)
         const teamOdds = {};
         const teamNames = {
+          // Códigos 3 letras FIFA
           "FRA":"Francia", "ESP":"España", "ENG":"Inglaterra", "ARG":"Argentina",
           "BRA":"Brasil", "POR":"Portugal", "GER":"Alemania", "NED":"Países Bajos",
           "BEL":"Bélgica", "URU":"Uruguay", "COL":"Colombia", "MEX":"México",
@@ -109,6 +110,19 @@ async function getKalshiOdds() {
           "COD":"RD Congo", "JOR":"Jordania", "PAR":"Paraguay", "CPV":"Cabo Verde",
           "PAN":"Panamá", "HAI":"Haití", "CUW":"Curazao", "RSA":"Sudáfrica",
           "NZL":"Nueva Zelanda", "QAT":"Catar", "IRQ":"Irak",
+          // Códigos 2 letras ISO (los que usa Kalshi en el log)
+          "ES":"España", "FR":"Francia", "PT":"Portugal", "GB":"Inglaterra",
+          "AR":"Argentina", "BR":"Brasil", "DE":"Alemania", "NL":"Países Bajos",
+          "BE":"Bélgica", "UY":"Uruguay", "CO":"Colombia", "MX":"México",
+          "MA":"Marruecos", "JP":"Japón", "SN":"Senegal", "KR":"Corea del Sur",
+          "US":"EE.UU.", "CH":"Suiza", "HR":"Croacia", "NO":"Noruega",
+          "TR":"Turquía", "AU":"Australia", "EC":"Ecuador", "CA":"Canadá",
+          "AT":"Austria", "SE":"Suecia", "CI":"C. Marfil", "CZ":"Rep. Checa",
+          "GH":"Ghana", "IR":"Irán", "SA":"Arabia Saudita", "SC":"Escocia",
+          "DZ":"Argelia", "EG":"Egipto", "BA":"Bosnia y Herz.", "UZ":"Uzbekistán",
+          "CD":"RD Congo", "JO":"Jordania", "PY":"Paraguay", "CV":"Cabo Verde",
+          "PA":"Panamá", "HT":"Haití", "CW":"Curazao", "ZA":"Sudáfrica",
+          "NZ":"Nueva Zelanda", "QA":"Catar", "IQ":"Irak",
         };
 
         wcItems.forEach(m => {
