@@ -584,7 +584,7 @@ Lesiones confirmadas: Rodrygo/Militão(Brasil), Foyth/Panichelli(Argentina), Gva
 INSTRUCCIÓN: Los titleContenders.odds deben coincidir con los precios de Kalshi si están disponibles. Ajusta según ELO ajustado por lesiones.
 
 JSON:{"headline":"titular más impactante","globalFavorite":"nombre","globalFavoriteChange":"subió|bajó|estable","topNews":[{"title":"t","impact":"alto|medio|bajo","team":"p","type":"lesión|resultado|táctica|otro","detail":"d"}],"titleContenders":[{"team":"p","odds":17,"trend":"subió|bajó|estable","reason":"razón con datos ELO+Kalshi","kalshiPrice":17,"eloRating":2048}]}
-Max 6 noticias, 8 candidatos. Solo JSON.`, 1800), 
+Max 6 noticias, 8 candidatos. Solo JSON.`, 1800);
 
   const sourcesStr = [
     "ELO+Lesiones",
