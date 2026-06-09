@@ -1,126 +1,151 @@
 {
-  "lastUpdated": "martes, 9 de junio de 2026",
-  "headline": "Brasil sufre golpe defensivo con lesión de Militao en vísperas del Mundial",
+  "lastUpdated": "lunes, 8 de junio de 2026",
+  "lastUpdatedShort": "2026-06-08",
+  "headline": "Brasil sufre doble golpe con lesiones de Rodrygo y Militão antes del Mundial",
   "globalFavorite": "Francia",
   "globalFavoriteChange": "estable",
   "topNews": [
     {
-      "title": "Brasil pierde a Militao y Rodrygo por lesiones antes del Mundial",
+      "title": "Rodrygo sufre rotura de LCA",
       "impact": "alto",
       "team": "Brasil",
-      "type": "lesion",
-      "detail": "Militao se suma a Rodrygo (LCA) en la enfermería; debilita la defensa verdeamarela"
+      "type": "lesión",
+      "detail": "El extremo del Real Madrid se perderá el Mundial tras confirmarse rotura de ligamento cruzado anterior"
     },
     {
-      "title": "Colombia vence 2-0 a Jordania con doblete de Jhon Arias",
+      "title": "Militão también lesionado",
       "impact": "alto",
-      "team": "Colombia",
-      "type": "desempeño",
-      "detail": "Actuación ofensiva dominante en amistoso preparatorio"
+      "team": "Brasil",
+      "type": "lesión",
+      "detail": "El defensa central brasileño se suma a las bajas de última hora en la zaga auriverde"
     },
     {
-      "title": "Inglaterra recibe baja de Grealish por lesión",
+      "title": "Colombia arrolla a Jordania con doblete de Jhon Arias",
+      "impact": "medio",
+      "team": "Colombia",
+      "type": "resultado",
+      "detail": "Los cafeteros sellan su pase con contundente victoria 2-0 en partido clasificatorio"
+    },
+    {
+      "title": "Grealish y Gvardiol fuera por lesión",
       "impact": "medio",
       "team": "Inglaterra",
-      "type": "lesion",
-      "detail": "Extremo clave fuera de la alineación para los Tres Leones"
+      "type": "lesión",
+      "detail": "Inglaterra y Croacia pierden a jugadores clave en sus alineaciones ofensivas"
     },
     {
-      "title": "Argentina entrena en Texas sin Foyth y Panichelli",
+      "title": "Problemas defensivos en Argentina",
       "impact": "medio",
       "team": "Argentina",
-      "type": "lesion",
-      "detail": "Dos defensas bajas limitan opciones de Scaloni en preparación"
+      "type": "lesión",
+      "detail": "Foyth y Panichelli baja por lesiones días previos al torneo"
     },
     {
-      "title": "Alemania enfrenta ausencia de Gnabry en fase previa",
+      "title": "Alemania y México también golpeadas",
       "impact": "bajo",
       "team": "Alemania",
-      "type": "lesion",
-      "detail": "Extremo atacante fuera de plan de preparación mundialista"
+      "type": "lesión",
+      "detail": "Gnabry no estará para Alemania mientras Malagón se pierde el torneo para México"
+    }
+  ],
+  "titleContenders": [
+    {
+      "team": "Francia",
+      "odds": 20,
+      "trend": "estable",
+      "reason": "Plantel intacto y experiencia campeona"
     },
     {
-      "title": "México con duda en portería tras lesión de Malagón",
-      "impact": "bajo",
-      "team": "México",
-      "type": "lesion",
-      "detail": "Problema en la portería a menos de tres semanas del torneo"
+      "team": "Argentina",
+      "odds": 18,
+      "trend": "estable",
+      "reason": "A pesar de lesiones, mantiene columna vertebral"
+    },
+    {
+      "team": "Brasil",
+      "odds": 16,
+      "trend": "bajista",
+      "reason": "Impacto significativo por bajas de Rodrygo y Militão"
+    },
+    {
+      "team": "Inglaterra",
+      "odds": 14,
+      "trend": "bajista",
+      "reason": "Pérdida de Grealish debilita ataque"
+    },
+    {
+      "team": "Alemania",
+      "odds": 12,
+      "trend": "estable",
+      "reason": "Reconstrucción en marcha, lesión de Gnabry afecta"
+    },
+    {
+      "team": "España",
+      "odds": 10,
+      "trend": "estable",
+      "reason": "Candidato secundario sin noticias de lesiones"
     }
   ],
   "groups": {
     "A": {
       "teams": [
-        "Mexico",
-        "Sudafrica",
-        "Corea",
-        "RepCheca"
+        "México",
+        "Corea del Sur",
+        "Rep. Checa",
+        "Sudáfrica"
       ],
-      "favorite": "Mexico",
+      "favorite": "México",
       "favoriteOdds": 58,
-      "trend": "preocupacion",
-      "keyNews": "Mexico sin Malogon por lesion de Aquiles",
-      "alert": "Malogon fuera por ruptura de tendon de Aquiles",
+      "trend": "inestable",
+      "keyNews": "Malagón lesionado. Defensa mexicana debilitada antes del torneo",
+      "alert": "Malagón (México) fuera. Portería en duda",
       "standings": [
         {
-          "team": "Mexico",
+          "team": "México",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "Sudafrica",
+          "team": "Corea del Sur",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "Corea",
+          "team": "Rep. Checa",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "RepCheca",
+          "team": "Sudáfrica",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         }
       ],
-      "nextMatch": "Mexico vs Sudafrica - 11/06"
+      "nextMatch": "México vs Sudáfrica 11jun"
     },
     "B": {
       "teams": [
-        "Canada",
-        "Bosnia",
-        "Qatar",
-        "Suiza"
+        "Canadá",
+        "Suiza",
+        "Bosnia y Herz.",
+        "Catar"
       ],
       "favorite": "Suiza",
       "favoriteOdds": 62,
       "trend": "estable",
-      "keyNews": "Grupo abierto con potencial sorpresa de Bosnia",
+      "keyNews": "Grupo equilibrado. Suiza lidera predicciones. Sin lesiones críticas",
       "alert": null,
       "standings": [
         {
-          "team": "Canada",
-          "pts": 0,
-          "gf": 0,
-          "gc": 0,
-          "gd": 0
-        },
-        {
-          "team": "Bosnia",
-          "pts": 0,
-          "gf": 0,
-          "gc": 0,
-          "gd": 0
-        },
-        {
-          "team": "Qatar",
+          "team": "Canadá",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -132,22 +157,36 @@
           "gf": 0,
           "gc": 0,
           "gd": 0
+        },
+        {
+          "team": "Bosnia y Herz.",
+          "pts": 0,
+          "gf": 0,
+          "gc": 0,
+          "gd": 0
+        },
+        {
+          "team": "Catar",
+          "pts": 0,
+          "gf": 0,
+          "gc": 0,
+          "gd": 0
         }
       ],
-      "nextMatch": "Canada vs Bosnia - 12/06"
+      "nextMatch": "Canadá vs Bosnia 12jun"
     },
     "C": {
       "teams": [
         "Brasil",
         "Marruecos",
-        "Haiti",
-        "Escocia"
+        "Escocia",
+        "Haití"
       ],
       "favorite": "Brasil",
       "favoriteOdds": 72,
-      "trend": "incertidumbre",
-      "keyNews": "Brasil sin Rodrygo ni Militao por lesiones musculares",
-      "alert": "Rodrygo (LCA) y Militao (muscular) ausentes en arranque",
+      "trend": "preocupante",
+      "keyNews": "Rodrygo y Militao lesionados. Defensa y ataque comprometidos",
+      "alert": "Rodrygo y Militao (Brasil) fuera. Equipo debilitado",
       "standings": [
         {
           "team": "Brasil",
@@ -164,44 +203,44 @@
           "gd": 0
         },
         {
-          "team": "Haiti",
+          "team": "Escocia",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "Escocia",
+          "team": "Haití",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         }
       ],
-      "nextMatch": "Brasil vs Marruecos - 13/06"
+      "nextMatch": "Brasil vs Marruecos 13jun"
     },
     "D": {
       "teams": [
-        "EEUU",
-        "Paraguay",
+        "EE.UU.",
+        "Turquía",
         "Australia",
-        "Turquia"
+        "Paraguay"
       ],
-      "favorite": "EEUU",
-      "favoriteOdds": 68,
+      "favorite": "EE.UU.",
+      "favoriteOdds": 60,
       "trend": "estable",
-      "keyNews": "EEUU busca liderato en grupo competitivo",
+      "keyNews": "Grupo competitivo. EE.UU. ligero favorito. Sin lesiones mayores",
       "alert": null,
       "standings": [
         {
-          "team": "EEUU",
+          "team": "EE.UU.",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "Paraguay",
+          "team": "Turquía",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -215,27 +254,27 @@
           "gd": 0
         },
         {
-          "team": "Turquia",
+          "team": "Paraguay",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         }
       ],
-      "nextMatch": "EEUU vs Paraguay - 12/06"
+      "nextMatch": "EE.UU. vs Paraguay 12jun"
     },
     "E": {
       "teams": [
         "Alemania",
-        "Costa de Marfil",
+        "C. Marfil",
         "Ecuador",
         "Curazao"
       ],
       "favorite": "Alemania",
       "favoriteOdds": 72,
       "trend": "estable",
-      "keyNews": "Gnabry fuera por lesion, Alemania busca comenzar fuerte",
-      "alert": "Gnabry(Alemania) lesionado",
+      "keyNews": "Gnabry lesionado. Alemania debe ajustar ofensiva ante C. Marfil",
+      "alert": "Gnabry(Alemania) baja por lesión",
       "standings": [
         {
           "team": "Alemania",
@@ -245,7 +284,7 @@
           "gd": 0
         },
         {
-          "team": "Costa de Marfil",
+          "team": "C. Marfil",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -266,30 +305,30 @@
           "gd": 0
         }
       ],
-      "nextMatch": "Alemania vs Curazao - 14/06"
+      "nextMatch": "Alemania vs Curazao 14jun"
     },
     "F": {
       "teams": [
-        "Paises Bajos",
-        "Japon",
+        "Países Bajos",
+        "Japón",
         "Suecia",
-        "Tunez"
+        "Túnez"
       ],
-      "favorite": "Paises Bajos",
+      "favorite": "Países Bajos",
       "favoriteOdds": 68,
       "trend": "estable",
-      "keyNews": "Paises Bajos favoritos del grupo, competencia equilibrada",
+      "keyNews": "Países Bajos sin bajas clave. Grupo competitivo con Japón y Suecia",
       "alert": null,
       "standings": [
         {
-          "team": "Paises Bajos",
+          "team": "Países Bajos",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "Japon",
+          "team": "Japón",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -303,30 +342,37 @@
           "gd": 0
         },
         {
-          "team": "Tunez",
+          "team": "Túnez",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         }
       ],
-      "nextMatch": "Paises Bajos vs Japon - 14/06"
+      "nextMatch": "Países Bajos vs Japón 14jun"
     },
     "G": {
       "teams": [
-        "Belgica",
+        "Bélgica",
+        "Irán",
         "Egipto",
-        "Iran",
         "Nueva Zelanda"
       ],
-      "favorite": "Belgica",
+      "favorite": "Bélgica",
       "favoriteOdds": 70,
       "trend": "estable",
-      "keyNews": "Belgica lidera grupo, Nueva Zelanda sorpresa potencial",
+      "keyNews": "Bélgica favorita. Irán y Egipto pugnarán por clasificación segunda",
       "alert": null,
       "standings": [
         {
-          "team": "Belgica",
+          "team": "Bélgica",
+          "pts": 0,
+          "gf": 0,
+          "gc": 0,
+          "gd": 0
+        },
+        {
+          "team": "Irán",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -340,13 +386,6 @@
           "gd": 0
         },
         {
-          "team": "Iran",
-          "pts": 0,
-          "gf": 0,
-          "gc": 0,
-          "gd": 0
-        },
-        {
           "team": "Nueva Zelanda",
           "pts": 0,
           "gf": 0,
@@ -354,30 +393,30 @@
           "gd": 0
         }
       ],
-      "nextMatch": "Belgica vs Egipto - 15/06"
+      "nextMatch": "Bélgica vs Egipto 15jun"
     },
     "H": {
       "teams": [
-        "Espana",
-        "Cabo Verde",
+        "España",
+        "Uruguay",
         "Arabia Saudita",
-        "Uruguay"
+        "Cabo Verde"
       ],
-      "favorite": "Espana",
+      "favorite": "España",
       "favoriteOdds": 75,
       "trend": "estable",
-      "keyNews": "Uruguay se fortalece, Espana favorita clara del grupo",
-      "alert": null,
+      "keyNews": "Foyth(Argentina) lesionado. España y Uruguay dominan grupo competitivo",
+      "alert": "Foyth(Argentina) baja por lesión",
       "standings": [
         {
-          "team": "Espana",
+          "team": "España",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "Cabo Verde",
+          "team": "Uruguay",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -391,30 +430,37 @@
           "gd": 0
         },
         {
-          "team": "Uruguay",
+          "team": "Cabo Verde",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         }
       ],
-      "nextMatch": "Espana vs Cabo Verde - 15/06"
+      "nextMatch": "España vs Cabo Verde 15jun"
     },
     "I": {
       "teams": [
         "Francia",
+        "Noruega",
         "Senegal",
-        "Irak",
-        "Noruega"
+        "Irak"
       ],
       "favorite": "Francia",
       "favoriteOdds": 72,
       "trend": "estable",
-      "keyNews": "Francia favorita, Senegal busca sorpresa africana",
+      "keyNews": "Francia lidera sin contratiempos. Senegal busca sorpresa africana.",
       "alert": null,
       "standings": [
         {
           "team": "Francia",
+          "pts": 0,
+          "gf": 0,
+          "gc": 0,
+          "gd": 0
+        },
+        {
+          "team": "Noruega",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -433,39 +479,25 @@
           "gf": 0,
           "gc": 0,
           "gd": 0
-        },
-        {
-          "team": "Noruega",
-          "pts": 0,
-          "gf": 0,
-          "gc": 0,
-          "gd": 0
         }
       ],
-      "nextMatch": "Francia vs Senegal - 16/06"
+      "nextMatch": "Francia vs Senegal 16jun"
     },
     "J": {
       "teams": [
         "Argentina",
-        "Argelia",
         "Austria",
+        "Argelia",
         "Jordania"
       ],
       "favorite": "Argentina",
-      "favoriteOdds": 75,
-      "trend": "estable",
-      "keyNews": "Argentina con lesiones: Foyth y Panichelli fuera",
-      "alert": "Foyth y Panichelli lesionados (Aquiles, LCA)",
+      "favoriteOdds": 68,
+      "trend": "ascendente",
+      "keyNews": "Argentina sin Foyth. Defensa comprometida ante Austria.",
+      "alert": "Foyth lesionado limita opciones defensivas",
       "standings": [
         {
           "team": "Argentina",
-          "pts": 0,
-          "gf": 0,
-          "gc": 0,
-          "gd": 0
-        },
-        {
-          "team": "Argelia",
           "pts": 0,
           "gf": 0,
           "gc": 0,
@@ -479,6 +511,13 @@
           "gd": 0
         },
         {
+          "team": "Argelia",
+          "pts": 0,
+          "gf": 0,
+          "gc": 0,
+          "gd": 0
+        },
+        {
           "team": "Jordania",
           "pts": 0,
           "gf": 0,
@@ -486,19 +525,19 @@
           "gd": 0
         }
       ],
-      "nextMatch": "Argentina vs Argelia - 16/06"
+      "nextMatch": "Argentina vs Argelia 16jun"
     },
     "K": {
       "teams": [
         "Portugal",
-        "RDCongo",
-        "Uzbekistan",
-        "Colombia"
+        "Colombia",
+        "RD Congo",
+        "Uzbekistán"
       ],
       "favorite": "Portugal",
-      "favoriteOdds": 68,
+      "favoriteOdds": 65,
       "trend": "estable",
-      "keyNews": "Portugal lidera grupo, Colombia amenaza desde Sudamerica",
+      "keyNews": "Portugal favorito claro. Colombia intenta revancha sudamericana.",
       "alert": null,
       "standings": [
         {
@@ -516,34 +555,34 @@
           "gd": 0
         },
         {
-          "team": "Uzbekistan",
+          "team": "RD Congo",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         },
         {
-          "team": "RDCongo",
+          "team": "Uzbekistán",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         }
       ],
-      "nextMatch": "Portugal vs RDCongo - 17/06"
+      "nextMatch": "Portugal vs RD Congo 17jun"
     },
     "L": {
       "teams": [
         "Inglaterra",
         "Croacia",
         "Ghana",
-        "Panama"
+        "Panamá"
       ],
       "favorite": "Inglaterra",
       "favoriteOdds": 70,
-      "trend": "al alza",
-      "keyNews": "Grealish fuera (pie), Gvardiol afecta defensa croata",
-      "alert": "Grealish lesionado (pie), Gvardiol lesionado (pierna)",
+      "trend": "descendente",
+      "keyNews": "Grealish ausente reduce creatividad inglesa. Gvardiol fuera en Croacia.",
+      "alert": "Croacia sin Gvardiol. Inglaterra sin Grealish compromete ambiciones.",
       "standings": [
         {
           "team": "Inglaterra",
@@ -567,52 +606,1275 @@
           "gd": 0
         },
         {
-          "team": "Panama",
+          "team": "Panamá",
           "pts": 0,
           "gf": 0,
           "gc": 0,
           "gd": 0
         }
       ],
-      "nextMatch": "Inglaterra vs Croacia - 17/06"
+      "nextMatch": "Inglaterra vs Croacia 17jun"
     }
   },
-  "titleContenders": [
+  "predictions": [
     {
-      "team": "Francia",
-      "odds": 18,
-      "trend": "estable",
-      "reason": "Favorita histórica, plantilla equilibrada sin bajas críticas"
+      "match": "México vs Sudáfrica",
+      "date": "2026-06-11",
+      "group": "A",
+      "jornada": 1,
+      "probHome": 58,
+      "probDraw": 24,
+      "probAway": 18,
+      "predictedScore": "2-0",
+      "confidence": 74,
+      "favorito": "México",
+      "keyFactor": "Ventaja de sede en México combinada con mejor ranking FIFA y forma reciente superior.",
+      "homeGoals": 2,
+      "awayGoals": 0
     },
     {
-      "team": "Argentina",
-      "odds": 17,
-      "trend": "estable",
-      "reason": "Campeona vigente, adaptándose a lesiones defensivas"
+      "match": "Corea del Sur vs Rep. Checa",
+      "date": "2026-06-11",
+      "group": "A",
+      "jornada": 1,
+      "probHome": 42,
+      "probDraw": 28,
+      "probAway": 30,
+      "predictedScore": "1-1",
+      "confidence": 68,
+      "favorito": "Rep. Checa",
+      "keyFactor": "República Checa con mejor ranking FIFA y experiencia reciente superior en competiciones europeas.",
+      "homeGoals": 1,
+      "awayGoals": 1
     },
     {
-      "team": "Brasil",
-      "odds": 16,
-      "trend": "en baja",
-      "reason": "Afectada por lesiones en defensa y ataque"
+      "match": "Canadá vs Bosnia y Herz.",
+      "date": "2026-06-12",
+      "group": "B",
+      "jornada": 1,
+      "probHome": 52,
+      "probDraw": 26,
+      "probAway": 22,
+      "predictedScore": "2-1",
+      "confidence": 70,
+      "favorito": "Canadá",
+      "keyFactor": "Factor sede de Canadá decisivo en primer partido con ventaja de ELO y cohesión táctica reciente.",
+      "homeGoals": 2,
+      "awayGoals": 1
     },
     {
-      "team": "Inglaterra",
-      "odds": 14,
-      "trend": "estable",
-      "reason": "Candidata consolidada pese a baja de Grealish"
+      "match": "EE.UU. vs Paraguay",
+      "date": "2026-06-12",
+      "group": "D",
+      "jornada": 1,
+      "probHome": 62,
+      "probDraw": 22,
+      "probAway": 16,
+      "predictedScore": "2-0",
+      "confidence": 76,
+      "favorito": "EE.UU.",
+      "keyFactor": "Superioridad clara en ranking FIFA, ventaja de sede en USA y mejor calidad ofensiva reciente.",
+      "homeGoals": 2,
+      "awayGoals": 0
     },
     {
-      "team": "España",
-      "odds": 13,
-      "trend": "estable",
-      "reason": "Plantilla competitiva y sin reportes críticos de lesiones"
+      "match": "Catar vs Suiza",
+      "date": "2026-06-13",
+      "group": "B",
+      "jornada": 1,
+      "probHome": 25,
+      "probDraw": 28,
+      "probAway": 47,
+      "predictedScore": "1-2",
+      "confidence": 72,
+      "favorito": "Suiza",
+      "keyFactor": "Suiza con ranking FIFA superior, mayor experiencia defensiva y Catar sin factor sede tras fracaso 2022.",
+      "homeGoals": 1,
+      "awayGoals": 2
     },
     {
-      "team": "Alemania",
-      "odds": 12,
-      "trend": "estable",
-      "reason": "Sólida en defensa y estructura táctica consolidada"
+      "match": "Brasil vs Marruecos",
+      "date": "2026-06-13",
+      "group": "C",
+      "jornada": 1,
+      "probHome": 64,
+      "probDraw": 20,
+      "probAway": 16,
+      "predictedScore": "2-0",
+      "confidence": 73,
+      "favorito": "Brasil",
+      "keyFactor": "Brasil domina en ELO y ranking pese a lesiones de Rodrygo y Militao; Marruecos vulnerable defensivamente.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Haití vs Escocia",
+      "date": "2026-06-13",
+      "group": "C",
+      "jornada": 1,
+      "probHome": 25,
+      "probDraw": 28,
+      "probAway": 47,
+      "predictedScore": "1-2",
+      "confidence": 68,
+      "favorito": "Escocia",
+      "keyFactor": "Escocia posee ranking FIFA superior (27º vs 61º) y mejor ELO pese a jugar fuera de casa.",
+      "homeGoals": 1,
+      "awayGoals": 2
+    },
+    {
+      "match": "Australia vs Turquía",
+      "date": "2026-06-13",
+      "group": "D",
+      "jornada": 1,
+      "probHome": 42,
+      "probDraw": 28,
+      "probAway": 30,
+      "predictedScore": "1-1",
+      "confidence": 65,
+      "favorito": "Australia",
+      "keyFactor": "Ventaja de sede para Australia combinada con ranking FIFA similar genera equilibrio competitivo.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Alemania vs Curazao",
+      "date": "2026-06-14",
+      "group": "E",
+      "jornada": 1,
+      "probHome": 88,
+      "probDraw": 9,
+      "probAway": 3,
+      "predictedScore": "4-0",
+      "confidence": 85,
+      "favorito": "Alemania",
+      "keyFactor": "Brecha abismal en ranking FIFA (4º vs 184º) y ausencia de Gnabry minimiza impacto de lesión.",
+      "homeGoals": 4,
+      "awayGoals": 0
+    },
+    {
+      "match": "Costa de Marfil vs Ecuador",
+      "date": "2026-06-14",
+      "group": "E",
+      "jornada": 1,
+      "probHome": 48,
+      "probDraw": 26,
+      "probAway": 26,
+      "predictedScore": "1-1",
+      "confidence": 62,
+      "favorito": "Costa de Marfil",
+      "keyFactor": "Ranking FIFA comparable (41º vs 44º) genera paridad con leve ventaja de sede para Marfil.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Países Bajos vs Japón",
+      "date": "2026-06-14",
+      "group": "F",
+      "jornada": 1,
+      "probHome": 72,
+      "probDraw": 18,
+      "probAway": 10,
+      "predictedScore": "3-0",
+      "confidence": 76,
+      "favorito": "Países Bajos",
+      "keyFactor": "Holanda ranking FIFA 8º versus Japón 24º con experiencia europea superior en torneos de élite.",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Suecia vs Túnez",
+      "date": "2026-06-14",
+      "group": "F",
+      "jornada": 1,
+      "probHome": 58,
+      "probDraw": 24,
+      "probAway": 18,
+      "predictedScore": "2-0",
+      "confidence": 70,
+      "favorito": "Suecia",
+      "keyFactor": "Suecia ranking 18º con mejor plantilla europea frente a Túnez (30º) genera diferencia sustancial.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Bélgica vs Egipto",
+      "date": "2026-06-15",
+      "group": "G",
+      "jornada": 1,
+      "probHome": 68,
+      "probDraw": 18,
+      "probAway": 14,
+      "predictedScore": "2-0",
+      "confidence": 75,
+      "favorito": "Bélgica",
+      "keyFactor": "Superioridad técnica belga y debilidad defensiva egipcia en torneos recientes",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Irán vs Nueva Zelanda",
+      "date": "2026-06-15",
+      "group": "G",
+      "jornada": 1,
+      "probHome": 52,
+      "probDraw": 28,
+      "probAway": 20,
+      "predictedScore": "1-0",
+      "confidence": 68,
+      "favorito": "Irán",
+      "keyFactor": "Irán mejor ranking FIFA con ventaja defensiva contra equipo oceánico",
+      "homeGoals": 1,
+      "awayGoals": 0
+    },
+    {
+      "match": "España vs Cabo Verde",
+      "date": "2026-06-15",
+      "group": "H",
+      "jornada": 1,
+      "probHome": 85,
+      "probDraw": 10,
+      "probAway": 5,
+      "predictedScore": "3-0",
+      "confidence": 82,
+      "favorito": "España",
+      "keyFactor": "Abismo de calidad entre top-10 mundial y selección africana clasificada por primera vez",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Arabia Saudita vs Uruguay",
+      "date": "2026-06-15",
+      "group": "H",
+      "jornada": 1,
+      "probHome": 18,
+      "probDraw": 22,
+      "probAway": 60,
+      "predictedScore": "0-2",
+      "confidence": 78,
+      "favorito": "Uruguay",
+      "keyFactor": "Uruguay es potencia mundial consolidada con experiencia copera frente a rival asiático débil",
+      "homeGoals": 0,
+      "awayGoals": 2
+    },
+    {
+      "match": "Francia vs Senegal",
+      "date": "2026-06-16",
+      "group": "I",
+      "jornada": 1,
+      "probHome": 72,
+      "probDraw": 16,
+      "probAway": 12,
+      "predictedScore": "2-0",
+      "confidence": 76,
+      "favorito": "Francia",
+      "keyFactor": "Campeón mundial con plantilla elite contra Senegal sin referencias ofensivas recientes",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Irak vs Noruega",
+      "date": "2026-06-16",
+      "group": "I",
+      "jornada": 1,
+      "probHome": 42,
+      "probDraw": 28,
+      "probAway": 30,
+      "predictedScore": "1-1",
+      "confidence": 70,
+      "favorito": "Noruega",
+      "keyFactor": "Irak como local con experiencia asiática pero Noruega con solidez defensiva europea",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Argentina vs Argelia",
+      "date": "2026-06-16",
+      "group": "J",
+      "jornada": 1,
+      "probHome": 72,
+      "probDraw": 18,
+      "probAway": 10,
+      "predictedScore": "2-0",
+      "confidence": 78,
+      "favorito": "Argentina",
+      "keyFactor": "Argentina es campeona mundial con plantilla de élite; Argelia débil en ranking FIFA pese a jugar en África del Norte.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Austria vs Jordania",
+      "date": "2026-06-16",
+      "group": "J",
+      "jornada": 1,
+      "probHome": 68,
+      "probDraw": 22,
+      "probAway": 10,
+      "predictedScore": "2-1",
+      "confidence": 75,
+      "favorito": "Austria",
+      "keyFactor": "Austria ranking superior y experiencia europea; Jordania ascendida pero sin nivel competitivo en fase de grupos.",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "match": "Portugal vs RD Congo",
+      "date": "2026-06-17",
+      "group": "K",
+      "jornada": 1,
+      "probHome": 75,
+      "probDraw": 16,
+      "probAway": 9,
+      "predictedScore": "3-0",
+      "confidence": 80,
+      "favorito": "Portugal",
+      "keyFactor": "Diferencia abismal de ranking FIFA y experiencia; RD Congo es debutante con equipo limitado.",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Uzbekistán vs Colombia",
+      "date": "2026-06-17",
+      "group": "K",
+      "jornada": 1,
+      "probHome": 25,
+      "probDraw": 28,
+      "probAway": 47,
+      "predictedScore": "1-2",
+      "confidence": 72,
+      "favorito": "Colombia",
+      "keyFactor": "Colombia con superior ranking FIFA y experiencia internacional; Uzbekistán débil en contexto asiático.",
+      "homeGoals": 1,
+      "awayGoals": 2
+    },
+    {
+      "match": "Inglaterra vs Croacia",
+      "date": "2026-06-17",
+      "group": "L",
+      "jornada": 1,
+      "probHome": 62,
+      "probDraw": 26,
+      "probAway": 12,
+      "predictedScore": "2-1",
+      "confidence": 70,
+      "favorito": "Inglaterra",
+      "keyFactor": "Inglaterra favorita pese a baja de Grealish; Croacia debilitada por lesión de Gvardiol en defensa central.",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "match": "Ghana vs Panamá",
+      "date": "2026-06-17",
+      "group": "L",
+      "jornada": 1,
+      "probHome": 58,
+      "probDraw": 26,
+      "probAway": 16,
+      "predictedScore": "2-0",
+      "confidence": 68,
+      "favorito": "Ghana",
+      "keyFactor": "Ghana con mayor experiencia mundialista africana y ranking superior; Panamá débil en contexto competitivo.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "México vs Corea del Sur",
+      "date": "2026-06-18",
+      "group": "A",
+      "jornada": 2,
+      "probHome": 58,
+      "probDraw": 24,
+      "probAway": 18,
+      "predictedScore": "2-0",
+      "confidence": 74,
+      "favorito": "México",
+      "keyFactor": "Ventaja de localía en México con Malagón ausente reduciendo nivel defensivo coreano.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Rep. Checa vs Sudáfrica",
+      "date": "2026-06-18",
+      "group": "A",
+      "jornada": 2,
+      "probHome": 52,
+      "probDraw": 28,
+      "probAway": 20,
+      "predictedScore": "1-1",
+      "confidence": 68,
+      "favorito": "Rep. Checa",
+      "keyFactor": "República Checa ligeramente superior en ranking pero Sudáfrica defensivamente sólida en torneos.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Suiza vs Bosnia y Herz.",
+      "date": "2026-06-18",
+      "group": "B",
+      "jornada": 2,
+      "probHome": 62,
+      "probDraw": 22,
+      "probAway": 16,
+      "predictedScore": "2-0",
+      "confidence": 76,
+      "favorito": "Suiza",
+      "keyFactor": "Diferencia considerable de ranking FIFA y consistencia defensiva suiza ante rival de menor calibre.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Canadá vs Catar",
+      "date": "2026-06-18",
+      "group": "B",
+      "jornada": 2,
+      "probHome": 48,
+      "probDraw": 26,
+      "probAway": 26,
+      "predictedScore": "1-1",
+      "confidence": 65,
+      "favorito": "Canadá",
+      "keyFactor": "Sede canadiense compensa baja calidad, Catar competitivo en Sudamérica pero débil fuera de Oriente Medio.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Escocia vs Marruecos",
+      "date": "2026-06-19",
+      "group": "C",
+      "jornada": 2,
+      "probHome": 54,
+      "probDraw": 26,
+      "probAway": 20,
+      "predictedScore": "2-1",
+      "confidence": 70,
+      "favorito": "Escocia",
+      "keyFactor": "Escocia superior en ranking y defensa más fiable que la errática Marruecos en fases de grupos.",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "match": "Brasil vs Haití",
+      "date": "2026-06-19",
+      "group": "C",
+      "jornada": 2,
+      "probHome": 89,
+      "probDraw": 8,
+      "probAway": 3,
+      "predictedScore": "4-0",
+      "confidence": 88,
+      "favorito": "Brasil",
+      "keyFactor": "Brasil sin Rodrygo y Militao pero aún abrumadoramente superior; Haití débil incluso en grupos de Mundiales.",
+      "homeGoals": 4,
+      "awayGoals": 0
+    },
+    {
+      "match": "EE.UU. vs Australia",
+      "date": "2026-06-19",
+      "group": "D",
+      "jornada": 2,
+      "probHome": 58,
+      "probDraw": 24,
+      "probAway": 18,
+      "predictedScore": "2-0",
+      "confidence": 74,
+      "favorito": "EE.UU.",
+      "keyFactor": "Ventaja de factor sede en Norteamérica con defensa local superior a equipo visitante intercontinental.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Turquía vs Paraguay",
+      "date": "2026-06-19",
+      "group": "D",
+      "jornada": 2,
+      "probHome": 52,
+      "probDraw": 28,
+      "probAway": 20,
+      "predictedScore": "1-1",
+      "confidence": 68,
+      "favorito": "Turquía",
+      "keyFactor": "Equilibrio entre ranking superior turco y solidez defensiva paraguaya en fases de grupo.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Alemania vs Costa de Marfil",
+      "date": "2026-06-20",
+      "group": "E",
+      "jornada": 2,
+      "probHome": 72,
+      "probDraw": 16,
+      "probAway": 12,
+      "predictedScore": "3-0",
+      "confidence": 78,
+      "favorito": "Alemania",
+      "keyFactor": "Superioridad técnica de Alemania sin Gnabry sigue siendo clara contra rival con recursos limitados.",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Ecuador vs Curazao",
+      "date": "2026-06-20",
+      "group": "E",
+      "jornada": 2,
+      "probHome": 68,
+      "probDraw": 18,
+      "probAway": 14,
+      "predictedScore": "2-0",
+      "confidence": 76,
+      "favorito": "Ecuador",
+      "keyFactor": "Experiencia ecuatoriana en Copas Mundiales versus pequeño rival caribeño sin estructura competitiva.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Países Bajos vs Suecia",
+      "date": "2026-06-20",
+      "group": "F",
+      "jornada": 2,
+      "probHome": 62,
+      "probDraw": 22,
+      "probAway": 16,
+      "predictedScore": "2-1",
+      "confidence": 71,
+      "favorito": "Países Bajos",
+      "keyFactor": "Potencial ofensivo holandés superior en ataque pero defensa sueca disciplinada garantiza goles.",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "match": "Túnez vs Japón",
+      "date": "2026-06-20",
+      "group": "F",
+      "jornada": 2,
+      "probHome": 45,
+      "probDraw": 30,
+      "probAway": 25,
+      "predictedScore": "1-1",
+      "confidence": 65,
+      "favorito": "Túnez",
+      "keyFactor": "Igualdad técnica con ligera ventaja tunecina en experiencia pero Japón competitivo y organizado.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Bélgica vs Irán",
+      "date": "2026-06-21",
+      "group": "G",
+      "jornada": 2,
+      "probHome": 72,
+      "probDraw": 18,
+      "probAway": 10,
+      "predictedScore": "2-0",
+      "confidence": 78,
+      "favorito": "Bélgica",
+      "keyFactor": "Bélgica en ranking top-5 con defensa sólida vs Irán históricamente débil en torneos internacionales",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Nueva Zelanda vs Egipto",
+      "date": "2026-06-21",
+      "group": "G",
+      "jornada": 2,
+      "probHome": 35,
+      "probDraw": 28,
+      "probAway": 37,
+      "predictedScore": "1-2",
+      "confidence": 68,
+      "favorito": "Egipto",
+      "keyFactor": "Egipto superior en ranking FIFA y experiencia en mundiales; Nueva Zelanda vulnerable defensivamente",
+      "homeGoals": 1,
+      "awayGoals": 2
+    },
+    {
+      "match": "España vs Arabia Saudita",
+      "date": "2026-06-21",
+      "group": "H",
+      "jornada": 2,
+      "probHome": 88,
+      "probDraw": 8,
+      "probAway": 4,
+      "predictedScore": "3-0",
+      "confidence": 85,
+      "favorito": "España",
+      "keyFactor": "España top-8 mundial con dominio ofensivo comprobado; Arabia Saudita sin capacidad defensiva para contener",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Uruguay vs Cabo Verde",
+      "date": "2026-06-21",
+      "group": "H",
+      "jornada": 2,
+      "probHome": 82,
+      "probDraw": 12,
+      "probAway": 6,
+      "predictedScore": "2-0",
+      "confidence": 81,
+      "favorito": "Uruguay",
+      "keyFactor": "Uruguay experiencia mundial y ofensiva consistente vs Cabo Verde debut histórico en Mundiales",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Francia vs Irak",
+      "date": "2026-06-22",
+      "group": "I",
+      "jornada": 2,
+      "probHome": 91,
+      "probDraw": 6,
+      "probAway": 3,
+      "predictedScore": "3-0",
+      "confidence": 87,
+      "favorito": "Francia",
+      "keyFactor": "Francia campeona defensora con plantel superior sin lesiones significativas frente a Irak debutante",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Noruega vs Senegal",
+      "date": "2026-06-22",
+      "group": "I",
+      "jornada": 2,
+      "probHome": 38,
+      "probDraw": 30,
+      "probAway": 32,
+      "predictedScore": "1-1",
+      "confidence": 66,
+      "favorito": "Senegal",
+      "keyFactor": "Paridad competitiva con ligera ventaja Senegal por ranking superior y mejor forma en competiciones africanas recientes",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Argentina vs Austria",
+      "date": "2026-06-22",
+      "group": "J",
+      "jornada": 2,
+      "probHome": 68,
+      "probDraw": 18,
+      "probAway": 14,
+      "predictedScore": "2-0",
+      "confidence": 75,
+      "favorito": "Argentina",
+      "keyFactor": "Argentina es campeona mundial con mejor ELO; Austria carece de ofensiva letal y Argentina gestiona ausencias defensivas con experiencia.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Jordania vs Argelia",
+      "date": "2026-06-22",
+      "group": "J",
+      "jornada": 2,
+      "probHome": 35,
+      "probDraw": 28,
+      "probAway": 37,
+      "predictedScore": "1-2",
+      "confidence": 68,
+      "favorito": "Argelia",
+      "keyFactor": "Argelia domina históricamente a Jordania y mantiene mejor ranking FIFA pese a crisis reciente.",
+      "homeGoals": 1,
+      "awayGoals": 2
+    },
+    {
+      "match": "Portugal vs Uzbekistán",
+      "date": "2026-06-23",
+      "group": "K",
+      "jornada": 2,
+      "probHome": 82,
+      "probDraw": 12,
+      "probAway": 6,
+      "predictedScore": "3-0",
+      "confidence": 78,
+      "favorito": "Portugal",
+      "keyFactor": "Brecha de ranking FIFA abismal (17 vs 89); Portugal sin lesiones clave y con ofensiva intacta.",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Colombia vs RD Congo",
+      "date": "2026-06-23",
+      "group": "K",
+      "jornada": 2,
+      "probHome": 75,
+      "probDraw": 16,
+      "probAway": 9,
+      "predictedScore": "2-0",
+      "confidence": 73,
+      "favorito": "Colombia",
+      "keyFactor": "Colombia juega en CONMEBOL con ritmo competitivo superior; RD Congo sin experiencia mundial.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Inglaterra vs Ghana",
+      "date": "2026-06-23",
+      "group": "L",
+      "jornada": 2,
+      "probHome": 71,
+      "probDraw": 18,
+      "probAway": 11,
+      "predictedScore": "2-1",
+      "confidence": 70,
+      "favorito": "Inglaterra",
+      "keyFactor": "Pérdida de Grealish debilita creatividad inglesa, pero superioridad ofensiva y defensiva compensa ante Ghana.",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "match": "Panamá vs Croacia",
+      "date": "2026-06-23",
+      "group": "L",
+      "jornada": 2,
+      "probHome": 28,
+      "probDraw": 24,
+      "probAway": 48,
+      "predictedScore": "0-2",
+      "confidence": 72,
+      "favorito": "Croacia",
+      "keyFactor": "Croacia finalista mundial con ELO superior a pesar de ausencia de Gvardiol; Panamá sin ofensiva consistente.",
+      "homeGoals": 0,
+      "awayGoals": 2
+    },
+    {
+      "match": "México vs Rep. Checa",
+      "date": "2026-06-24",
+      "group": "A",
+      "jornada": 3,
+      "probHome": 58,
+      "probDraw": 24,
+      "probAway": 18,
+      "predictedScore": "2-0",
+      "confidence": 74,
+      "favorito": "México",
+      "keyFactor": "Factor sede local en México con selección motivada en J3 definidora.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Sudáfrica vs Corea del Sur",
+      "date": "2026-06-24",
+      "group": "A",
+      "jornada": 3,
+      "probHome": 42,
+      "probDraw": 28,
+      "probAway": 30,
+      "predictedScore": "1-1",
+      "confidence": 68,
+      "favorito": "Corea del Sur",
+      "keyFactor": "Corea superior en ranking ELO pero ambos necesitan resultado en J3 decisiva.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Suiza vs Canadá",
+      "date": "2026-06-24",
+      "group": "B",
+      "jornada": 3,
+      "probHome": 62,
+      "probDraw": 22,
+      "probAway": 16,
+      "predictedScore": "2-0",
+      "confidence": 76,
+      "favorito": "Suiza",
+      "keyFactor": "Suiza ranking superior (15 vs 48) y Canadá debilitado sin factor sede.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Bosnia y Herz. vs Catar",
+      "date": "2026-06-24",
+      "group": "B",
+      "jornada": 3,
+      "probHome": 52,
+      "probDraw": 26,
+      "probAway": 22,
+      "predictedScore": "1-1",
+      "confidence": 70,
+      "favorito": "Bosnia y Herz.",
+      "keyFactor": "Paridad competitiva en partido de J3 donde ambos luchan por clasificarse.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Brasil vs Escocia",
+      "date": "2026-06-25",
+      "group": "C",
+      "jornada": 3,
+      "probHome": 72,
+      "probDraw": 18,
+      "probAway": 10,
+      "predictedScore": "2-0",
+      "confidence": 78,
+      "favorito": "Brasil",
+      "keyFactor": "Brasil ranking élite mundial (3) supera a Escocia (43) pese a bajas de Rodrygo y Militao.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Marruecos vs Haití",
+      "date": "2026-06-25",
+      "group": "C",
+      "jornada": 3,
+      "probHome": 68,
+      "probDraw": 20,
+      "probAway": 12,
+      "predictedScore": "2-0",
+      "confidence": 75,
+      "favorito": "Marruecos",
+      "keyFactor": "Diferencia abismal en ranking FIFA (11 vs 173) con Marruecos buscando avanzar.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "EE.UU. vs Turquía",
+      "date": "2026-06-25",
+      "group": "D",
+      "jornada": 3,
+      "probHome": 58,
+      "probDraw": 24,
+      "probAway": 18,
+      "predictedScore": "2-0",
+      "confidence": 74,
+      "favorito": "EE.UU.",
+      "keyFactor": "Ventaja de localía en USA amplificada por mayor rango ELO y forma reciente superior",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Paraguay vs Australia",
+      "date": "2026-06-25",
+      "group": "D",
+      "jornada": 3,
+      "probHome": 45,
+      "probDraw": 28,
+      "probAway": 27,
+      "predictedScore": "1-1",
+      "confidence": 68,
+      "favorito": "Paraguay",
+      "keyFactor": "Equipos equilibrados en ranking ELO con tendencia australiana defensiva pero efectiva",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Alemania vs Ecuador",
+      "date": "2026-06-26",
+      "group": "E",
+      "jornada": 3,
+      "probHome": 72,
+      "probDraw": 18,
+      "probAway": 10,
+      "predictedScore": "3-0",
+      "confidence": 79,
+      "favorito": "Alemania",
+      "keyFactor": "Superioridad ofensiva alemana sin Gnabry compensada por profundidad táctica frente a Ecuador limitado",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "C. Marfil vs Curazao",
+      "date": "2026-06-26",
+      "group": "E",
+      "jornada": 3,
+      "probHome": 68,
+      "probDraw": 20,
+      "probAway": 12,
+      "predictedScore": "2-0",
+      "confidence": 75,
+      "favorito": "C. Marfil",
+      "keyFactor": "Diferencial técnico y físico significativo entre equipos con experiencia mundial favorable a Costa de Marfil",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Países Bajos vs Túnez",
+      "date": "2026-06-26",
+      "group": "F",
+      "jornada": 3,
+      "probHome": 75,
+      "probDraw": 16,
+      "probAway": 9,
+      "predictedScore": "2-0",
+      "confidence": 81,
+      "favorito": "Países Bajos",
+      "keyFactor": "Selección neerlandesa con superioridad absoluta en ranking ELO y versatilidad táctica frente a rival defensivo",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Japón vs Suecia",
+      "date": "2026-06-26",
+      "group": "F",
+      "jornada": 3,
+      "probHome": 48,
+      "probDraw": 26,
+      "probAway": 26,
+      "predictedScore": "1-1",
+      "confidence": 70,
+      "favorito": "Empate",
+      "keyFactor": "Equipos tácticos y defensivos con perfiles similares en ELO generan bloqueo mutuo característico de terceras jornadas",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Bélgica vs Nueva Zelanda",
+      "date": "2026-06-26",
+      "group": "G",
+      "jornada": 3,
+      "probHome": 72,
+      "probDraw": 18,
+      "probAway": 10,
+      "predictedScore": "2-0",
+      "confidence": 78,
+      "favorito": "Bélgica",
+      "keyFactor": "Superioridad técnica y experiencia mundialista de Bélgica vs Nueva Zelanda sin tradición de Mundiales.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Egipto vs Irán",
+      "date": "2026-06-26",
+      "group": "G",
+      "jornada": 3,
+      "probHome": 48,
+      "probDraw": 28,
+      "probAway": 24,
+      "predictedScore": "1-1",
+      "confidence": 65,
+      "favorito": "Egipto",
+      "keyFactor": "Equilibrio entre defensa iraní sólida y capacidad ofensiva egipcia con Mohamed Salah.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "España vs Uruguay",
+      "date": "2026-06-26",
+      "group": "H",
+      "jornada": 3,
+      "probHome": 62,
+      "probDraw": 22,
+      "probAway": 16,
+      "predictedScore": "2-1",
+      "confidence": 74,
+      "favorito": "España",
+      "keyFactor": "Posesión y control de España compensan experiencia defensiva de Uruguay, pero Cavani/Suárez envejecidos.",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "match": "Cabo Verde vs Arabia Saudita",
+      "date": "2026-06-26",
+      "group": "H",
+      "jornada": 3,
+      "probHome": 35,
+      "probDraw": 30,
+      "probAway": 35,
+      "predictedScore": "1-1",
+      "confidence": 62,
+      "favorito": "Arabia Saudita",
+      "keyFactor": "Paridad entre selecciones modestas con déficit defensivo de ambas y pocas garantías ofensivas.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Francia vs Noruega",
+      "date": "2026-06-26",
+      "group": "I",
+      "jornada": 3,
+      "probHome": 78,
+      "probDraw": 14,
+      "probAway": 8,
+      "predictedScore": "3-0",
+      "confidence": 81,
+      "favorito": "Francia",
+      "keyFactor": "Abismo de calidad entre campeones olímpicos franceses y Noruega sin clasificación histórica a Mundiales.",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Senegal vs Irak",
+      "date": "2026-06-26",
+      "group": "I",
+      "jornada": 3,
+      "probHome": 65,
+      "probDraw": 22,
+      "probAway": 13,
+      "predictedScore": "2-0",
+      "confidence": 73,
+      "favorito": "Senegal",
+      "keyFactor": "Experiencia africana de Senegal y defensa iraní desorganizada con poco potencial ofensivo.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "match": "Argentina vs Jordania",
+      "date": "2026-06-26",
+      "group": "J",
+      "jornada": 3,
+      "probHome": 94,
+      "probDraw": 4,
+      "probAway": 2,
+      "predictedScore": "3-0",
+      "confidence": 89,
+      "favorito": "Argentina",
+      "keyFactor": "Diferencia abismal de ranking FIFA (Argentina #2 vs Jordania #60) con Argentina ya clasificada buscando terminar primero de grupo.",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "match": "Argelia vs Austria",
+      "date": "2026-06-26",
+      "group": "J",
+      "jornada": 3,
+      "probHome": 38,
+      "probDraw": 28,
+      "probAway": 34,
+      "predictedScore": "1-1",
+      "confidence": 68,
+      "favorito": "Austria",
+      "keyFactor": "Austria ligeramente superior en ranking y forma reciente, pero ambos equipos necesitan puntos; empate probable jugándose la clasificación.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Portugal vs Colombia",
+      "date": "2026-06-27",
+      "group": "K",
+      "jornada": 3,
+      "probHome": 58,
+      "probDraw": 22,
+      "probAway": 20,
+      "predictedScore": "2-1",
+      "confidence": 75,
+      "favorito": "Portugal",
+      "keyFactor": "Portugal con mejor ranking FIFA (#7 vs #13) y ventaja psicológica, aunque Colombia juega más combinado en Norteamérica.",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "match": "RD Congo vs Uzbekistán",
+      "date": "2026-06-27",
+      "group": "K",
+      "jornada": 3,
+      "probHome": 45,
+      "probDraw": 28,
+      "probAway": 27,
+      "predictedScore": "1-1",
+      "confidence": 65,
+      "favorito": "RD Congo",
+      "keyFactor": "Equipos similares en ranking mundial con contexto de presión defensiva; RD Congo liga en casa pero Uzbekistán compite bien en transiciones.",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "match": "Inglaterra vs Panamá",
+      "date": "2026-06-27",
+      "group": "L",
+      "jornada": 3,
+      "probHome": 96,
+      "probDraw": 3,
+      "probAway": 1,
+      "predictedScore": "4-0",
+      "confidence": 87,
+      "favorito": "Inglaterra",
+      "keyFactor": "Abismo de calidad entre ranking #4 vs #56 con Grealish lesionado pero plantilla profunda; goleada esperada en partido de trámite.",
+      "homeGoals": 4,
+      "awayGoals": 0
+    },
+    {
+      "match": "Croacia vs Ghana",
+      "date": "2026-06-27",
+      "group": "L",
+      "jornada": 3,
+      "probHome": 62,
+      "probDraw": 20,
+      "probAway": 18,
+      "predictedScore": "2-0",
+      "confidence": 73,
+      "favorito": "Croacia",
+      "keyFactor": "Croacia superior en ranking (#9 vs #61) pero sin Gvardiol; Ghana defensivamente ordenada pero Croacia debería prevalecer en juego posicional.",
+      "homeGoals": 2,
+      "awayGoals": 0
+    }
+  ],
+  "todayMatches": [],
+  "upcomingMatches": [
+    {
+      "date": "2026-06-11",
+      "group": "A",
+      "home": "México",
+      "away": "Sudáfrica",
+      "j": 1,
+      "prediction": {
+        "match": "México vs Sudáfrica",
+        "date": "2026-06-11",
+        "group": "A",
+        "jornada": 1,
+        "probHome": 58,
+        "probDraw": 24,
+        "probAway": 18,
+        "predictedScore": "2-0",
+        "confidence": 74,
+        "favorito": "México",
+        "keyFactor": "Ventaja de sede en México combinada con mejor ranking FIFA y forma reciente superior.",
+        "homeGoals": 2,
+        "awayGoals": 0
+      }
+    },
+    {
+      "date": "2026-06-11",
+      "group": "A",
+      "home": "Corea del Sur",
+      "away": "Rep. Checa",
+      "j": 1,
+      "prediction": {
+        "match": "Corea del Sur vs Rep. Checa",
+        "date": "2026-06-11",
+        "group": "A",
+        "jornada": 1,
+        "probHome": 42,
+        "probDraw": 28,
+        "probAway": 30,
+        "predictedScore": "1-1",
+        "confidence": 68,
+        "favorito": "Rep. Checa",
+        "keyFactor": "República Checa con mejor ranking FIFA y experiencia reciente superior en competiciones europeas.",
+        "homeGoals": 1,
+        "awayGoals": 1
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "group": "B",
+      "home": "Canadá",
+      "away": "Bosnia y Herz.",
+      "j": 1,
+      "prediction": {
+        "match": "Canadá vs Bosnia y Herz.",
+        "date": "2026-06-12",
+        "group": "B",
+        "jornada": 1,
+        "probHome": 52,
+        "probDraw": 26,
+        "probAway": 22,
+        "predictedScore": "2-1",
+        "confidence": 70,
+        "favorito": "Canadá",
+        "keyFactor": "Factor sede de Canadá decisivo en primer partido con ventaja de ELO y cohesión táctica reciente.",
+        "homeGoals": 2,
+        "awayGoals": 1
+      }
+    },
+    {
+      "date": "2026-06-12",
+      "group": "D",
+      "home": "EE.UU.",
+      "away": "Paraguay",
+      "j": 1,
+      "prediction": {
+        "match": "EE.UU. vs Paraguay",
+        "date": "2026-06-12",
+        "group": "D",
+        "jornada": 1,
+        "probHome": 62,
+        "probDraw": 22,
+        "probAway": 16,
+        "predictedScore": "2-0",
+        "confidence": 76,
+        "favorito": "EE.UU.",
+        "keyFactor": "Superioridad clara en ranking FIFA, ventaja de sede en USA y mejor calidad ofensiva reciente.",
+        "homeGoals": 2,
+        "awayGoals": 0
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "group": "B",
+      "home": "Catar",
+      "away": "Suiza",
+      "j": 1,
+      "prediction": {
+        "match": "Catar vs Suiza",
+        "date": "2026-06-13",
+        "group": "B",
+        "jornada": 1,
+        "probHome": 25,
+        "probDraw": 28,
+        "probAway": 47,
+        "predictedScore": "1-2",
+        "confidence": 72,
+        "favorito": "Suiza",
+        "keyFactor": "Suiza con ranking FIFA superior, mayor experiencia defensiva y Catar sin factor sede tras fracaso 2022.",
+        "homeGoals": 1,
+        "awayGoals": 2
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "group": "C",
+      "home": "Brasil",
+      "away": "Marruecos",
+      "j": 1,
+      "prediction": {
+        "match": "Brasil vs Marruecos",
+        "date": "2026-06-13",
+        "group": "C",
+        "jornada": 1,
+        "probHome": 64,
+        "probDraw": 20,
+        "probAway": 16,
+        "predictedScore": "2-0",
+        "confidence": 73,
+        "favorito": "Brasil",
+        "keyFactor": "Brasil domina en ELO y ranking pese a lesiones de Rodrygo y Militao; Marruecos vulnerable defensivamente.",
+        "homeGoals": 2,
+        "awayGoals": 0
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "group": "C",
+      "home": "Haití",
+      "away": "Escocia",
+      "j": 1,
+      "prediction": {
+        "match": "Haití vs Escocia",
+        "date": "2026-06-13",
+        "group": "C",
+        "jornada": 1,
+        "probHome": 25,
+        "probDraw": 28,
+        "probAway": 47,
+        "predictedScore": "1-2",
+        "confidence": 68,
+        "favorito": "Escocia",
+        "keyFactor": "Escocia posee ranking FIFA superior (27º vs 61º) y mejor ELO pese a jugar fuera de casa.",
+        "homeGoals": 1,
+        "awayGoals": 2
+      }
+    },
+    {
+      "date": "2026-06-13",
+      "group": "D",
+      "home": "Australia",
+      "away": "Turquía",
+      "j": 1,
+      "prediction": {
+        "match": "Australia vs Turquía",
+        "date": "2026-06-13",
+        "group": "D",
+        "jornada": 1,
+        "probHome": 42,
+        "probDraw": 28,
+        "probAway": 30,
+        "predictedScore": "1-1",
+        "confidence": 65,
+        "favorito": "Australia",
+        "keyFactor": "Ventaja de sede para Australia combinada con ranking FIFA similar genera equilibrio competitivo.",
+        "homeGoals": 1,
+        "awayGoals": 1
+      }
     }
   ]
 }
