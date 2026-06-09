@@ -318,63 +318,33 @@ function buildMatchProbs(fixture, oddsData, kalshiData, footballData) {
     : 150;
   const confidence = Math.max(45, Math.min(92, Math.round(82 - Math.sqrt(variance))));
 
-  // Modelo de Poisson para predecir marcador más probable
-  // Estándar estadístico en análisis de fútbol
+  // Modelo de Poisson — estándar estadístico para predicción de goles en fútbol
+  // Promedio histórico Mundiales: ~2.6 goles/partido (1.4 local + 1.2 visitante)
   function poissonProb(lambda, k) {
-    // P(X=k) = e^(-lambda) * lambda^k / k!
     let factorial = 1;
     for (let i = 2; i <= k; i++) factorial *= i;
     return Math.exp(-lambda) * Math.pow(lambda, k) / factorial;
   }
 
-  function predictScorePoisson(pH, pD, pA) {
-    // Estimar goles esperados basado en probabilidades del partido
-    // En mundiales: promedio ~2.5 goles/partido, ~1.3 local, ~1.2 visitante
-    // Ajustar según probabilidades del partido
-    const baseHomeGoals = 1.3;
-    const baseAwayGoals = 1.2;
+  function predictScorePoisson(pH, pA) {
+    // Calcular lambdas ajustados por ventaja relativa
+    // diff positivo = local favorito, negativo = visitante favorito
+    const diff = (pH - pA) / 100;
+    const lambdaHome = Math.max(0.5, 1.4 + diff * 1.2);
+    const lambdaAway = Math.max(0.5, 1.2 - diff * 1.0);
 
-    // Escalar según ventaja: equipo favorito anota más
-    const homeAdvantage = pH / 50; // >1 si favorito, <1 si desventaja
-    const awayAdvantage = pA / 50;
-
-    const lambdaHome = Math.max(0.3, Math.min(3.5, baseHomeGoals * homeAdvantage));
-    const lambdaAway = Math.max(0.3, Math.min(3.0, baseAwayGoals * awayAdvantage));
-
-    // Calcular probabilidad de cada marcador (0-0 hasta 4-4)
-    let bestScore = { hg:1, ag:0, prob:0 };
-    for (let hg = 0; hg <= 4; hg++) {
-      for (let ag = 0; ag <= 4; ag++) {
+    // Encontrar marcador con mayor probabilidad (0-0 hasta 5-5)
+    let best = { hg:0, ag:0, prob:0 };
+    for (let hg = 0; hg <= 5; hg++) {
+      for (let ag = 0; ag <= 5; ag++) {
         const prob = poissonProb(lambdaHome, hg) * poissonProb(lambdaAway, ag);
-        if (prob > bestScore.prob) {
-          bestScore = { hg, ag, prob };
-        }
+        if (prob > best.prob) best = { hg, ag, prob };
       }
     }
-
-    // Validar coherencia con resultado esperado
-    // Si pH > 55%, el marcador no puede favorecer al visitante
-    if (pH > 55 && bestScore.hg <= bestScore.ag) {
-      bestScore = { hg:1, ag:0, prob:bestScore.prob };
-    }
-    if (pA > 55 && bestScore.ag <= bestScore.hg) {
-      bestScore = { hg:0, ag:1, prob:bestScore.prob };
-    }
-    // Si empate > 35%, considerar 0-0 o 1-1
-    if (pD > 35 && bestScore.hg !== bestScore.ag) {
-      const draw00 = poissonProb(lambdaHome, 0) * poissonProb(lambdaAway, 0);
-      const draw11 = poissonProb(lambdaHome, 1) * poissonProb(lambdaAway, 1);
-      if (draw11 > bestScore.prob * 0.8) {
-        bestScore = { hg:1, ag:1, prob:draw11 };
-      } else if (draw00 > bestScore.prob * 0.8) {
-        bestScore = { hg:0, ag:0, prob:draw00 };
-      }
-    }
-
-    return { score:`${bestScore.hg}-${bestScore.ag}`, hg:bestScore.hg, ag:bestScore.ag };
+    return { score:`${best.hg}-${best.ag}`, hg:best.hg, ag:best.ag };
   }
 
-  const predicted = predictScorePoisson(combined.home, combined.draw, combined.away);
+  const predicted = predictScorePoisson(combined.home, combined.away);
 
   return {
     probHome:combined.home, probDraw:combined.draw, probAway:combined.away,
