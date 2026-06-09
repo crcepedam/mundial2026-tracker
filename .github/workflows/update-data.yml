@@ -34,7 +34,7 @@ jobs:
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-       run: node --no-deprecation scripts/update-data.js
+       run: node scripts/update-data.js
 
       - name: Commit y push de datos actualizados
         run: |
