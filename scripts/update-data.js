@@ -1,4 +1,5 @@
-// scripts/update-data.js — 5 FUENTES: ELO + Kalshi + TheOddsAPI + API-Football + Claude AI
+// scripts/update-data.js — MODELO ESTADÍSTICO COMPLETO
+// Fuentes: ELO + Kalshi + TheOddsAPI + API-Football + Claude AI
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -17,281 +18,223 @@ function getChileDateShort() {
   return chile.toISOString().split("T")[0];
 }
 
-// ── FUENTE 1: ELO Ratings (eloratings.net) ────────────────────────────────────
-// Ratings ELO para los 48 equipos del Mundial 2026
-// Fuente académicamente validada como la más predictiva para fútbol
-const ELO_RATINGS = {
-  "Francia":        2083, "España":         2048, "Brasil":         2034,
-  "Argentina":      2142, "Inglaterra":     2021, "Portugal":       1975,
-  "Países Bajos":   1976, "Alemania":       1956, "Bélgica":        1928,
-  "Uruguay":        1870, "Colombia":       1852, "México":         1836,
-  "Marruecos":      1827, "Japón":          1808, "Senegal":        1782,
-  "Corea del Sur":  1776, "EE.UU.":         1768, "Suiza":          1862,
-  "Croacia":        1882, "Noruega":        1825, "Turquía":        1782,
-  "Australia":      1737, "Ecuador":        1752, "Canadá":         1773,
-  "Austria":        1766, "Suecia":         1759, "C. Marfil":      1745,
-  "Rep. Checa":     1729, "Ghana":          1701, "Irán":           1741,
-  "Arabia Saudita": 1693, "Escocia":        1733, "Argelia":        1714,
-  "Egipto":         1695, "Serbia":         1764, "Bosnia y Herz.": 1698,
-  "Uzbekistán":     1672, "Marruecos":      1827, "RD Congo":       1638,
-  "Jordania":       1601, "Paraguay":       1718, "Cabo Verde":     1642,
-  "Panamá":         1623, "Haití":          1541, "Curazao":        1489,
-  "Sudáfrica":      1641, "Nueva Zelanda":  1548, "Catar":          1611,
-  "Irak":           1629,
+// ── ELO RATINGS — base estadística más confiable ──────────────────────────────
+const ELO = {
+  "Francia":2083,"España":2048,"Brasil":2034,"Argentina":2142,"Inglaterra":2021,
+  "Portugal":1975,"Países Bajos":1976,"Alemania":1956,"Bélgica":1928,"Suiza":1862,
+  "Croacia":1882,"Uruguay":1870,"Colombia":1852,"Noruega":1825,"México":1836,
+  "Marruecos":1827,"Japón":1808,"Senegal":1782,"Corea del Sur":1776,"EE.UU.":1768,
+  "Turquía":1782,"Austria":1766,"Suecia":1759,"Ecuador":1752,"Rep. Checa":1729,
+  "Australia":1737,"C. Marfil":1745,"Serbia":1764,"Irán":1741,"Escocia":1733,
+  "Argelia":1714,"Canadá":1773,"Egipto":1695,"Bosnia y Herz.":1698,"Paraguay":1718,
+  "Ghana":1701,"Arabia Saudita":1693,"Uzbekistán":1672,"RD Congo":1638,
+  "Jordania":1601,"Cabo Verde":1642,"Panamá":1623,"Haití":1541,
+  "Curazao":1489,"Sudáfrica":1641,"Nueva Zelanda":1548,"Catar":1611,"Irak":1629,
 };
 
-// Función para calcular probabilidades con ELO (fórmula estándar)
-function eloToProbabilities(homeElo, awayElo) {
-  const homeDiff = homeElo - awayElo;
-  // Ventaja de local en torneos neutrales es menor (~30-50 puntos)
-  const adjustedDiff = homeDiff + 40;
-  const homeWinProb = 1 / (1 + Math.pow(10, -adjustedDiff / 400));
-  // Modelo Dixon-Coles simplificado para distribución H/D/A
-  const drawFactor = 0.26; // ~26% empates en Mundiales
-  const adjustedHome = homeWinProb * (1 - drawFactor);
-  const adjustedAway = (1 - homeWinProb) * (1 - drawFactor);
+// Calcular probabilidades base con ELO + modelo Dixon-Coles
+function calcEloProbs(homeTeam, awayTeam) {
+  const homeElo = ELO[homeTeam] || 1700;
+  const awayElo = ELO[awayTeam] || 1700;
+  const diff = homeElo - awayElo + 40; // +40 ventaja local/neutral
+  const homeWin = 1 / (1 + Math.pow(10, -diff / 400));
+  const draw = 0.26; // ~26% empates en mundiales
   return {
-    probHome: Math.round(adjustedHome * 100),
-    probDraw: Math.round(drawFactor * 100),
-    probAway: Math.round(adjustedAway * 100),
-    homeElo,
-    awayElo,
-    eloDiff: homeDiff,
+    home: Math.round(homeWin * (1 - draw) * 100),
+    draw: Math.round(draw * 100),
+    away: Math.round((1 - homeWin) * (1 - draw) * 100),
+    homeElo, awayElo, diff: homeElo - awayElo,
   };
 }
 
-// ── FUENTE 2: Kalshi — Mercados de predicción ─────────────────────────────────
-async function getKalshiOdds() {
-  console.log("📈 Obteniendo odds de mercados de predicción (Kalshi)...");
+// Ajustar probabilidades por lesiones conocidas
+const INJURY_IMPACT = {
+  "Brasil":     { players:["Rodrygo (LCA)","Militão (muscular)"], eloMalus: -35 },
+  "Argentina":  { players:["Foyth (Aquiles)","Panichelli (LCA)"], eloMalus: -20 },
+  "México":     { players:["Malagón (Aquiles)"], eloMalus: -15 },
+  "Inglaterra": { players:["Grealish (pie)"], eloMalus: -10 },
+  "Croacia":    { players:["Gvardiol (pierna)"], eloMalus: -25 },
+  "Alemania":   { players:["Gnabry"], eloMalus: -10 },
+  "España":     { players:["Yamal (duda)"], eloMalus: -10 },
+};
+
+function applyInjuryAdjustment(homeTeam, awayTeam, baseProbs) {
+  const homeMalus = INJURY_IMPACT[homeTeam]?.eloMalus || 0;
+  const awayMalus = INJURY_IMPACT[awayTeam]?.eloMalus || 0;
+  const adjustedDiff = baseProbs.diff - homeMalus + awayMalus;
+  const homeWin = 1 / (1 + Math.pow(10, -(adjustedDiff + 40) / 400));
+  const draw = 0.26;
+  return {
+    home: Math.round(homeWin * (1 - draw) * 100),
+    draw: Math.round(draw * 100),
+    away: Math.round((1 - homeWin) * (1 - draw) * 100),
+  };
+}
+
+// Combinar probabilidades de múltiples fuentes con pesos
+function combineProbs(sources) {
+  // sources = [{probs:{home,draw,away}, weight, name}]
+  const totalWeight = sources.reduce((s, x) => s + x.weight, 0);
+  let home = 0, draw = 0, away = 0;
+  sources.forEach(s => {
+    home += s.probs.home * s.weight / totalWeight;
+    draw += s.probs.draw * s.weight / totalWeight;
+    away += s.probs.away * s.weight / totalWeight;
+  });
+  // Normalizar a 100%
+  const total = home + draw + away;
+  return {
+    home: Math.round(home / total * 100),
+    draw: Math.round(draw / total * 100),
+    away: Math.round(away / total * 100),
+    sourceNames: sources.map(s => s.name).join("+"),
+  };
+}
+
+// ── FUENTE 1: Kalshi ──────────────────────────────────────────────────────────
+async function getKalshiData() {
+  console.log("📈 Kalshi...");
   try {
-    // Kalshi endpoints correctos para Mundial 2026
-    // Los mercados de partido individual aparecen progresivamente
-    // Los de ganador del torneo y grupos YA están disponibles
-    const endpoints = [
+    const res = await fetch(
       "https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open&series_ticker=KXMENWORLDCUP",
-      "https://api.elections.kalshi.com/trade-api/v2/events?limit=100&status=open&series_ticker=KXMENWORLDCUP",
-      "https://api.elections.kalshi.com/trade-api/v2/markets?limit=200&status=open&category=sports&search=world+cup",
-    ];
+      { headers: { "Accept": "application/json" } }
+    );
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const markets = data.markets || [];
 
-    for (const endpoint of endpoints) {
-      const res = await fetch(endpoint, { headers: { "Accept": "application/json" } });
-      console.log("  Kalshi endpoint:", endpoint.split("?")[1], "→ status", res.status);
-      if (!res.ok) continue;
-      const data = await res.json();
-      console.log("  Kalshi raw:", JSON.stringify(data).slice(0, 500));
-      const items = data.markets || data.events || [];
-      const wcItems = items.filter(m =>
-        m.title?.toLowerCase().includes("world cup") ||
-        m.title?.toLowerCase().includes("soccer") ||
-        m.ticker?.toUpperCase().includes("WORLDCUP") ||
-        m.event_ticker?.toUpperCase().includes("WORLDCUP") ||
-        m.series_ticker?.toUpperCase().includes("WORLDCUP") ||
-        m.ticker?.includes("KXMEN")
-      );
-      if (wcItems.length > 0) {
-        console.log(`  ✅ Kalshi WC items: ${wcItems.length}`);
-        console.log("  Primeros items:", wcItems.slice(0,3).map(m=>m.ticker+"|"+m.title).join(", "));
+    const ISO2 = {
+      "ES":"España","FR":"Francia","PT":"Portugal","GB":"Inglaterra","AR":"Argentina",
+      "BR":"Brasil","DE":"Alemania","NL":"Países Bajos","BE":"Bélgica","UY":"Uruguay",
+      "CO":"Colombia","MX":"México","MA":"Marruecos","JP":"Japón","SN":"Senegal",
+      "KR":"Corea del Sur","US":"EE.UU.","CH":"Suiza","HR":"Croacia","NO":"Noruega",
+      "TR":"Turquía","AU":"Australia","EC":"Ecuador","CA":"Canadá","AT":"Austria",
+      "SE":"Suecia","CI":"C. Marfil","CZ":"Rep. Checa","GH":"Ghana","IR":"Irán",
+      "SA":"Arabia Saudita","DZ":"Argelia","EG":"Egipto","BA":"Bosnia y Herz.",
+      "UZ":"Uzbekistán","CD":"RD Congo","JO":"Jordania","PY":"Paraguay",
+      "CV":"Cabo Verde","PA":"Panamá","HT":"Haití","CW":"Curazao","ZA":"Sudáfrica",
+      "NZ":"Nueva Zelanda","QA":"Catar","IQ":"Irak","SC":"Escocia",
+    };
 
-        // Extraer probabilidades implícitas de los mercados disponibles
-        // Extraer probabilidades de Kalshi
-        // El precio en Kalshi = probabilidad implícita en dólares (0.17 = 17%)
-        const teamOdds = {};
-        const teamNames = {
-          // Códigos 3 letras FIFA
-          "FRA":"Francia", "ESP":"España", "ENG":"Inglaterra", "ARG":"Argentina",
-          "BRA":"Brasil", "POR":"Portugal", "GER":"Alemania", "NED":"Países Bajos",
-          "BEL":"Bélgica", "URU":"Uruguay", "COL":"Colombia", "MEX":"México",
-          "MAR":"Marruecos", "JPN":"Japón", "SEN":"Senegal", "KOR":"Corea del Sur",
-          "USA":"EE.UU.", "SUI":"Suiza", "CRO":"Croacia", "NOR":"Noruega",
-          "TUR":"Turquía", "AUS":"Australia", "ECU":"Ecuador", "CAN":"Canadá",
-          "AUT":"Austria", "SWE":"Suecia", "CIV":"C. Marfil", "CZE":"Rep. Checa",
-          "GHA":"Ghana", "IRN":"Irán", "KSA":"Arabia Saudita", "SCO":"Escocia",
-          "ALG":"Argelia", "EGY":"Egipto", "BIH":"Bosnia y Herz.", "UZB":"Uzbekistán",
-          "COD":"RD Congo", "JOR":"Jordania", "PAR":"Paraguay", "CPV":"Cabo Verde",
-          "PAN":"Panamá", "HAI":"Haití", "CUW":"Curazao", "RSA":"Sudáfrica",
-          "NZL":"Nueva Zelanda", "QAT":"Catar", "IRQ":"Irak",
-          // Códigos 2 letras ISO (los que usa Kalshi en el log)
-          "ES":"España", "FR":"Francia", "PT":"Portugal", "GB":"Inglaterra",
-          "AR":"Argentina", "BR":"Brasil", "DE":"Alemania", "NL":"Países Bajos",
-          "BE":"Bélgica", "UY":"Uruguay", "CO":"Colombia", "MX":"México",
-          "MA":"Marruecos", "JP":"Japón", "SN":"Senegal", "KR":"Corea del Sur",
-          "US":"EE.UU.", "CH":"Suiza", "HR":"Croacia", "NO":"Noruega",
-          "TR":"Turquía", "AU":"Australia", "EC":"Ecuador", "CA":"Canadá",
-          "AT":"Austria", "SE":"Suecia", "CI":"C. Marfil", "CZ":"Rep. Checa",
-          "GH":"Ghana", "IR":"Irán", "SA":"Arabia Saudita", "SC":"Escocia",
-          "DZ":"Argelia", "EG":"Egipto", "BA":"Bosnia y Herz.", "UZ":"Uzbekistán",
-          "CD":"RD Congo", "JO":"Jordania", "PY":"Paraguay", "CV":"Cabo Verde",
-          "PA":"Panamá", "HT":"Haití", "CW":"Curazao", "ZA":"Sudáfrica",
-          "NZ":"Nueva Zelanda", "QA":"Catar", "IQ":"Irak",
-        };
+    const teamOdds = {};
+    markets.forEach(m => {
+      const code = m.ticker?.split("-").pop();
+      const team = ISO2[code] || code;
+      const price = parseFloat(m.last_price_dollars) || parseFloat(m.yes_bid) || parseFloat(m.yes_ask) || 0;
+      if (price > 0 && team) teamOdds[team] = Math.round(price * 100);
+    });
 
-        wcItems.forEach(m => {
-          // Ticker formato: KXMENWORLDCUP-26-XXX donde XXX es código de país
-          const code = m.ticker?.split("-").pop();
-          const teamName = teamNames[code] || code;
-          // Precio en Kalshi = probabilidad (0.17 = 17%)
-          const price = parseFloat(m.last_price_dollars) ||
-                        parseFloat(m.yes_bid) ||
-                        parseFloat(m.yes_ask) ||
-                        parseFloat(m.last_price) || 0;
-          if (price > 0 && teamName) {
-            teamOdds[teamName] = Math.round(price * 100);
-          }
-        });
-
-        // Mostrar top 8 favoritos según Kalshi
-        const sorted = Object.entries(teamOdds).sort((a,b) => b[1]-a[1]).slice(0,8);
-        console.log("  🏆 Top Kalshi:", sorted.map(([t,p]) => t+":"+p+"%").join(", "));
-        return { available: true, markets: wcItems, teamOdds };
-      }
-    }
-    console.log("  ⚠️ Kalshi: no se encontraron mercados del Mundial");
-    return { available: false, markets: [], teamOdds: {} };
-  } catch (err) {
-    console.log("  ⚠️ Kalshi error:", err.message);
-    return { available: false, markets: [], teamOdds: {} };
+    const sorted = Object.entries(teamOdds).sort((a,b) => b[1]-a[1]);
+    console.log(`  ✅ ${markets.length} mercados | Top: ${sorted.slice(0,6).map(([t,p])=>t+":"+p+"%").join(", ")}`);
+    return { available: true, teamOdds, sorted };
+  } catch(e) {
+    console.log("  ⚠️ Kalshi:", e.message);
+    return { available: false, teamOdds: {}, sorted: [] };
   }
 }
 
-// ── FUENTE 3: TheOddsAPI ──────────────────────────────────────────────────────
+// ── FUENTE 2: TheOddsAPI ──────────────────────────────────────────────────────
 async function getOddsData() {
-  console.log("🎲 Obteniendo cuotas de casas de apuestas (TheOddsAPI)...");
-  console.log("  ODDS_API_KEY existe:", !!ODDS_API_KEY, "| longitud:", ODDS_API_KEY?.length || 0, "| primeros 8 chars:", ODDS_API_KEY?.substring(0,8) || "VACÍA");
+  console.log("🎲 TheOddsAPI...");
+  console.log("  Key existe:", !!ODDS_API_KEY, "| longitud:", ODDS_API_KEY?.length || 0);
+  if (!ODDS_API_KEY) return { available: false, matches: [] };
   try {
-    const sportsRes = await fetch(
-      `https://api.the-odds-api.com/v4/sports/?apiKey=${ODDS_API_KEY}`
-    );
+    const sportsRes = await fetch(`https://api.the-odds-api.com/v4/sports/?apiKey=${ODDS_API_KEY}`);
     const sportsRaw = await sportsRes.json();
-    // DEBUG COMPLETO
-    console.log("  TheOddsAPI raw:", JSON.stringify(sportsRaw).slice(0, 1000));
-    const sports = Array.isArray(sportsRaw) ? sportsRaw : (sportsRaw?.data || []);
-    console.log("  Sports count:", sports.length);
-    if (sports.length > 0) {
-      const allKeys = sports.map(s => s.key || s.sport_key).filter(Boolean);
-      console.log("  Todos los sports keys:", allKeys.join(", ").slice(0, 500));
-    }
-
-    // Buscar cualquier deporte de fútbol/soccer disponible
+    const sports = Array.isArray(sportsRaw) ? sportsRaw : [];
     const wcSport = sports.find(s =>
-      (s.key || s.sport_key)?.includes("world_cup") ||
-      (s.key || s.sport_key)?.includes("fifa") ||
-      s.title?.toLowerCase().includes("world cup") ||
-      s.title?.toLowerCase().includes("mundial") ||
-      s.description?.toLowerCase().includes("world cup")
+      s.key?.includes("world_cup") || s.key?.includes("fifa") ||
+      s.title?.toLowerCase().includes("world cup")
     );
-
     if (!wcSport) {
-      const soccerSports = sports.filter(s =>
-        (s.key||s.sport_key)?.includes("soccer") ||
-        s.group?.toLowerCase().includes("soccer") ||
-        s.group?.toLowerCase().includes("football")
-      );
-      console.log("  Soccer/Football sports:", soccerSports.map(s => (s.key||s.sport_key)+"|"+s.title).join(", ").slice(0,300));
-      console.log("  ⚠️ Mundial 2026 no encontrado en TheOddsAPI");
+      const soccer = sports.filter(s => s.key?.includes("soccer")).map(s=>s.key).join(", ");
+      console.log("  Soccer sports:", soccer.slice(0,200) || "ninguno");
       return { available: false, matches: [] };
     }
-
-    console.log(`  ✅ Sport: ${wcSport.key} | ${wcSport.title}`);
     const oddsRes = await fetch(
       `https://api.the-odds-api.com/v4/sports/${wcSport.key}/odds/?apiKey=${ODDS_API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal`
     );
     const oddsData = await oddsRes.json();
-
     const matches = (Array.isArray(oddsData) ? oddsData : []).map(game => {
-      const bookmakers = game.bookmakers || [];
-      if (!bookmakers.length) return null;
-      const probSums = { home:0, draw:0, away:0 };
-      let count = 0;
-      bookmakers.forEach(bm => {
-        const h2h = bm.markets?.find(m => m.key === "h2h");
+      const bms = game.bookmakers || [];
+      if (!bms.length) return null;
+      const sums = {home:0,draw:0,away:0}; let count = 0;
+      bms.forEach(bm => {
+        const h2h = bm.markets?.find(m=>m.key==="h2h");
         if (!h2h) return;
-        const homeOdd = h2h.outcomes?.find(o => o.name === game.home_team)?.price;
-        const awayOdd = h2h.outcomes?.find(o => o.name === game.away_team)?.price;
-        const drawOdd = h2h.outcomes?.find(o => o.name === "Draw")?.price;
-        if (homeOdd && awayOdd && drawOdd) {
-          const total = 1/homeOdd + 1/drawOdd + 1/awayOdd;
-          probSums.home += (1/homeOdd/total)*100;
-          probSums.draw += (1/drawOdd/total)*100;
-          probSums.away += (1/awayOdd/total)*100;
+        const hO = h2h.outcomes?.find(o=>o.name===game.home_team)?.price;
+        const aO = h2h.outcomes?.find(o=>o.name===game.away_team)?.price;
+        const dO = h2h.outcomes?.find(o=>o.name==="Draw")?.price;
+        if (hO && aO && dO) {
+          const t = 1/hO+1/dO+1/aO;
+          sums.home += (1/hO/t)*100; sums.draw += (1/dO/t)*100; sums.away += (1/aO/t)*100;
           count++;
         }
       });
       if (!count) return null;
       return {
-        home: game.home_team, away: game.away_team,
-        date: game.commence_time?.split("T")[0],
-        probHome: Math.round(probSums.home/count),
-        probDraw: Math.round(probSums.draw/count),
-        probAway: Math.round(probSums.away/count),
-        bookmakerCount: count,
+        home:game.home_team, away:game.away_team,
+        date:game.commence_time?.split("T")[0],
+        probs:{ home:Math.round(sums.home/count), draw:Math.round(sums.draw/count), away:Math.round(sums.away/count) },
+        bookmakerCount:count,
       };
     }).filter(Boolean);
-
-    console.log(`  ✅ Cuotas: ${matches.length} partidos`);
+    console.log(`  ✅ ${matches.length} partidos con cuotas`);
     return { available: true, matches };
-  } catch (err) {
-    console.log("  ⚠️ TheOddsAPI error:", err.message);
+  } catch(e) {
+    console.log("  ⚠️ TheOddsAPI:", e.message);
     return { available: false, matches: [] };
   }
 }
 
-// ── FUENTE 4: API-Football ────────────────────────────────────────────────────
+// ── FUENTE 3: API-Football ────────────────────────────────────────────────────
 async function getFootballData() {
-  console.log("📡 Obteniendo datos de API-Football...");
+  console.log("📡 API-Football...");
+  if (!FOOTBALL_API_KEY) return { available:false, groups:{}, recentResults:[] };
   try {
     const headers = { "x-apisports-key": FOOTBALL_API_KEY };
-    const leagueRes = await fetch(
-      "https://v3.football.api-sports.io/leagues?type=cup&season=2026", { headers }
-    );
-    const leagueData = await leagueRes.json();
-    const wc = (leagueData?.response||[]).find(l =>
-      l.league?.name?.toLowerCase().includes("world cup") ||
-      l.league?.name?.toLowerCase().includes("mundial")
-    );
-    if (!wc?.league?.id) {
-      console.log("  ⚠️ Mundial 2026 aún no en API-Football");
-      return { groups:{}, recentResults:[], available:false };
-    }
+    const lr = await fetch("https://v3.football.api-sports.io/leagues?type=cup&season=2026", { headers });
+    const ld = await lr.json();
+    const wc = (ld?.response||[]).find(l => l.league?.name?.toLowerCase().includes("world cup"));
+    if (!wc?.league?.id) { console.log("  ⚠️ Torneo no disponible aún"); return { available:false, groups:{}, recentResults:[] }; }
     const [sd, fd] = await Promise.all([
-      fetch(`https://v3.football.api-sports.io/standings?league=${wc.league.id}&season=2026`, { headers }).then(r=>r.json()),
-      fetch(`https://v3.football.api-sports.io/fixtures?league=${wc.league.id}&season=2026&status=FT`, { headers }).then(r=>r.json()),
+      fetch(`https://v3.football.api-sports.io/standings?league=${wc.league.id}&season=2026`, {headers}).then(r=>r.json()),
+      fetch(`https://v3.football.api-sports.io/fixtures?league=${wc.league.id}&season=2026&status=FT`, {headers}).then(r=>r.json()),
     ]);
     const groups = {};
-    for (const group of (sd?.response?.[0]?.league?.standings||[])) {
-      if (!group.length) continue;
-      const name = group[0]?.group?.replace(/^Group\s*/i,"") || "?";
-      groups[name] = group.map(t => ({
+    for (const g of (sd?.response?.[0]?.league?.standings||[])) {
+      if (!g.length) continue;
+      const name = g[0]?.group?.replace(/^Group\s*/i,"") || "?";
+      groups[name] = g.map(t => ({
         team:t.team.name, pts:t.points,
-        gf:t.all.goals.for, gc:t.all.goals.against,
-        gd:t.goalsDiff, form:t.form?.slice(-1)||"?",
+        gf:t.all.goals.for, gc:t.all.goals.against, gd:t.goalsDiff,
       }));
     }
-    const recentResults = (fd?.response||[]).slice(-12).map(f => ({
-      date:f.fixture.date?.split("T")[0],
+    const results = (fd?.response||[]).slice(-12).map(f => ({
       home:f.teams.home.name, away:f.teams.away.name,
-      score:`${f.goals.home}-${f.goals.away}`, round:f.league.round,
+      score:`${f.goals.home}-${f.goals.away}`, date:f.fixture.date?.split("T")[0],
     }));
-    console.log(`  ✅ ${Object.keys(groups).length} grupos, ${recentResults.length} resultados`);
-    return { groups, recentResults, available:true };
-  } catch (err) {
-    console.log("  ⚠️ API-Football error:", err.message);
-    return { groups:{}, recentResults:[], available:false };
+    console.log(`  ✅ ${Object.keys(groups).length} grupos, ${results.length} resultados`);
+    return { available:true, groups, recentResults:results };
+  } catch(e) {
+    console.log("  ⚠️ API-Football:", e.message);
+    return { available:false, groups:{}, recentResults:[] };
   }
 }
 
-// ── FUENTE 5: Claude AI ───────────────────────────────────────────────────────
+// ── Claude AI helper ──────────────────────────────────────────────────────────
 async function callClaude(prompt, maxTokens=1800) {
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method:"POST",
-    headers:{ "Content-Type":"application/json", "x-api-key":ANTHROPIC_API_KEY, "anthropic-version":"2023-06-01" },
+    headers:{ "Content-Type":"application/json","x-api-key":ANTHROPIC_API_KEY,"anthropic-version":"2023-06-01" },
     body: JSON.stringify({ model:"claude-haiku-4-5-20251001", max_tokens:maxTokens, messages:[{role:"user",content:prompt}] }),
   });
-  if (!res.ok) throw new Error(`Claude ${res.status}: ${await res.text().then(t=>t.slice(0,200))}`);
+  if (!res.ok) throw new Error(`Claude ${res.status}`);
   const raw = await res.json();
   let text = (raw.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("").trim()
     .replace(/^```json\s*/i,"").replace(/^```\s*/i,"").replace(/\s*```$/i,"").trim();
-  const s=text.indexOf("{"), e=text.lastIndexOf("}");
-  if (s===-1) throw new Error("No JSON: "+text.slice(0,100));
+  const s=text.indexOf("{"),e=text.lastIndexOf("}");
+  if (s===-1) throw new Error("No JSON");
   return JSON.parse(text.slice(s,e+1));
 }
 
@@ -371,78 +314,140 @@ const ALL_FIXTURES = [
   { date:"2026-06-27", time:"21:00", group:"L", home:"Croacia",       away:"Ghana",          j:3, venue:"Atlanta" },
 ];
 
-// ── Generar pronósticos combinando 5 fuentes ──────────────────────────────────
-async function getMatchPredictions(matches, today, oddsData, kalshiData, footballData) {
-  const matchList = matches.map((m, i) => {
-    // ELO base (siempre disponible)
-    const homeElo = ELO_RATINGS[m.home] || 1700;
-    const awayElo = ELO_RATINGS[m.away] || 1700;
-    const eloPred = eloToProbabilities(homeElo, awayElo);
+// ── NÚCLEO: Calcular probabilidades combinando TODAS las fuentes ──────────────
+function buildMatchProbs(fixture, oddsData, kalshiData, footballData) {
+  const { home, away } = fixture;
 
-    // Cuotas de casas de apuestas
-    const odds = oddsData.matches?.find(o =>
-      o.home?.toLowerCase().includes(m.home.toLowerCase().split(" ")[0]) ||
-      m.home.toLowerCase().includes(o.home?.toLowerCase().split(" ")[0]||"XX")
-    );
-    const oddsStr = odds
-      ? `[BOOKMAKERS (${odds.bookmakerCount} casas): Local ${odds.probHome}%, Empate ${odds.probDraw}%, Visitante ${odds.probAway}%]`
-      : `[Sin bookmakers]`;
+  // FUENTE 1: ELO + ajuste por lesiones (siempre disponible)
+  const eloBase = calcEloProbs(home, away);
+  const eloAdj  = applyInjuryAdjustment(home, away, eloBase);
+  const sources = [{ probs: eloAdj, weight: 40, name: "ELO" }];
 
-    return `${i+1}. ${m.home}(ELO:${homeElo}) vs ${m.away}(ELO:${awayElo}) | G${m.group} J${m.j} | ${m.date} ${m.time} Chile | ${m.venue}
-   ELO base: Local ${eloPred.probHome}%, Empate ${eloPred.probDraw}%, Visitante ${eloPred.probAway}% (diff ELO: ${eloPred.eloDiff > 0 ? '+' : ''}${eloPred.eloDiff})
-   ${oddsStr}`;
-  }).join("\n\n");
+  // FUENTE 2: TheOddsAPI bookmakers
+  const bookmakerMatch = oddsData.matches?.find(o =>
+    (o.home?.toLowerCase().includes(home.split(" ")[0].toLowerCase()) ||
+     home.toLowerCase().includes((o.home||"").split(" ")[0].toLowerCase())) &&
+    (o.away?.toLowerCase().includes(away.split(" ")[0].toLowerCase()) ||
+     away.toLowerCase().includes((o.away||"").split(" ")[0].toLowerCase()))
+  );
+  if (bookmakerMatch) {
+    sources.push({ probs: bookmakerMatch.probs, weight: 35, name: `Bookmakers(${bookmakerMatch.bookmakerCount})` });
+  }
 
-  const hasResults = footballData.recentResults?.length > 0;
-  const resultsStr = hasResults
-    ? `\nRESULTADOS REALES: ${footballData.recentResults.slice(-6).map(r=>`${r.home} ${r.score} ${r.away}`).join(" | ")}`
-    : "";
+  // FUENTE 3: Kalshi — usar diferencia relativa de probabilidades de ganar el torneo
+  // Si el equipo A tiene 17% de ganar el torneo y el B tiene 5%,
+  // eso informa la probabilidad del partido individual
+  const kalshiHome = kalshiData.teamOdds?.[home] || 0;
+  const kalshiAway = kalshiData.teamOdds?.[away] || 0;
+  if (kalshiHome > 0 || kalshiAway > 0) {
+    const total = kalshiHome + kalshiAway;
+    if (total > 0) {
+      const kalshiRatio = kalshiHome / total; // proporción relativa
+      // Convertir ratio de torneo a prob. de partido (con regresión a la media)
+      const matchProb = 0.3 + kalshiRatio * 0.4; // escala entre 30% y 70%
+      const draw = 0.26;
+      sources.push({
+        probs: {
+          home: Math.round(matchProb * (1-draw) * 100),
+          draw: Math.round(draw * 100),
+          away: Math.round((1-matchProb) * (1-draw) * 100),
+        },
+        weight: 15,
+        name: "Kalshi",
+      });
+    }
+  }
 
-  const prompt = `Eres el mejor analista estadístico de fútbol. Hoy ${today}. Mundial FIFA 2026.
+  // FUENTE 4: API-Football resultados recientes (ajuste de forma)
+  if (footballData.available && footballData.recentResults?.length > 0) {
+    const homeResults = footballData.recentResults.filter(r => r.home===home || r.away===home);
+    const awayResults = footballData.recentResults.filter(r => r.home===away || r.away===away);
+    if (homeResults.length > 0 || awayResults.length > 0) {
+      // Calcular puntos de forma (últimos 3 partidos)
+      const formScore = (results, team) => {
+        return results.slice(-3).reduce((score, r) => {
+          const [hg, ag] = r.score.split("-").map(Number);
+          const isHome = r.home === team;
+          const won = isHome ? hg > ag : ag > hg;
+          const drew = hg === ag;
+          return score + (won ? 3 : drew ? 1 : 0);
+        }, 0);
+      };
+      const homeForm = formScore(homeResults, home) / 9; // 0-1
+      const awayForm = formScore(awayResults, away) / 9;
+      const formRatio = 0.5 + (homeForm - awayForm) * 0.3;
+      const draw = 0.26;
+      sources.push({
+        probs: {
+          home: Math.round(formRatio * (1-draw) * 100),
+          draw: Math.round(draw * 100),
+          away: Math.round((1-formRatio) * (1-draw) * 100),
+        },
+        weight: 10,
+        name: "Forma",
+      });
+    }
+  }
 
-METODOLOGÍA: Combina las siguientes fuentes por peso:
-1. ELO Ratings (40%) — fortaleza histórica y forma reciente
-2. Cuotas de bookmakers (35%) — mercado con miles de analistas
-3. Análisis contextual Claude (25%) — lesiones, motivación, sede
+  const combined = combineProbs(sources);
 
-LESIONES CONFIRMADAS: Rodrygo(Brasil,LCA), Militao(Brasil,muscular), Grealish(Inglaterra,pie), Gvardiol(Croacia,pierna), Malagón(México,Aquiles), Gnabry(Alemania), Foyth(Argentina,Aquiles), Panichelli(Argentina,LCA), Yamal(España,duda).
-${resultsStr}
+  // Calcular confianza basada en cuántas fuentes están de acuerdo
+  const homeProbs = sources.map(s => s.probs.home);
+  const variance = homeProbs.length > 1
+    ? homeProbs.reduce((v, p) => v + Math.pow(p - combined.home, 2), 0) / homeProbs.length
+    : 100;
+  const confidence = Math.max(45, Math.min(90, Math.round(80 - Math.sqrt(variance))));
 
-PARTIDOS (con datos ELO y bookmakers):
-${matchList}
+  // Marcador más probable basado en probabilidades
+  function predictScore(pHome, pAway) {
+    const homeGoals = pHome > 60 ? 2 : pHome > 45 ? 1 : 1;
+    const awayGoals = pAway > 60 ? 2 : pAway > 45 ? 1 : 0;
+    if (pHome > pAway + 20) return { score:`${homeGoals+1}-${awayGoals}`, hg:homeGoals+1, ag:awayGoals };
+    if (pAway > pHome + 20) return { score:`${awayGoals}-${homeGoals+1}`, hg:awayGoals, ag:homeGoals+1 };
+    if (combined.draw > 28) return { score:"1-1", hg:1, ag:1 };
+    return { score:`${homeGoals}-${awayGoals}`, hg:homeGoals, ag:awayGoals };
+  }
+  const predicted = predictScore(combined.home, combined.away);
 
-INSTRUCCIÓN: Para cada partido, pondera los datos ELO + bookmakers + ajuste por lesiones/contexto. El resultado debe reflejar la combinación real de las fuentes disponibles.
+  return {
+    probHome: combined.home,
+    probDraw: combined.draw,
+    probAway: combined.away,
+    predictedScore: predicted.score,
+    homeGoals: predicted.hg,
+    awayGoals: predicted.ag,
+    confidence,
+    favorito: combined.home > combined.away ? home : combined.away > combined.home ? away : "Equilibrado",
+    sources: combined.sourceNames,
+    hasBookmakerOdds: !!bookmakerMatch,
+    hasKalshi: kalshiHome > 0 || kalshiAway > 0,
+    eloHome: eloBase.homeElo,
+    eloAway: eloBase.awayElo,
+    eloDiff: eloBase.diff,
+    kalshiHome,
+    kalshiAway,
+    injuries: [
+      ...(INJURY_IMPACT[home]?.players.map(p => `${home}: ${p}`) || []),
+      ...(INJURY_IMPACT[away]?.players.map(p => `${away}: ${p}`) || []),
+    ],
+  };
+}
 
-JSON exacto:
-{"predictions":[{
-  "match":"Home vs Away",
-  "date":"YYYY-MM-DD",
-  "time":"HH:MM",
-  "group":"X",
-  "jornada":1,
-  "venue":"ciudad",
-  "probHome":55,
-  "probDraw":25,
-  "probAway":20,
-  "predictedScore":"2-0",
-  "homeGoals":2,
-  "awayGoals":0,
-  "confidence":72,
-  "favorito":"Home",
-  "keyFactor":"razon principal en 1 frase",
-  "eloHome":2083,
-  "eloAway":1827,
-  "hasBookmakerOdds":false,
-  "sources":"ELO+Claude"
-}]}
-Solo JSON.`;
-
-  const result = await callClaude(prompt, 2000);
-  return result.predictions || [];
+// ── Claude: solo factor clave (análisis contextual ligero) ────────────────────
+async function getKeyFactors(matches, today) {
+  const list = matches.map((m,i) => `${i+1}. ${m.home} vs ${m.away} (G${m.group} J${m.j})`).join("\n");
+  const prompt = `Mundial 2026, ${today}. Para cada partido da UN factor clave en máximo 10 palabras.
+Lesiones: Rodrygo/Militão(Brasil), Grealish(Inglaterra), Gvardiol(Croacia), Malagón(México), Gnabry(Alemania), Foyth/Panichelli(Argentina).
+${list}
+JSON: {"factors":["factor1","factor2",...]} — exactamente ${matches.length} factores. Solo JSON.`;
+  try {
+    const r = await callClaude(prompt, 800);
+    return r.factors || matches.map(() => "");
+  } catch(e) { return matches.map(() => ""); }
 }
 
 // ── Grupos ────────────────────────────────────────────────────────────────────
-async function getGroups(groupIds, today, footballData) {
+async function getGroups(groupIds, today, footballData, kalshiData) {
   const teams = {
     A:["México","Corea del Sur","Rep. Checa","Sudáfrica"],
     B:["Canadá","Suiza","Bosnia y Herz.","Catar"],
@@ -466,124 +471,143 @@ async function getGroups(groupIds, today, footballData) {
     K:"Portugal vs RD Congo · 17/06 19:00",L:"Inglaterra vs Croacia · 17/06 22:00",
   };
 
-  // Incluir ELO de los equipos en el análisis
-  const eloContext = groupIds.map(g =>
-    `Grupo ${g}: ${teams[g].map(t => `${t}(ELO:${ELO_RATINGS[t]||1700})`).join(", ")}`
-  ).join(" | ");
+  // Calcular favoriteOdds usando ELO + Kalshi directamente (sin Claude)
+  const result = {};
+  for (const g of groupIds) {
+    const groupTeams = teams[g];
+    // Sumar ELO de cada equipo normalizado
+    const eloSum = groupTeams.reduce((s, t) => s + (ELO[t]||1700), 0);
+    const standings = footballData.available && footballData.groups[g]
+      ? footballData.groups[g]
+      : groupTeams.map(t => ({ team:t, pts:0, gf:0, gc:0, gd:0 }));
 
-  const standingsStr = footballData.available && Object.keys(footballData.groups).length > 0
-    ? `\nSTANDINGS REALES: ${JSON.stringify(footballData.groups)}`
-    : "";
+    // Favorito: mayor ELO ajustado por Kalshi
+    const scores = groupTeams.map(t => {
+      const eloScore = (ELO[t]||1700) / eloSum * 100;
+      const kalshiScore = kalshiData.teamOdds?.[t] || 0;
+      return { team:t, score: eloScore * 0.7 + kalshiScore * 0.3 };
+    }).sort((a,b) => b.score - a.score);
 
-  const prompt = `Mundial 2026, hoy ${today}.
-ELO RATINGS: ${eloContext}
-Lesiones: Rodrygo(Brasil), Militao(Brasil), Grealish(Inglaterra), Gvardiol(Croacia), Malagón(México), Gnabry(Alemania), Foyth(Argentina), Panichelli(Argentina).${standingsStr}
+    const favorite = scores[0].team;
+    const favoriteOdds = Math.min(85, Math.max(35, Math.round(scores[0].score * 2.5)));
 
-Genera análisis grupos: ${groupIds.join(", ")} usando los ELO ratings para calcular favoriteOdds.
-JSON:
-{${groupIds.map(g=>`"${g}":{"teams":${JSON.stringify(teams[g])},"favorite":"nombre","favoriteOdds":65,"trend":"estable","keyNews":"max 80 chars","alert":null,"standings":${JSON.stringify(teams[g].map(t=>({team:t,pts:0,gf:0,gc:0,gd:0})))},"nextMatch":"${nextMatch[g]}"}`).join(",")}}
-Solo JSON.`;
-
-  return await callClaude(prompt, 1800);
+    result[g] = {
+      teams: groupTeams,
+      favorite,
+      favoriteOdds,
+      trend: "estable",
+      keyNews: `${favorite} favorito por ELO ${ELO[favorite]||1700}${kalshiData.teamOdds?.[favorite] ? ` y Kalshi ${kalshiData.teamOdds[favorite]}%` : ""}`,
+      alert: INJURY_IMPACT[favorite] ? `⚠️ ${favorite}: ${INJURY_IMPACT[favorite].players.join(", ")}` : null,
+      standings,
+      nextMatch: nextMatch[g] || "",
+    };
+  }
+  return result;
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
-  console.log("🚀 Iniciando actualización con 5 fuentes...");
+  console.log("🚀 Iniciando — modelo estadístico multi-fuente");
   const today = getChileDate();
   const todayShort = getChileDateShort();
-  console.log("📅 Chile:", today);
+  console.log("📅", today);
 
-  // Obtener todas las fuentes externas en paralelo
-  const [oddsData, kalshiData, footballData] = await Promise.all([
+  // Obtener todas las fuentes en paralelo
+  const [kalshiData, oddsData, footballData] = await Promise.all([
+    getKalshiData(),
     getOddsData(),
-    getKalshiOdds(),
     getFootballData(),
   ]);
 
-  const sourcesAvailable = [
-    "ELO Ratings (48 equipos) ✅",
-    oddsData.available ? `TheOddsAPI (${oddsData.matches.length} partidos) ✅` : "TheOddsAPI ⏳",
-    kalshiData.available ? `Kalshi (${kalshiData.markets.length} mercados) ✅` : "Kalshi ⏳",
-    footballData.available ? `API-Football ✅` : "API-Football ⏳",
-    "Claude AI ✅",
-  ];
-  console.log("\n📊 FUENTES DISPONIBLES:");
-  sourcesAvailable.forEach(s => console.log("  " + s));
+  console.log("\n📊 FUENTES ACTIVAS:");
+  console.log("  ELO Ratings: ✅ 48 equipos");
+  console.log("  Kalshi:", kalshiData.available ? `✅ ${Object.keys(kalshiData.teamOdds).length} equipos` : "❌");
+  console.log("  TheOddsAPI:", oddsData.available ? `✅ ${oddsData.matches.length} partidos` : "❌");
+  console.log("  API-Football:", footballData.available ? "✅" : "⏳ pendiente (inicia 11 jun)");
 
-  // Pronósticos por lotes de 6 — combinando ELO + bookmakers + Claude
-  console.log("\n⚽ Generando pronósticos (ELO + Bookmakers + Claude)...");
-  const allPredictions = [];
-  for (let i = 0; i < ALL_FIXTURES.length; i += 6) {
-    const batch = ALL_FIXTURES.slice(i, i + 6);
-    console.log(`  Lote ${Math.floor(i/6)+1}/12`);
-    try {
-      const preds = await getMatchPredictions(batch, today, oddsData, kalshiData, footballData);
-      allPredictions.push(...preds);
-    } catch(e) {
-      console.log("  ⚠️ Error lote:", e.message);
-    }
+  // Calcular probabilidades para los 72 partidos usando modelo estadístico directo
+  console.log("\n⚽ Calculando probabilidades (modelo estadístico)...");
+  const predictions = ALL_FIXTURES.map(f => ({
+    match: `${f.home} vs ${f.away}`,
+    date: f.date,
+    time: f.time,
+    group: f.group,
+    jornada: f.j,
+    venue: f.venue,
+    ...buildMatchProbs(f, oddsData, kalshiData, footballData),
+    keyFactor: "", // se llena después
+  }));
+
+  // Agregar factores clave via Claude (solo texto, no probabilidades)
+  console.log("🧠 Agregando factores clave con Claude...");
+  for (let i = 0; i < ALL_FIXTURES.length; i += 8) {
+    const batch = ALL_FIXTURES.slice(i, i + 8);
+    const predBatch = predictions.slice(i, i + 8);
+    const factors = await getKeyFactors(batch, today);
+    factors.forEach((f, j) => { if (predBatch[j]) predBatch[j].keyFactor = f; });
+    console.log(`  Lote ${Math.floor(i/8)+1}/9`);
   }
 
-  // Grupos con ELO
+  // Grupos
   console.log("📊 Generando grupos...");
   const [gAD, gEH, gIL] = await Promise.all([
-    getGroups(["A","B","C","D"], today, footballData),
-    getGroups(["E","F","G","H"], today, footballData),
-    getGroups(["I","J","K","L"], today, footballData),
+    getGroups(["A","B","C","D"], today, footballData, kalshiData),
+    getGroups(["E","F","G","H"], today, footballData, kalshiData),
+    getGroups(["I","J","K","L"], today, footballData, kalshiData),
   ]);
 
-  // Meta con datos de Kalshi integrados
+  // Meta: noticias + candidatos con datos reales de Kalshi
   console.log("📰 Generando noticias y candidatos...");
-  const kalshiTop = kalshiData.available && Object.keys(kalshiData.teamOdds||{}).length > 0
-    ? Object.entries(kalshiData.teamOdds).sort((a,b)=>b[1]-a[1]).slice(0,10)
-      .map(([t,p]) => t+":"+p+"%").join(", ")
-    : "No disponible";
+  const kalshiTop = kalshiData.sorted?.slice(0,10).map(([t,p])=>`${t}:${p}%`).join(", ") || "no disponible";
+  const meta = await callClaude(`Mundial 2026, ${today}.
+KALSHI (probabilidades reales de ganar el torneo): ${kalshiTop}
+ELO top: Argentina(2142), Francia(2083), España(2048), Brasil(2034), Inglaterra(2021), Países Bajos(1976), Alemania(1956), Croacia(1882).
+Lesiones: Rodrygo/Militão(Brasil,-35 ELO), Foyth/Panichelli(Argentina,-20), Gvardiol(Croacia,-25), Malagón(México,-15), Grealish(Inglaterra,-10), Gnabry(Alemania,-10), Yamal(España,duda).
+Noticias: Colombia ganó 2-0 a Jordania. EE.UU. cayó 2-1 ante Alemania. Argentina venció 2-0 a Honduras (Messi en banca, fatiga muscular).
 
-  const meta = await callClaude(`Mundial 2026, hoy ${today}.
+INSTRUCCIÓN: Los titleContenders deben usar los precios de Kalshi como probabilidad base, ajustada por ELO y lesiones. El campo "odds" debe coincidir aproximadamente con Kalshi.
 
-DATOS DE MERCADOS DE PREDICCIÓN (Kalshi — 48 contratos activos):
-${kalshiTop}
-
-ELO RATINGS top: Argentina(2142), Francia(2083), España(2048), Brasil(2034), Inglaterra(2021), Croacia(1882), Suiza(1862), Países Bajos(1976).
-
-Lesiones: Rodrygo(Brasil,LCA), Militao(Brasil,muscular), Grealish(Inglaterra,pie), Gvardiol(Croacia,pierna), Malagón(México,Aquiles), Foyth(Argentina,Aquiles), Panichelli(Argentina,LCA), Yamal(España,duda).
-
-Noticias recientes: Colombia ganó 2-0 a Jordania (Jhon Arias x2). EE.UU. cayó 2-1 ante Alemania. Canadá empató 1-1 con Irlanda. Argentina venció 2-0 a Honduras con Messi en banca por fatiga muscular.
-
-INSTRUCCIÓN: Usa los precios de Kalshi como probabilidades reales del mercado. Combínalos con ELO para los titleContenders. Los odds en titleContenders deben reflejar los precios de Kalshi si están disponibles.
-
-JSON:{"headline":"titular impactante","globalFavorite":"nombre","globalFavoriteChange":"subió|bajó|estable","topNews":[{"title":"t","impact":"alto","team":"p","type":"lesión|resultado|táctica|otro","detail":"d"}],"titleContenders":[{"team":"p","odds":20,"trend":"estable","reason":"r","kalshiPrice":17}]}
+JSON:{"headline":"titular impactante del día","globalFavorite":"nombre","globalFavoriteChange":"subió|bajó|estable","topNews":[{"title":"t","impact":"alto|medio|bajo","team":"p","type":"lesión|resultado|táctica|otro","detail":"d"}],"titleContenders":[{"team":"p","odds":17,"trend":"estable","reason":"razon con datos ELO y Kalshi","kalshiPrice":17,"eloRating":2048}]}
 Max 6 noticias, 8 candidatos. Solo JSON.`, 1800);
 
-  const oddsCount = allPredictions.filter(p => p.hasBookmakerOdds).length;
-  const dataSourcesSummary = sourcesAvailable.join(" | ");
+  // Estadísticas finales
+  const sourcesUsed = [
+    "ELO(48 equipos)",
+    kalshiData.available ? `Kalshi(${Object.keys(kalshiData.teamOdds).length} equipos)` : null,
+    oddsData.available ? `Bookmakers(${oddsData.matches.length} partidos)` : null,
+    footballData.available ? "API-Football" : null,
+    "Claude AI(factores)",
+  ].filter(Boolean).join(" + ");
+
+  const withKalshi = predictions.filter(p => p.hasKalshi).length;
+  const withBookmakers = predictions.filter(p => p.hasBookmakerOdds).length;
+
+  console.log(`\n✅ COMPLETADO`);
+  console.log(`⚽ Pronósticos: ${predictions.length}`);
+  console.log(`📊 Con Kalshi: ${withKalshi} | Con Bookmakers: ${withBookmakers}`);
+  console.log(`🔢 Fuentes: ${sourcesUsed}`);
 
   const analysis = {
     lastUpdated: today,
     lastUpdatedShort: todayShort,
-    headline: meta.headline || "Mundial 2026 arranca el 11 de junio",
-    globalFavorite: meta.globalFavorite || "Argentina",
+    headline: meta.headline || "Mundial 2026 - Análisis en vivo",
+    globalFavorite: meta.globalFavorite || "España",
     globalFavoriteChange: meta.globalFavoriteChange || "estable",
-    dataSources: dataSourcesSummary,
-    bookmakerOddsCount: oddsCount,
-    eloRatings: ELO_RATINGS,
+    dataSources: sourcesUsed,
+    stats: { predictions: predictions.length, withKalshi, withBookmakers },
     topNews: meta.topNews || [],
     titleContenders: meta.titleContenders || [],
     groups: { ...gAD, ...gEH, ...gIL },
-    predictions: allPredictions,
+    predictions,
     fixtures: ALL_FIXTURES,
+    eloRatings: ELO,
+    kalshiOdds: kalshiData.teamOdds || {},
   };
 
   const outputDir = path.join(__dirname, "..", "public", "data");
   if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
   fs.writeFileSync(path.join(outputDir, "mundial-data.json"), JSON.stringify(analysis, null, 2), "utf8");
-
-  console.log("\n✅ COMPLETADO");
-  console.log("⚽ Pronósticos:", allPredictions.length);
-  console.log("🎲 Con bookmakers:", oddsCount);
-  console.log("📊 ELO aplicado: 48 equipos");
-  console.log("🏆 Candidatos:", analysis.titleContenders?.length);
+  console.log("💾 Guardado en public/data/mundial-data.json");
 }
 
 main().catch(err => { console.error("❌", err.message); process.exit(1); });
