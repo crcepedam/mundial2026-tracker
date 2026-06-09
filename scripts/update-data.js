@@ -1,4 +1,4 @@
-// scripts/update-data.js - VERSIÓN DIAGNÓSTICO
+// scripts/update-data.js - DIAGNÓSTICO v2
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
