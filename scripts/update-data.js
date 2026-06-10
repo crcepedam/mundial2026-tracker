@@ -291,7 +291,7 @@ async function getOddsData() {
     }
     console.log(`  Sport: ${wcSport.key} | ${wcSport.title}`);
     const oddsRes = await fetch(
-      `https://api.the-odds-api.com/v4/sports/${wcSport.key}/odds/?apiKey=${ODDS_API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal`
+      `https://api.the-odds-api.com/v4/sports/${wcSport.key}/odds/?apiKey=${ODDS_API_KEY}&regions=eu,uk,us,au&markets=h2h&oddsFormat=decimal`
     );
     const oddsData = await oddsRes.json();
     const matches = (Array.isArray(oddsData)?oddsData:[]).map(game => {
@@ -318,7 +318,9 @@ async function getOddsData() {
       };
     }).filter(Boolean);
 
-    console.log(`  ✅ ${matches.length} partidos | Ejemplo: ${matches[0]?.homeEN} vs ${matches[0]?.awayEN} → Local ${matches[0]?.probs.home}%`);
+    const avgBookmakers = matches.length > 0 ? Math.round(matches.reduce((s,m)=>s+m.bookmakerCount,0)/matches.length) : 0;
+    console.log(`  ✅ ${matches.length} partidos | Promedio ${avgBookmakers} casas/partido (4 regiones: eu,uk,us,au)`);
+    console.log(`     Ejemplo: ${matches[0]?.homeEN} vs ${matches[0]?.awayEN} → Local ${matches[0]?.probs.home}% (${matches[0]?.bookmakerCount} casas)`);
     return { available:true, matches };
   } catch(e) {
     console.log("  ⚠️ TheOddsAPI:", e.message);
@@ -387,15 +389,19 @@ function buildMatchProbs(fixture, oddsData, kalshiData, footballData) {
 
   // FUENTE 1: ELO + lesiones (siempre disponible, base más confiable)
   const eloP = calcEloProbs(home, away);
-  sources.push({ p:eloP, weight:35, name:"ELO" });
+  sources.push({ p:eloP, weight:30, name:"ELO" });
 
   // FUENTE 2: TheOddsAPI — buscar con matching flexible ES↔EN
   const bookMatch = oddsData.matches?.find(o =>
     matchTeam(o.homeEN, home) && matchTeam(o.awayEN, away)
   );
   if (bookMatch) {
-    sources.push({ p:bookMatch.probs, weight:40, name:`Bookmakers(${bookMatch.bookmakerCount})` });
-    console.log(`    📊 Bookmakers encontrados: ${home} vs ${away} → Local ${bookMatch.probs.home}%`);
+    // OPCIÓN A: Peso dinámico de bookmakers según número de casas
+    // Los bookmakers tienen el mejor RPS (0.195), les damos peso dominante
+    // Más casas = más confiable = más peso (hasta 55%)
+    const bmCount = bookMatch.bookmakerCount;
+    const bmWeight = bmCount >= 30 ? 55 : bmCount >= 20 ? 50 : bmCount >= 10 ? 45 : 40;
+    sources.push({ p:bookMatch.probs, weight:bmWeight, name:`Bookmakers(${bmCount})` });
   }
 
   // FUENTE 3: Kalshi — convertir probabilidad de torneo a partido
