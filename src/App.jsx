@@ -69,6 +69,17 @@ function MatchCard({ m, pred, showDate=false }) {
             {p.predictedScore||"?-?"}
           </div>
           <div style={{ fontSize:9, color:"#475569", marginTop:2, letterSpacing:1 }}>PRONÓSTICO</div>
+          {p.top3Scores && p.top3Scores.length > 0 && (
+            <div style={{ display:"flex", gap:3, marginTop:3, justifyContent:"center" }}>
+              {p.top3Scores.map((s, i) => (
+                <span key={i} style={{
+                  fontSize:8, color: i===0 ? "#c8a84b" : "#475569",
+                  padding:"1px 4px", borderRadius:4,
+                  background: i===0 ? "rgba(200,168,75,0.1)" : "transparent",
+                }}>{s.score} {s.prob}%</span>
+              ))}
+            </div>
+          )}
         </div>
         <div style={{ flex:1 }}>
           <div style={{ fontSize:14, fontWeight:700,
@@ -90,7 +101,20 @@ function MatchCard({ m, pred, showDate=false }) {
         </div>
       </div>
 
-      {/* Confianza + cuotas + factor */}
+      {/* ELO + Confianza + cuotas + factor */}
+      {(p.eloHome || p.eloAway) && (
+        <div style={{ display:"flex", gap:6, marginBottom:5 }}>
+          <span style={{ fontSize:9, color:"#475569" }}>
+            ELO: {home} <span style={{ color:"#c8a84b", fontWeight:700 }}>{p.eloHome}</span>
+            {" "}&nbsp;·&nbsp;{" "}{away} <span style={{ color:"#c8a84b", fontWeight:700 }}>{p.eloAway}</span>
+            {p.eloHome && p.eloAway && (
+              <span style={{ color: p.eloHome > p.eloAway ? "#22c55e" : "#ef4444" }}>
+                {" "}(Δ {p.eloHome - p.eloAway > 0 ? "+" : ""}{p.eloHome - p.eloAway})
+              </span>
+            )}
+          </span>
+        </div>
+      )}
       <div style={{ display:"flex", gap:6, alignItems:"center", flexWrap:"wrap" }}>
         <span style={{ fontSize:10, padding:"1px 7px", borderRadius:8,
           background:`${confColor}18`, color:confColor, fontWeight:700 }}>
@@ -99,9 +123,13 @@ function MatchCard({ m, pred, showDate=false }) {
         {p.hasBookmakerOdds && (
           <span style={{ fontSize:10, padding:"1px 7px", borderRadius:8,
             background:"rgba(99,102,241,0.15)", color:"#818cf8", fontWeight:700 }}>
-            🎲 Cuotas reales
+            🎲 Bookmakers
           </span>
         )}
+        <span style={{ fontSize:9, padding:"1px 6px", borderRadius:8,
+          background:"rgba(200,168,75,0.1)", color:"#c8a84b", fontWeight:700 }}>
+          📊 {p.sources || "ELO+Claude"}
+        </span>
         {p.keyFactor && (
           <span style={{ fontSize:10, color:"#64748b", flex:1 }}>{p.keyFactor}</span>
         )}
