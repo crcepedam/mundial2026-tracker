@@ -1,122 +1,122 @@
 {
-  "lastUpdated": "viernes, 12 de junio de 2026",
-  "lastUpdatedShort": "2026-06-12",
-  "headline": "España desplaza a Francia como favorita en vísperas del Mundial 2026",
-  "globalFavorite": "España",
-  "globalFavoriteChange": "subió",
-  "dataSources": "ELO+Lesiones + Kalshi(31) + Bookmakers(57 partidos) + Claude(contexto)",
+  "lastUpdated": "sábado, 13 de junio de 2026",
+  "lastUpdatedShort": "2026-06-13",
+  "headline": "Francia y España comparten favoritismo en Kalshi; Brasil pierde opciones por lesiones de Rodrygo y Militão",
+  "globalFavorite": "Francia",
+  "globalFavoriteChange": "estable",
+  "dataSources": "ELO+Lesiones + Kalshi(31) + Bookmakers(58 partidos) + Claude(contexto)",
   "stats": {
     "predictions": 72,
-    "withBookmakers": 57,
-    "withKalshi": 53
+    "withBookmakers": 58,
+    "withKalshi": 55
   },
   "topNews": [
     {
-      "title": "Yamal en duda para el inicio del torneo; España monitorea su estado",
-      "impact": "alto",
-      "team": "España",
-      "type": "lesión",
-      "detail": "Incertidumbre sobre disponibilidad de Yamal en fase de grupos. ELO ajustado: 2038"
-    },
-    {
-      "title": "Rodrygo y Militão fuera: Brasil pierde potencial ofensivo en defensa",
+      "title": "Rodrygo y Militão bajas confirmadas para Brasil",
       "impact": "alto",
       "team": "Brasil",
       "type": "lesión",
-      "detail": "Bajas confirmadas reducen ELO de 2034 a 1999. Odds caen a 9%"
+      "detail": "Brasil desciende de 2034 a 1999 ELO ajustado; Kalshi reduce probabilidad a 9%"
     },
     {
-      "title": "Gvardiol y lesiones defensivas debilitan a Croacia en defensa",
+      "title": "Yamal en duda para España; riesgo antes de fase de grupos",
+      "impact": "medio",
+      "team": "España",
+      "type": "lesión",
+      "detail": "ELO ajustado: 2038; Kalshi mantiene 17% pero dependiente de confirmación médica"
+    },
+    {
+      "title": "Gvardiol baja para Croacia; debilita defensa campeona",
       "impact": "medio",
       "team": "Croacia",
       "type": "lesión",
-      "detail": "ELO cae de 1882 a 1857. Potencial semifinalista comprometido"
+      "detail": "ELO cae de 1882 a 1857; impacto en estructura defensiva"
     },
     {
-      "title": "Francia mantiene solidez: segunda favorita con estructura íntegra",
-      "impact": "medio",
+      "title": "Francia mantiene favoritismo compartido con España en mercados",
+      "impact": "alto",
       "team": "Francia",
       "type": "otro",
-      "detail": "ELO 2083 sin lesiones críticas confirmadas. Odds estables en 17%"
+      "detail": "Kalshi 17%; ELO 2083 sin lesiones confirmadas; favorita técnica"
     },
     {
-      "title": "Argentina recuperada: optimismo previo pese a bajas puntuales",
+      "title": "Argentina padece bajas en defensa; ELO ajustado a 2122",
       "impact": "medio",
       "team": "Argentina",
       "type": "lesión",
-      "detail": "Foyth y Panichelli afectan rotación. ELO ajustado: 2122. Defensoras de título con 9%"
+      "detail": "Foyth y Panichelli fuera; probabilidad se reduce respecto potencial base"
     },
     {
-      "title": "Grealish ausente: Inglaterra ajusta plan ofensivo para fase de grupos",
+      "title": "Inglaterra sin Grealish; impacto ofensivo en grupo",
       "impact": "bajo",
       "team": "Inglaterra",
       "type": "lesión",
-      "detail": "Baja en extremo izquierdo. Odds se mantienen en 11%"
+      "detail": "Kalshi 11%; lesión afecta creatividad pero no crítica para avance"
     }
   ],
   "titleContenders": [
     {
-      "team": "España",
-      "odds": 18,
-      "trend": "subió",
-      "reason": "Liderazgo en Kalshi (18%) respaldado por ELO ajustado 2038. Yamal en duda pero estructura táctica robusta",
-      "kalshiPrice": 18,
-      "eloRating": 2038
-    },
-    {
       "team": "Francia",
       "odds": 17,
       "trend": "estable",
-      "reason": "Segundo favorito en Kalshi. ELO 2083 sin lesiones críticas. Consistencia defensiva clave",
+      "reason": "ELO 2083 máximo del torneo sin lesiones; Kalshi 17% confirma favoritismo técnico",
       "kalshiPrice": 17,
       "eloRating": 2083
+    },
+    {
+      "team": "España",
+      "odds": 17,
+      "trend": "estable",
+      "reason": "ELO ajustado 2038; empatada con Francia en Kalshi pese a duda Yamal; defensa sólida",
+      "kalshiPrice": 17,
+      "eloRating": 2038
     },
     {
       "team": "Portugal",
       "odds": 11,
       "trend": "estable",
-      "reason": "Tercera opción según Kalshi. Equilibrio táctico probado en clasificatoria",
+      "reason": "Tercera favorita histórica; sin lesiones confirmadas; Kalshi 11%",
       "kalshiPrice": 11,
       "eloRating": 1920
     },
     {
       "team": "Inglaterra",
       "odds": 11,
-      "trend": "estable",
-      "reason": "Paridad con Portugal en Kalshi. Grealish ausente impacta ofensiva pero plantilla profunda",
+      "trend": "bajó",
+      "reason": "Kalshi 11% pero baja por Grealish; potencial limitado sin creatividad ofensiva",
       "kalshiPrice": 11,
-      "eloRating": 1950
+      "eloRating": 1940
+    },
+    {
+      "team": "Argentina",
+      "odds": 9,
+      "trend": "bajó",
+      "reason": "ELO ajustado 2122 por lesiones Foyth/Panichelli; Kalshi 9%; defensiva comprometida",
+      "kalshiPrice": 9,
+      "eloRating": 2122
     },
     {
       "team": "Brasil",
       "odds": 9,
       "trend": "bajó",
-      "reason": "Caída notable por Rodrygo/Militão. ELO ajustado 1999 vs 2034 previo. Potencial limitado ofensivamente",
+      "reason": "ELO desciende a 1999 por bajas Rodrygo y Militão; Kalshi 9%; impacto crítico en ataque y defensa",
       "kalshiPrice": 9,
       "eloRating": 1999
-    },
-    {
-      "team": "Argentina",
-      "odds": 9,
-      "trend": "estable",
-      "reason": "Defensoras con ELO 2122 ajustado. Foyth/Panichelli reducen rotación pero core competitivo intacto",
-      "kalshiPrice": 9,
-      "eloRating": 2122
     },
     {
       "team": "Países Bajos",
       "odds": 6,
       "trend": "estable",
-      "reason": "ELO 1976 sostiene proyección. Sexto favorito por consistencia táctica sin grandes ausencias",
+      "reason": "ELO 1976 sin lesiones reportadas; Kalshi 6%; equipo completo para fase de grupos",
       "kalshiPrice": 6,
       "eloRating": 1976
     },
     {
       "team": "Alemania",
-      "odds": 6,
+      "odds": 5,
       "trend": "bajó",
-      "reason": "Gnabry fuera. ELO ajustado 1946. Potencial de sorpresa pero lesión limita flexibilidad ofensiva",
-      "kalshiPrice": 6,
+      "reason": "ELO ajustado a 1946 por Gnabry; Kalshi 5%; potencial limitado en ataque",
+      "kalshiPrice": 5,
       "eloRating": 1946
     }
   ],
@@ -131,7 +131,7 @@
       "favorite": "México",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "México lidera (ELO:1821, Kalshi:3%)",
+      "keyNews": "México lidera (ELO:1821, Kalshi:2%)",
       "alert": "⚠️ México: Malagón (Aquiles)",
       "standings": [
         {
@@ -307,7 +307,7 @@
       "favorite": "Alemania",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Alemania lidera (ELO:1946, Kalshi:6%)",
+      "keyNews": "Alemania lidera (ELO:1946, Kalshi:5%)",
       "alert": "⚠️ Alemania: Gnabry",
       "standings": [
         {
@@ -439,7 +439,7 @@
       "favorite": "España",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "España lidera (ELO:2038, Kalshi:18%)",
+      "keyNews": "España lidera (ELO:2038, Kalshi:17%)",
       "alert": "⚠️ España: Yamal (duda)",
       "standings": [
         {
@@ -680,30 +680,30 @@
       ],
       "confidence": 74,
       "favorito": "México",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
+      "sources": "ELO+Bookmakers(56)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1836,
       "eloAway": 1641,
       "eloHomeAdj": 1821,
       "eloAwayAdj": 1641,
-      "kalshiHome": 3,
+      "kalshiHome": 2,
       "kalshiAway": 0,
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "Malagón ausente: defensa mexicana vulnerable ante presión sudafricana inicial"
+      "keyFactor": "México sin Malagón debe acelerar laterales; Sudáfrica presionará alto."
     },
     {
       "match": "Corea del Sur vs Rep. Checa",
-      "date": "2026-06-12",
-      "time": "00:00",
+      "date": "2026-06-11",
+      "time": "22:00",
       "group": "A",
       "jornada": 1,
       "venue": "Guadalajara",
-      "probHome": 46,
+      "probHome": 54,
       "probDraw": 26,
-      "probAway": 28,
+      "probAway": 20,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -721,30 +721,30 @@
           "prob": 7.1
         }
       ],
-      "confidence": 70,
+      "confidence": 72,
       "favorito": "Corea del Sur",
-      "sources": "ELO",
+      "sources": "ELO+Kalshi",
       "hasBookmakerOdds": false,
-      "hasKalshi": false,
+      "hasKalshi": true,
       "eloHome": 1776,
       "eloAway": 1729,
       "eloHomeAdj": 1776,
       "eloAwayAdj": 1729,
-      "kalshiHome": 0,
+      "kalshiHome": 1,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Intensidad física coreana debe contrarrestar técnica checa en mediocampo"
+      "keyFactor": "Corea del Sur buscará ritmo rápido ante República Checa defensiva."
     },
     {
       "match": "Canadá vs Bosnia y Herz.",
       "date": "2026-06-12",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "jornada": 1,
       "venue": "Toronto",
-      "probHome": 51,
-      "probDraw": 27,
-      "probAway": 22,
+      "probHome": 49,
+      "probDraw": 26,
+      "probAway": 25,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -762,10 +762,10 @@
           "prob": 7.8
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Canadá",
-      "sources": "ELO+Bookmakers(59)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1773,
       "eloAway": 1698,
@@ -774,18 +774,18 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bosnia carece profundidad: Canadá explota bandas con velocidad"
+      "keyFactor": "Bosnia aprovechará transiciones; Canadá necesita intensidad física sostenida."
     },
     {
       "match": "EE.UU. vs Paraguay",
       "date": "2026-06-12",
-      "time": "23:00",
+      "time": "21:00",
       "group": "D",
       "jornada": 1,
       "venue": "SoFi, LA",
-      "probHome": 48,
-      "probDraw": 28,
-      "probAway": 24,
+      "probHome": 54,
+      "probDraw": 26,
+      "probAway": 20,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -805,21 +805,147 @@
       ],
       "confidence": 72,
       "favorito": "EE.UU.",
-      "sources": "ELO+Bookmakers(59)+Kalshi",
-      "hasBookmakerOdds": true,
+      "sources": "ELO+Kalshi",
+      "hasBookmakerOdds": false,
       "hasKalshi": true,
       "eloHome": 1768,
       "eloAway": 1718,
       "eloHomeAdj": 1768,
       "eloAwayAdj": 1718,
-      "kalshiHome": 2,
+      "kalshiHome": 3,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Paraguay sorprende con presión alta: EE.UU. controla posesión"
+      "keyFactor": "Paraguay contendrá; EE.UU. explotará amplitud y velocidad en bandas."
+    },
+    {
+      "match": "Catar vs Suiza",
+      "date": "2026-06-13",
+      "time": "15:00",
+      "group": "B",
+      "jornada": 1,
+      "venue": "San Francisco",
+      "probHome": 10,
+      "probDraw": 20,
+      "probAway": 70,
+      "predictedScore": "0-2",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "top3Scores": [
+        {
+          "score": "0-2",
+          "prob": 13
+        },
+        {
+          "score": "0-1",
+          "prob": 12.9
+        },
+        {
+          "score": "1-2",
+          "prob": 9.4
+        }
+      ],
+      "confidence": 78,
+      "favorito": "Suiza",
+      "sources": "ELO+Bookmakers(60)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1611,
+      "eloAway": 1862,
+      "eloHomeAdj": 1611,
+      "eloAwayAdj": 1862,
+      "kalshiHome": 0,
+      "kalshiAway": 1,
+      "injuries": [],
+      "keyFactor": "Suiza dominará posesión; Catar debe defender compacto y contraatacar."
+    },
+    {
+      "match": "Brasil vs Marruecos",
+      "date": "2026-06-13",
+      "time": "18:00",
+      "group": "C",
+      "jornada": 1,
+      "venue": "MetLife, NJ",
+      "probHome": 57,
+      "probDraw": 25,
+      "probAway": 17,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 8.3
+        },
+        {
+          "score": "2-1",
+          "prob": 5.2
+        },
+        {
+          "score": "2-0",
+          "prob": 4
+        }
+      ],
+      "confidence": 81,
+      "favorito": "Brasil",
+      "sources": "ELO+Bookmakers(60)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 2034,
+      "eloAway": 1827,
+      "eloHomeAdj": 1999,
+      "eloAwayAdj": 1827,
+      "kalshiHome": 9,
+      "kalshiAway": 2,
+      "injuries": [
+        "Brasil: Rodrygo (LCA)",
+        "Brasil: Militão (muscular)"
+      ],
+      "keyFactor": "Brasil con bajas defensivas; presión rápida de Marruecos será clave."
+    },
+    {
+      "match": "Haití vs Escocia",
+      "date": "2026-06-13",
+      "time": "21:00",
+      "group": "C",
+      "jornada": 1,
+      "venue": "Boston",
+      "probHome": 18,
+      "probDraw": 24,
+      "probAway": 58,
+      "predictedScore": "0-2",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 12.4
+        },
+        {
+          "score": "0-2",
+          "prob": 12.3
+        },
+        {
+          "score": "1-2",
+          "prob": 9.5
+        }
+      ],
+      "confidence": 79,
+      "favorito": "Escocia",
+      "sources": "ELO+Bookmakers(60)",
+      "hasBookmakerOdds": true,
+      "hasKalshi": false,
+      "eloHome": 1541,
+      "eloAway": 1733,
+      "eloHomeAdj": 1541,
+      "eloAwayAdj": 1733,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
+      "injuries": [],
+      "keyFactor": "Escocia controlará juego; Haití necesitará solidez defensiva y rapidez."
     },
     {
       "match": "Australia vs Turquía",
-      "date": "2026-06-13",
+      "date": "2026-06-14",
       "time": "00:00",
       "group": "D",
       "jornada": 1,
@@ -846,7 +972,7 @@
       ],
       "confidence": 71,
       "favorito": "Turquía",
-      "sources": "ELO+Bookmakers(59)+Kalshi",
+      "sources": "ELO+Bookmakers(60)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1737,
@@ -856,138 +982,137 @@
       "kalshiHome": 0,
       "kalshiAway": 1,
       "injuries": [],
-      "keyFactor": "Turquía superior ELO: Australia necesita transiciones rápidas defensivas"
+      "keyFactor": "Turquía presionará; Australia requiere intensidad física y transiciones rápidas."
     },
     {
-      "match": "Catar vs Suiza",
-      "date": "2026-06-13",
-      "time": "17:00",
-      "group": "B",
+      "match": "Alemania vs Curazao",
+      "date": "2026-06-14",
+      "time": "13:00",
+      "group": "E",
       "jornada": 1,
-      "venue": "San Francisco",
-      "probHome": 10,
-      "probDraw": 20,
-      "probAway": 70,
-      "predictedScore": "0-2",
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "0-2",
-          "prob": 13
-        },
-        {
-          "score": "0-1",
-          "prob": 12.9
-        },
-        {
-          "score": "1-2",
-          "prob": 9.4
-        }
-      ],
-      "confidence": 78,
-      "favorito": "Suiza",
-      "sources": "ELO+Bookmakers(59)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1611,
-      "eloAway": 1862,
-      "eloHomeAdj": 1611,
-      "eloAwayAdj": 1862,
-      "kalshiHome": 0,
-      "kalshiAway": 1,
-      "injuries": [],
-      "keyFactor": "Suiza dominancia física: Catar busca profundidad táctica y paciencia"
-    },
-    {
-      "match": "Brasil vs Marruecos",
-      "date": "2026-06-13",
-      "time": "20:00",
-      "group": "C",
-      "jornada": 1,
-      "venue": "MetLife, NJ",
-      "probHome": 58,
-      "probDraw": 25,
-      "probAway": 17,
-      "predictedScore": "2-1",
+      "venue": "Houston",
+      "probHome": 68,
+      "probDraw": 26,
+      "probAway": 6,
+      "predictedScore": "2-0",
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 0,
       "top3Scores": [
-        {
-          "score": "1-0",
-          "prob": 8.3
-        },
-        {
-          "score": "2-1",
-          "prob": 5.2
-        },
         {
           "score": "2-0",
-          "prob": 4
-        }
-      ],
-      "confidence": 81,
-      "favorito": "Brasil",
-      "sources": "ELO+Bookmakers(59)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 2034,
-      "eloAway": 1827,
-      "eloHomeAdj": 1999,
-      "eloAwayAdj": 1827,
-      "kalshiHome": 9,
-      "kalshiAway": 2,
-      "injuries": [
-        "Brasil: Rodrygo (LCA)",
-        "Brasil: Militão (muscular)"
-      ],
-      "keyFactor": "Brasil sin Rodrygo/Militão: Marruecos intensifica presión en construcción"
-    },
-    {
-      "match": "Haití vs Escocia",
-      "date": "2026-06-13",
-      "time": "23:00",
-      "group": "C",
-      "jornada": 1,
-      "venue": "Boston",
-      "probHome": 18,
-      "probDraw": 24,
-      "probAway": 58,
-      "predictedScore": "0-2",
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 12.4
+          "prob": 12.8
         },
         {
-          "score": "0-2",
-          "prob": 12.3
+          "score": "3-0",
+          "prob": 10.6
         },
         {
-          "score": "1-2",
-          "prob": 9.5
+          "score": "1-0",
+          "prob": 9.3
         }
       ],
       "confidence": 79,
-      "favorito": "Escocia",
-      "sources": "ELO+Bookmakers(59)",
-      "hasBookmakerOdds": true,
-      "hasKalshi": false,
-      "eloHome": 1541,
-      "eloAway": 1733,
-      "eloHomeAdj": 1541,
-      "eloAwayAdj": 1733,
-      "kalshiHome": 0,
+      "favorito": "Alemania",
+      "sources": "ELO+Kalshi",
+      "hasBookmakerOdds": false,
+      "hasKalshi": true,
+      "eloHome": 1956,
+      "eloAway": 1489,
+      "eloHomeAdj": 1946,
+      "eloAwayAdj": 1489,
+      "kalshiHome": 5,
       "kalshiAway": 0,
+      "injuries": [
+        "Alemania: Gnabry"
+      ],
+      "keyFactor": "Alemania domina técnicamente; Curazao debe presionar temprano antes cansancio."
+    },
+    {
+      "match": "Países Bajos vs Japón",
+      "date": "2026-06-14",
+      "time": "16:00",
+      "group": "F",
+      "jornada": 1,
+      "venue": "Dallas",
+      "probHome": 51,
+      "probDraw": 27,
+      "probAway": 22,
+      "predictedScore": "1-0",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "top3Scores": [
+        {
+          "score": "2-1",
+          "prob": 9.1
+        },
+        {
+          "score": "1-0",
+          "prob": 8.9
+        },
+        {
+          "score": "2-0",
+          "prob": 7.8
+        }
+      ],
+      "confidence": 78,
+      "favorito": "Países Bajos",
+      "sources": "ELO+Bookmakers(59)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1976,
+      "eloAway": 1808,
+      "eloHomeAdj": 1976,
+      "eloAwayAdj": 1808,
+      "kalshiHome": 6,
+      "kalshiAway": 2,
       "injuries": [],
-      "keyFactor": "Diferencia ELO extrema: Escocia impone ritmo ante Haiti"
+      "keyFactor": "Países Bajos control posesión; Japón contraataque rápido con transiciones."
+    },
+    {
+      "match": "C. Marfil vs Ecuador",
+      "date": "2026-06-14",
+      "time": "19:00",
+      "group": "E",
+      "jornada": 1,
+      "venue": "Philadelphia",
+      "probHome": 29,
+      "probDraw": 30,
+      "probAway": 40,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 8.5
+        },
+        {
+          "score": "1-2",
+          "prob": 7.6
+        },
+        {
+          "score": "0-2",
+          "prob": 6
+        }
+      ],
+      "confidence": 68,
+      "favorito": "Ecuador",
+      "sources": "ELO+Bookmakers(60)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1745,
+      "eloAway": 1752,
+      "eloHomeAdj": 1745,
+      "eloAwayAdj": 1752,
+      "kalshiHome": 0,
+      "kalshiAway": 1,
+      "injuries": [],
+      "keyFactor": "Equilibrio físico similar; decisivo acierto defensivo y eficiencia ofensiva."
     },
     {
       "match": "Suecia vs Túnez",
       "date": "2026-06-14",
-      "time": "00:00",
+      "time": "22:00",
       "group": "F",
       "jornada": 1,
       "venue": "Monterrey",
@@ -1023,137 +1148,12 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Presión alta sueca contra defensa tunecina desorganizada en transiciones."
-    },
-    {
-      "match": "Alemania vs Curazao",
-      "date": "2026-06-14",
-      "time": "15:00",
-      "group": "E",
-      "jornada": 1,
-      "venue": "Houston",
-      "probHome": 68,
-      "probDraw": 26,
-      "probAway": 6,
-      "predictedScore": "2-0",
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "top3Scores": [
-        {
-          "score": "2-0",
-          "prob": 12.8
-        },
-        {
-          "score": "3-0",
-          "prob": 10.6
-        },
-        {
-          "score": "1-0",
-          "prob": 9.3
-        }
-      ],
-      "confidence": 79,
-      "favorito": "Alemania",
-      "sources": "ELO+Kalshi",
-      "hasBookmakerOdds": false,
-      "hasKalshi": true,
-      "eloHome": 1956,
-      "eloAway": 1489,
-      "eloHomeAdj": 1946,
-      "eloAwayAdj": 1489,
-      "kalshiHome": 6,
-      "kalshiAway": 0,
-      "injuries": [
-        "Alemania: Gnabry"
-      ],
-      "keyFactor": "Superioridad alemana abrumadora; Curazao debe defender compacto y esperar."
-    },
-    {
-      "match": "Países Bajos vs Japón",
-      "date": "2026-06-14",
-      "time": "18:00",
-      "group": "F",
-      "jornada": 1,
-      "venue": "Dallas",
-      "probHome": 51,
-      "probDraw": 27,
-      "probAway": 22,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "top3Scores": [
-        {
-          "score": "2-1",
-          "prob": 9.1
-        },
-        {
-          "score": "1-0",
-          "prob": 8.9
-        },
-        {
-          "score": "2-0",
-          "prob": 7.8
-        }
-      ],
-      "confidence": 78,
-      "favorito": "Países Bajos",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1976,
-      "eloAway": 1808,
-      "eloHomeAdj": 1976,
-      "eloAwayAdj": 1808,
-      "kalshiHome": 6,
-      "kalshiAway": 2,
-      "injuries": [],
-      "keyFactor": "Control posesional holandés versus contraataque rápido japonés en bandas."
-    },
-    {
-      "match": "C. Marfil vs Ecuador",
-      "date": "2026-06-14",
-      "time": "21:00",
-      "group": "E",
-      "jornada": 1,
-      "venue": "Philadelphia",
-      "probHome": 29,
-      "probDraw": 30,
-      "probAway": 40,
-      "predictedScore": "0-1",
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 8.5
-        },
-        {
-          "score": "1-2",
-          "prob": 7.6
-        },
-        {
-          "score": "0-2",
-          "prob": 6
-        }
-      ],
-      "confidence": 68,
-      "favorito": "Ecuador",
-      "sources": "ELO+Bookmakers(59)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1745,
-      "eloAway": 1752,
-      "eloHomeAdj": 1745,
-      "eloAwayAdj": 1752,
-      "kalshiHome": 0,
-      "kalshiAway": 1,
-      "injuries": [],
-      "keyFactor": "Equilibrio ELO similar; intensidad física y errores determinan ganador."
+      "keyFactor": "Suecia intensidad defensiva; Túnez necesita velocidad en banda lateral."
     },
     {
       "match": "España vs Cabo Verde",
       "date": "2026-06-15",
-      "time": "14:00",
+      "time": "12:00",
       "group": "H",
       "jornada": 1,
       "venue": "Atlanta",
@@ -1179,24 +1179,24 @@
       ],
       "confidence": 71,
       "favorito": "España",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
+      "sources": "ELO+Bookmakers(60)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 2048,
       "eloAway": 1642,
       "eloHomeAdj": 2038,
       "eloAwayAdj": 1642,
-      "kalshiHome": 18,
+      "kalshiHome": 17,
       "kalshiAway": 0,
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "España domina; Yamal dudoso limita creatividad, Cabo Verde cierra atrás."
+      "keyFactor": "España posesión sin Yamal; Cabo Verde bloque bajo compacto defensivo."
     },
     {
       "match": "Bélgica vs Egipto",
       "date": "2026-06-15",
-      "time": "17:00",
+      "time": "15:00",
       "group": "G",
       "jornada": 1,
       "venue": "Seattle",
@@ -1222,7 +1222,7 @@
       ],
       "confidence": 79,
       "favorito": "Bélgica",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
+      "sources": "ELO+Bookmakers(59)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1928,
@@ -1232,12 +1232,12 @@
       "kalshiHome": 2,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bélgica presiona arriba; Egipto vulnerable defensivamente sin estructura media."
+      "keyFactor": "Bélgica experiencia táctica; Egipto resistencia física y contragolpe directo."
     },
     {
       "match": "Arabia Saudita vs Uruguay",
       "date": "2026-06-15",
-      "time": "20:00",
+      "time": "18:00",
       "group": "H",
       "jornada": 1,
       "venue": "Miami",
@@ -1263,7 +1263,7 @@
       ],
       "confidence": 76,
       "favorito": "Uruguay",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
+      "sources": "ELO+Bookmakers(59)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1693,
@@ -1273,16 +1273,16 @@
       "kalshiHome": 0,
       "kalshiAway": 1,
       "injuries": [],
-      "keyFactor": "Uruguay agresivo físicamente; Arabia Saudita necesita solidez defensiva defensiva."
+      "keyFactor": "Uruguay presión alta agresiva; Arabia Saudita transiciones rápidas contraataques."
     },
     {
       "match": "Irán vs Nueva Zelanda",
       "date": "2026-06-15",
-      "time": "23:00",
+      "time": "21:00",
       "group": "G",
       "jornada": 1,
       "venue": "Los Ángeles",
-      "probHome": 55,
+      "probHome": 54,
       "probDraw": 27,
       "probAway": 18,
       "predictedScore": "1-0",
@@ -1304,7 +1304,7 @@
       ],
       "confidence": 78,
       "favorito": "Irán",
-      "sources": "ELO+Bookmakers(58)",
+      "sources": "ELO+Bookmakers(59)",
       "hasBookmakerOdds": true,
       "hasKalshi": false,
       "eloHome": 1741,
@@ -1314,97 +1314,12 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Irán controla juego; Nueva Zelanda apuesta contraataques directos y rápidos."
-    },
-    {
-      "match": "Argentina vs Argelia",
-      "date": "2026-06-16",
-      "time": "00:00",
-      "group": "J",
-      "jornada": 1,
-      "venue": "Kansas City",
-      "probHome": 68,
-      "probDraw": 23,
-      "probAway": 9,
-      "predictedScore": "2-1",
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "top3Scores": [
-        {
-          "score": "1-0",
-          "prob": 9.7
-        },
-        {
-          "score": "2-1",
-          "prob": 9.4
-        },
-        {
-          "score": "2-0",
-          "prob": 8.7
-        }
-      ],
-      "confidence": 80,
-      "favorito": "Argentina",
-      "sources": "ELO+Bookmakers(57)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 2142,
-      "eloAway": 1714,
-      "eloHomeAdj": 2122,
-      "eloAwayAdj": 1714,
-      "kalshiHome": 9,
-      "kalshiAway": 0,
-      "injuries": [
-        "Argentina: Foyth (Aquiles)",
-        "Argentina: Panichelli (LCA)"
-      ],
-      "keyFactor": "Argentina sin Militão: defensa vulnerable ante velocidad argelina"
-    },
-    {
-      "match": "Austria vs Jordania",
-      "date": "2026-06-16",
-      "time": "02:00",
-      "group": "J",
-      "jornada": 1,
-      "venue": "San Francisco",
-      "probHome": 67,
-      "probDraw": 21,
-      "probAway": 12,
-      "predictedScore": "2-1",
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "top3Scores": [
-        {
-          "score": "1-0",
-          "prob": 11.7
-        },
-        {
-          "score": "2-0",
-          "prob": 10.7
-        },
-        {
-          "score": "2-1",
-          "prob": 9.5
-        }
-      ],
-      "confidence": 74,
-      "favorito": "Austria",
-      "sources": "ELO+Bookmakers(57)",
-      "hasBookmakerOdds": true,
-      "hasKalshi": false,
-      "eloHome": 1766,
-      "eloAway": 1601,
-      "eloHomeAdj": 1766,
-      "eloAwayAdj": 1601,
-      "kalshiHome": 0,
-      "kalshiAway": 0,
-      "injuries": [],
-      "keyFactor": "Austria presión alta contra Jordania, evitar contraataques rápidos"
+      "keyFactor": "Irán control mediocampo; Nueva Zelanda organización defensiva y precisión pases."
     },
     {
       "match": "Francia vs Senegal",
       "date": "2026-06-16",
-      "time": "17:00",
+      "time": "15:00",
       "group": "I",
       "jornada": 1,
       "venue": "MetLife, NJ",
@@ -1430,7 +1345,7 @@
       ],
       "confidence": 81,
       "favorito": "Francia",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
+      "sources": "ELO+Bookmakers(59)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 2083,
@@ -1440,12 +1355,12 @@
       "kalshiHome": 17,
       "kalshiAway": 1,
       "injuries": [],
-      "keyFactor": "Francia control posesión, aprovechar superioridad técnica sobre Senegal"
+      "keyFactor": "Francia domina técnicamente; Senegal debe presionar alto y transiciones rápidas"
     },
     {
       "match": "Irak vs Noruega",
       "date": "2026-06-16",
-      "time": "19:00",
+      "time": "18:00",
       "group": "I",
       "jornada": 1,
       "venue": "Boston",
@@ -1471,7 +1386,7 @@
       ],
       "confidence": 76,
       "favorito": "Noruega",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
+      "sources": "ELO+Bookmakers(59)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1629,
@@ -1479,55 +1394,99 @@
       "eloHomeAdj": 1629,
       "eloAwayAdj": 1825,
       "kalshiHome": 0,
-      "kalshiAway": 3,
-      "injuries": [],
-      "keyFactor": "Noruega intensidad física, explotar debilidad defensiva iraquí"
-    },
-    {
-      "match": "Uzbekistán vs Colombia",
-      "date": "2026-06-17",
-      "time": "00:00",
-      "group": "K",
-      "jornada": 1,
-      "venue": "Azteca, CDMX",
-      "probHome": 15,
-      "probDraw": 23,
-      "probAway": 63,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 10.4
-        },
-        {
-          "score": "1-2",
-          "prob": 8.9
-        },
-        {
-          "score": "0-2",
-          "prob": 8.5
-        }
-      ],
-      "confidence": 76,
-      "favorito": "Colombia",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1672,
-      "eloAway": 1852,
-      "eloHomeAdj": 1672,
-      "eloAwayAdj": 1852,
-      "kalshiHome": 0,
       "kalshiAway": 2,
       "injuries": [],
-      "keyFactor": "Colombia velocidad lateral, superar marcaje cerrado uzbeko"
+      "keyFactor": "Noruega superior en ranking; Irak necesita solidez defensiva y contragolpes"
+    },
+    {
+      "match": "Argentina vs Argelia",
+      "date": "2026-06-16",
+      "time": "21:00",
+      "group": "J",
+      "jornada": 1,
+      "venue": "Kansas City",
+      "probHome": 68,
+      "probDraw": 23,
+      "probAway": 9,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 9.7
+        },
+        {
+          "score": "2-1",
+          "prob": 9.4
+        },
+        {
+          "score": "2-0",
+          "prob": 8.7
+        }
+      ],
+      "confidence": 80,
+      "favorito": "Argentina",
+      "sources": "ELO+Bookmakers(59)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 2142,
+      "eloAway": 1714,
+      "eloHomeAdj": 2122,
+      "eloAwayAdj": 1714,
+      "kalshiHome": 9,
+      "kalshiAway": 0,
+      "injuries": [
+        "Argentina: Foyth (Aquiles)",
+        "Argentina: Panichelli (LCA)"
+      ],
+      "keyFactor": "Argentina sin Foyth-Panichelli; defensa vulnerable ante presión de Argelia"
+    },
+    {
+      "match": "Austria vs Jordania",
+      "date": "2026-06-17",
+      "time": "00:00",
+      "group": "J",
+      "jornada": 1,
+      "venue": "San Francisco",
+      "probHome": 67,
+      "probDraw": 20,
+      "probAway": 13,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 11.7
+        },
+        {
+          "score": "2-0",
+          "prob": 10.7
+        },
+        {
+          "score": "2-1",
+          "prob": 9.5
+        }
+      ],
+      "confidence": 74,
+      "favorito": "Austria",
+      "sources": "ELO+Bookmakers(59)",
+      "hasBookmakerOdds": true,
+      "hasKalshi": false,
+      "eloHome": 1766,
+      "eloAway": 1601,
+      "eloHomeAdj": 1766,
+      "eloAwayAdj": 1601,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
+      "injuries": [],
+      "keyFactor": "Austria favorita; Jordania requiere compacidad defensiva y disciplina táctica"
     },
     {
       "match": "Portugal vs RD Congo",
       "date": "2026-06-17",
-      "time": "15:00",
+      "time": "13:00",
       "group": "K",
       "jornada": 1,
       "venue": "Houston",
@@ -1553,7 +1512,7 @@
       ],
       "confidence": 77,
       "favorito": "Portugal",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
+      "sources": "ELO+Bookmakers(57)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1975,
@@ -1563,12 +1522,12 @@
       "kalshiHome": 11,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Portugal posesión dominante, evitar sorpresas RD Congo"
+      "keyFactor": "Portugal controla; Congo debe defender en bloque y aprovechar espacios"
     },
     {
       "match": "Inglaterra vs Croacia",
       "date": "2026-06-17",
-      "time": "18:00",
+      "time": "16:00",
       "group": "L",
       "jornada": 1,
       "venue": "Dallas",
@@ -1594,7 +1553,7 @@
       ],
       "confidence": 78,
       "favorito": "Inglaterra",
-      "sources": "ELO+Bookmakers(57)+Kalshi",
+      "sources": "ELO+Bookmakers(59)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 2021,
@@ -1607,12 +1566,12 @@
         "Inglaterra: Grealish (pie)",
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Inglaterra amplitud táctica, Grealish ausente compromete flanco izquierdo"
+      "keyFactor": "Grealish ausente limita creatividad inglesa; Croacia sin Gvardiol en defensa"
     },
     {
       "match": "Ghana vs Panamá",
       "date": "2026-06-17",
-      "time": "21:00",
+      "time": "19:00",
       "group": "L",
       "jornada": 1,
       "venue": "Toronto",
@@ -1638,7 +1597,7 @@
       ],
       "confidence": 79,
       "favorito": "Ghana",
-      "sources": "ELO+Bookmakers(55)",
+      "sources": "ELO+Bookmakers(58)",
       "hasBookmakerOdds": true,
       "hasKalshi": false,
       "eloHome": 1701,
@@ -1648,12 +1607,53 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Ghana intensidad física, presionar temprano contra Panamá"
+      "keyFactor": "Paridad ELO; Ghana necesita intensidad física y presión constante"
+    },
+    {
+      "match": "Uzbekistán vs Colombia",
+      "date": "2026-06-17",
+      "time": "22:00",
+      "group": "K",
+      "jornada": 1,
+      "venue": "Azteca, CDMX",
+      "probHome": 15,
+      "probDraw": 23,
+      "probAway": 63,
+      "predictedScore": "1-2",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 10.4
+        },
+        {
+          "score": "1-2",
+          "prob": 8.9
+        },
+        {
+          "score": "0-2",
+          "prob": 8.5
+        }
+      ],
+      "confidence": 76,
+      "favorito": "Colombia",
+      "sources": "ELO+Bookmakers(58)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1672,
+      "eloAway": 1852,
+      "eloHomeAdj": 1672,
+      "eloAwayAdj": 1852,
+      "kalshiHome": 0,
+      "kalshiAway": 2,
+      "injuries": [],
+      "keyFactor": "Colombia superior; Uzbekistán debe cerrar espacios y juego directo"
     },
     {
       "match": "Rep. Checa vs Sudáfrica",
       "date": "2026-06-18",
-      "time": "14:00",
+      "time": "12:00",
       "group": "A",
       "jornada": 2,
       "venue": "Atlanta",
@@ -1679,7 +1679,7 @@
       ],
       "confidence": 80,
       "favorito": "Rep. Checa",
-      "sources": "ELO+Bookmakers(55)",
+      "sources": "ELO+Bookmakers(56)",
       "hasBookmakerOdds": true,
       "hasKalshi": false,
       "eloHome": 1729,
@@ -1689,12 +1689,12 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Rep. Checa domina posesión; Sudáfrica presiona en transiciones rápidas."
+      "keyFactor": "República Checa domina físicamente; Sudáfrica debe jugar compacto defensivo."
     },
     {
       "match": "Suiza vs Bosnia y Herz.",
       "date": "2026-06-18",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "jornada": 2,
       "venue": "Los Ángeles",
@@ -1730,12 +1730,12 @@
       "kalshiHome": 1,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suiza controla ritmo; Bosnia vulnerables defensivamente sin Gvardiol."
+      "keyFactor": "Suiza controla posesión; Bosnia necesita transiciones rápidas contraataques."
     },
     {
       "match": "Canadá vs Catar",
       "date": "2026-06-18",
-      "time": "20:00",
+      "time": "18:00",
       "group": "B",
       "jornada": 2,
       "venue": "Vancouver",
@@ -1771,18 +1771,18 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Canadá intensidad física; Catar carece profundidad táctica ofensiva."
+      "keyFactor": "Canadá corre más; Catar busca control de balón técnico."
     },
     {
       "match": "México vs Corea del Sur",
       "date": "2026-06-18",
-      "time": "23:00",
+      "time": "22:00",
       "group": "A",
       "jornada": 2,
       "venue": "Guadalajara",
-      "probHome": 49,
+      "probHome": 47,
       "probDraw": 28,
-      "probAway": 24,
+      "probAway": 25,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -1800,73 +1800,32 @@
           "prob": 5.7
         }
       ],
-      "confidence": 73,
+      "confidence": 81,
       "favorito": "México",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
+      "sources": "ELO+Bookmakers(56)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1836,
       "eloAway": 1776,
       "eloHomeAdj": 1821,
       "eloAwayAdj": 1776,
-      "kalshiHome": 3,
-      "kalshiAway": 0,
+      "kalshiHome": 2,
+      "kalshiAway": 1,
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "México sin Malagón; Corea presión alta sin descanso defensivo."
-    },
-    {
-      "match": "Turquía vs Paraguay",
-      "date": "2026-06-19",
-      "time": "00:00",
-      "group": "D",
-      "jornada": 2,
-      "venue": "San Francisco",
-      "probHome": 47,
-      "probDraw": 28,
-      "probAway": 25,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "top3Scores": [
-        {
-          "score": "1-0",
-          "prob": 9.7
-        },
-        {
-          "score": "2-1",
-          "prob": 9
-        },
-        {
-          "score": "2-0",
-          "prob": 8.2
-        }
-      ],
-      "confidence": 71,
-      "favorito": "Turquía",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1782,
-      "eloAway": 1718,
-      "eloHomeAdj": 1782,
-      "eloAwayAdj": 1718,
-      "kalshiHome": 1,
-      "kalshiAway": 0,
-      "injuries": [],
-      "keyFactor": "Turquía domina mediocampo; Paraguay contraataque directo sin balón."
+      "keyFactor": "México sin Malagón vulnerable; Corea presiona salida portero."
     },
     {
       "match": "EE.UU. vs Australia",
       "date": "2026-06-19",
-      "time": "17:00",
+      "time": "15:00",
       "group": "D",
       "jornada": 2,
       "venue": "Seattle",
-      "probHome": 52,
-      "probDraw": 25,
-      "probAway": 23,
+      "probHome": 55,
+      "probDraw": 24,
+      "probAway": 20,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -1886,66 +1845,22 @@
       ],
       "confidence": 73,
       "favorito": "EE.UU.",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
+      "sources": "ELO+Bookmakers(54)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1768,
       "eloAway": 1737,
       "eloHomeAdj": 1768,
       "eloAwayAdj": 1737,
-      "kalshiHome": 2,
+      "kalshiHome": 3,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "EE.UU. presión alta; Australia busca espacios transicionales contraataque."
-    },
-    {
-      "match": "Brasil vs Haití",
-      "date": "2026-06-19",
-      "time": "20:00",
-      "group": "C",
-      "jornada": 2,
-      "venue": "Philadelphia",
-      "probHome": 80,
-      "probDraw": 16,
-      "probAway": 4,
-      "predictedScore": "2-0",
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "top3Scores": [
-        {
-          "score": "2-0",
-          "prob": 12.1
-        },
-        {
-          "score": "1-0",
-          "prob": 12
-        },
-        {
-          "score": "2-1",
-          "prob": 9.6
-        }
-      ],
-      "confidence": 70,
-      "favorito": "Brasil",
-      "sources": "ELO+Bookmakers(50)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 2034,
-      "eloAway": 1541,
-      "eloHomeAdj": 1999,
-      "eloAwayAdj": 1541,
-      "kalshiHome": 9,
-      "kalshiAway": 0,
-      "injuries": [
-        "Brasil: Rodrygo (LCA)",
-        "Brasil: Militão (muscular)"
-      ],
-      "keyFactor": "Brasil abrumador; Haití cierra líneas sin perder compacidad defensiva."
+      "keyFactor": "EE.UU. agresivo; Australia compensa físicamente con defensa sólida."
     },
     {
       "match": "Escocia vs Marruecos",
       "date": "2026-06-19",
-      "time": "23:00",
+      "time": "18:00",
       "group": "C",
       "jornada": 2,
       "venue": "Boston",
@@ -1971,7 +1886,7 @@
       ],
       "confidence": 72,
       "favorito": "Marruecos",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
+      "sources": "ELO+Bookmakers(56)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1733,
@@ -1981,53 +1896,97 @@
       "kalshiHome": 0,
       "kalshiAway": 2,
       "injuries": [],
-      "keyFactor": "Escocia intensidad; Marruecos control posesión técnica con variabilidad táctica."
+      "keyFactor": "Marruecos superior ELO; Escocia juega directo sin posesión."
     },
     {
-      "match": "Japón vs Túnez",
-      "date": "2026-06-20",
-      "time": "00:00",
-      "group": "F",
+      "match": "Brasil vs Haití",
+      "date": "2026-06-19",
+      "time": "21:00",
+      "group": "C",
       "jornada": 2,
-      "venue": "Monterrey",
-      "probHome": 57,
-      "probDraw": 26,
-      "probAway": 17,
-      "predictedScore": "2-1",
+      "venue": "Philadelphia",
+      "probHome": 80,
+      "probDraw": 16,
+      "probAway": 4,
+      "predictedScore": "2-0",
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 0,
       "top3Scores": [
         {
-          "score": "1-0",
-          "prob": 11.3
+          "score": "2-0",
+          "prob": 12.1
         },
         {
-          "score": "2-0",
-          "prob": 10.4
+          "score": "1-0",
+          "prob": 12
         },
         {
           "score": "2-1",
-          "prob": 9.5
+          "prob": 9.6
         }
       ],
-      "confidence": 75,
-      "favorito": "Japón",
-      "sources": "ELO+Kalshi",
-      "hasBookmakerOdds": false,
+      "confidence": 70,
+      "favorito": "Brasil",
+      "sources": "ELO+Bookmakers(52)+Kalshi",
+      "hasBookmakerOdds": true,
       "hasKalshi": true,
-      "eloHome": 1808,
-      "eloAway": 1700,
-      "eloHomeAdj": 1808,
-      "eloAwayAdj": 1700,
-      "kalshiHome": 2,
+      "eloHome": 2034,
+      "eloAway": 1541,
+      "eloHomeAdj": 1999,
+      "eloAwayAdj": 1541,
+      "kalshiHome": 9,
+      "kalshiAway": 0,
+      "injuries": [
+        "Brasil: Rodrygo (LCA)",
+        "Brasil: Militão (muscular)"
+      ],
+      "keyFactor": "Brasil ataca con Rodrygo lesionado; Haití defiende ultracerrado."
+    },
+    {
+      "match": "Turquía vs Paraguay",
+      "date": "2026-06-19",
+      "time": "23:00",
+      "group": "D",
+      "jornada": 2,
+      "venue": "San Francisco",
+      "probHome": 49,
+      "probDraw": 28,
+      "probAway": 24,
+      "predictedScore": "1-0",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 9.7
+        },
+        {
+          "score": "2-1",
+          "prob": 9
+        },
+        {
+          "score": "2-0",
+          "prob": 8.2
+        }
+      ],
+      "confidence": 73,
+      "favorito": "Turquía",
+      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1782,
+      "eloAway": 1718,
+      "eloHomeAdj": 1782,
+      "eloAwayAdj": 1718,
+      "kalshiHome": 1,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Japón debe controlar ritmo; Túnez presiona físicamente sin Gvardiol."
+      "keyFactor": "Turquía presiona alto; Paraguay contraataca rápido con transiciones."
     },
     {
       "match": "Países Bajos vs Suecia",
       "date": "2026-06-20",
-      "time": "15:00",
+      "time": "13:00",
       "group": "F",
       "jornada": 2,
       "venue": "Houston",
@@ -2053,7 +2012,7 @@
       ],
       "confidence": 78,
       "favorito": "Países Bajos",
-      "sources": "ELO+Bookmakers(53)+Kalshi",
+      "sources": "ELO+Bookmakers(54)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1976,
@@ -2063,18 +2022,18 @@
       "kalshiHome": 6,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Países Bajos domina posesión; Suecia defiende compacta sin mediocampo."
+      "keyFactor": "Suecia debe presionar alto para evitar juego posicional neerlandés superior"
     },
     {
       "match": "Alemania vs C. Marfil",
       "date": "2026-06-20",
-      "time": "18:00",
+      "time": "16:00",
       "group": "E",
       "jornada": 2,
       "venue": "Toronto",
       "probHome": 61,
       "probDraw": 24,
-      "probAway": 15,
+      "probAway": 16,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2094,24 +2053,24 @@
       ],
       "confidence": 79,
       "favorito": "Alemania",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1956,
       "eloAway": 1745,
       "eloHomeAdj": 1946,
       "eloAwayAdj": 1745,
-      "kalshiHome": 6,
+      "kalshiHome": 5,
       "kalshiAway": 0,
       "injuries": [
         "Alemania: Gnabry"
       ],
-      "keyFactor": "Alemania ataque sin Gnabry; Marfil contraataque rápido sin defensa."
+      "keyFactor": "Gnabry ausente limita amplitud ofensiva alemana contra defensa marfileña compacta"
     },
     {
       "match": "Ecuador vs Curazao",
       "date": "2026-06-20",
-      "time": "22:00",
+      "time": "20:00",
       "group": "E",
       "jornada": 2,
       "venue": "Kansas City",
@@ -2147,12 +2106,53 @@
       "kalshiHome": 1,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Ecuador superioridad física; Curazao contraataque desesperado sin mediapunta."
+      "keyFactor": "Ecuador domina posesión; Curazao apuesta contraataques rápidos en transición"
+    },
+    {
+      "match": "Túnez vs Japón",
+      "date": "2026-06-21",
+      "time": "00:00",
+      "group": "F",
+      "jornada": 2,
+      "venue": "Monterrey",
+      "probHome": 22,
+      "probDraw": 26,
+      "probAway": 52,
+      "predictedScore": "1-2",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 11
+        },
+        {
+          "score": "0-2",
+          "prob": 9.8
+        },
+        {
+          "score": "1-2",
+          "prob": 9.4
+        }
+      ],
+      "confidence": 71,
+      "favorito": "Japón",
+      "sources": "ELO+Kalshi",
+      "hasBookmakerOdds": false,
+      "hasKalshi": true,
+      "eloHome": 1700,
+      "eloAway": 1808,
+      "eloHomeAdj": 1700,
+      "eloAwayAdj": 1808,
+      "kalshiHome": 0,
+      "kalshiAway": 2,
+      "injuries": [],
+      "keyFactor": "Japón debe aprovechar superioridad física en mediocampo contra Túnez"
     },
     {
       "match": "España vs Arabia Saudita",
       "date": "2026-06-21",
-      "time": "14:00",
+      "time": "12:00",
       "group": "H",
       "jornada": 2,
       "venue": "Atlanta",
@@ -2178,24 +2178,24 @@
       ],
       "confidence": 71,
       "favorito": "España",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 2048,
       "eloAway": 1693,
       "eloHomeAdj": 2038,
       "eloAwayAdj": 1693,
-      "kalshiHome": 18,
+      "kalshiHome": 17,
       "kalshiAway": 0,
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "España dominio táctico sin Yamal; Arabia Saudita cierre defensivo."
+      "keyFactor": "Yamal duda condiciona bandas españolas; Arabia Saudita defiende en bloque"
     },
     {
       "match": "Bélgica vs Irán",
       "date": "2026-06-21",
-      "time": "17:00",
+      "time": "15:00",
       "group": "G",
       "jornada": 2,
       "venue": "Los Ángeles",
@@ -2221,7 +2221,7 @@
       ],
       "confidence": 78,
       "favorito": "Bélgica",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1928,
@@ -2231,25 +2231,66 @@
       "kalshiHome": 2,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bélgica presión alta; Irán bloque bajo y transiciones rápidas."
+      "keyFactor": "Bélgica controla ritmo; Irán busca robo y contraataque directo vertical"
     },
     {
-      "match": "Cabo Verde vs Uruguay",
+      "match": "Uruguay vs Cabo Verde",
       "date": "2026-06-21",
-      "time": "20:00",
+      "time": "18:00",
       "group": "H",
       "jornada": 2,
       "venue": "Miami",
-      "probHome": 15,
+      "probHome": 64,
+      "probDraw": 23,
+      "probAway": 13,
+      "predictedScore": "2-0",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 14.1
+        },
+        {
+          "score": "2-0",
+          "prob": 11.1
+        },
+        {
+          "score": "2-1",
+          "prob": 8.7
+        }
+      ],
+      "confidence": 80,
+      "favorito": "Uruguay",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1870,
+      "eloAway": 1642,
+      "eloHomeAdj": 1870,
+      "eloAwayAdj": 1642,
+      "kalshiHome": 1,
+      "kalshiAway": 0,
+      "injuries": [],
+      "keyFactor": "Uruguay impone intensidad física; Cabo Verde aguanta defensivo sin pretensiones"
+    },
+    {
+      "match": "Nueva Zelanda vs Egipto",
+      "date": "2026-06-21",
+      "time": "21:00",
+      "group": "G",
+      "jornada": 2,
+      "venue": "Vancouver",
+      "probHome": 22,
       "probDraw": 26,
-      "probAway": 59,
-      "predictedScore": "0-2",
+      "probAway": 52,
+      "predictedScore": "0-1",
       "homeGoals": 0,
-      "awayGoals": 2,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "0-1",
-          "prob": 13.7
+          "prob": 13
         },
         {
           "score": "0-2",
@@ -2257,109 +2298,27 @@
         },
         {
           "score": "1-2",
-          "prob": 8.5
+          "prob": 8.8
         }
       ],
-      "confidence": 77,
-      "favorito": "Uruguay",
-      "sources": "ELO+Kalshi",
-      "hasBookmakerOdds": false,
-      "hasKalshi": true,
-      "eloHome": 1642,
-      "eloAway": 1870,
-      "eloHomeAdj": 1642,
-      "eloAwayAdj": 1870,
-      "kalshiHome": 0,
-      "kalshiAway": 1,
-      "injuries": [],
-      "keyFactor": "Uruguay control posesional; Cabo Verde intensidad defensiva sin recursos."
-    },
-    {
-      "match": "Egipto vs Nueva Zelanda",
-      "date": "2026-06-21",
-      "time": "23:00",
-      "group": "G",
-      "jornada": 2,
-      "venue": "Vancouver",
-      "probHome": 55,
-      "probDraw": 26,
-      "probAway": 19,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "top3Scores": [
-        {
-          "score": "1-0",
-          "prob": 13.4
-        },
-        {
-          "score": "2-0",
-          "prob": 11
-        },
-        {
-          "score": "2-1",
-          "prob": 9
-        }
-      ],
-      "confidence": 70,
+      "confidence": 79,
       "favorito": "Egipto",
-      "sources": "ELO",
-      "hasBookmakerOdds": false,
-      "hasKalshi": false,
-      "eloHome": 1695,
-      "eloAway": 1548,
-      "eloHomeAdj": 1695,
-      "eloAwayAdj": 1548,
-      "kalshiHome": 0,
-      "kalshiAway": 0,
-      "injuries": [],
-      "keyFactor": "Egipto domina mediocampo; Nueva Zelanda compacidad defensiva contraataques."
-    },
-    {
-      "match": "Jordania vs Argelia",
-      "date": "2026-06-22",
-      "time": "01:00",
-      "group": "J",
-      "jornada": 2,
-      "venue": "San Francisco",
-      "probHome": 20,
-      "probDraw": 24,
-      "probAway": 56,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 11.8
-        },
-        {
-          "score": "0-2",
-          "prob": 8.3
-        },
-        {
-          "score": "1-2",
-          "prob": 8.2
-        }
-      ],
-      "confidence": 75,
-      "favorito": "Argelia",
-      "sources": "ELO+Bookmakers(54)",
+      "sources": "ELO+Bookmakers(55)",
       "hasBookmakerOdds": true,
       "hasKalshi": false,
-      "eloHome": 1601,
-      "eloAway": 1714,
-      "eloHomeAdj": 1601,
-      "eloAwayAdj": 1714,
+      "eloHome": 1548,
+      "eloAway": 1695,
+      "eloHomeAdj": 1548,
+      "eloAwayAdj": 1695,
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Defensa argelina debe contener transiciones rápidas de Jordania"
+      "keyFactor": "Nueva Zelanda presiona adelantado; Egipto jugará transiciones desde atrás organizado"
     },
     {
       "match": "Argentina vs Austria",
       "date": "2026-06-22",
-      "time": "15:00",
+      "time": "13:00",
       "group": "J",
       "jornada": 2,
       "venue": "Dallas",
@@ -2385,7 +2344,7 @@
       ],
       "confidence": 78,
       "favorito": "Argentina",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 2142,
@@ -2398,12 +2357,12 @@
         "Argentina: Foyth (Aquiles)",
         "Argentina: Panichelli (LCA)"
       ],
-      "keyFactor": "Argentina sin Foyth: vulnerabilidad defensiva lateral ante Austria"
+      "keyFactor": "Superioridad ofensiva argentina sin Foyth; defensa austríaca vulnerable lateralmente"
     },
     {
       "match": "Francia vs Irak",
       "date": "2026-06-22",
-      "time": "19:00",
+      "time": "17:00",
       "group": "I",
       "jornada": 2,
       "venue": "Philadelphia",
@@ -2429,7 +2388,7 @@
       ],
       "confidence": 72,
       "favorito": "Francia",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 2083,
@@ -2439,18 +2398,18 @@
       "kalshiHome": 17,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Francia domina posesión; Irak contraataque en espacios"
+      "keyFactor": "Francia domina posesión; Irak debe contrapresionar rápido sin balón"
     },
     {
       "match": "Noruega vs Senegal",
       "date": "2026-06-22",
-      "time": "22:00",
+      "time": "20:00",
       "group": "I",
       "jornada": 2,
       "venue": "MetLife, NJ",
-      "probHome": 46,
+      "probHome": 45,
       "probDraw": 27,
-      "probAway": 27,
+      "probAway": 28,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2468,30 +2427,71 @@
           "prob": 7
         }
       ],
-      "confidence": 77,
+      "confidence": 80,
       "favorito": "Noruega",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1825,
       "eloAway": 1782,
       "eloHomeAdj": 1825,
       "eloAwayAdj": 1782,
-      "kalshiHome": 3,
+      "kalshiHome": 2,
       "kalshiAway": 1,
       "injuries": [],
-      "keyFactor": "Senegal presión alta; Noruega juega largo y directo"
+      "keyFactor": "Senegal presión alta; Noruega necesita transiciones rápidas verticales"
+    },
+    {
+      "match": "Jordania vs Argelia",
+      "date": "2026-06-22",
+      "time": "23:00",
+      "group": "J",
+      "jornada": 2,
+      "venue": "San Francisco",
+      "probHome": 20,
+      "probDraw": 24,
+      "probAway": 56,
+      "predictedScore": "1-2",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 11.8
+        },
+        {
+          "score": "0-2",
+          "prob": 8.3
+        },
+        {
+          "score": "1-2",
+          "prob": 8.2
+        }
+      ],
+      "confidence": 75,
+      "favorito": "Argelia",
+      "sources": "ELO+Bookmakers(55)",
+      "hasBookmakerOdds": true,
+      "hasKalshi": false,
+      "eloHome": 1601,
+      "eloAway": 1714,
+      "eloHomeAdj": 1601,
+      "eloAwayAdj": 1714,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
+      "injuries": [],
+      "keyFactor": "Argelia favorita; Jordania depende de defensiva compacta y contras"
     },
     {
       "match": "Portugal vs Uzbekistán",
       "date": "2026-06-23",
-      "time": "00:00",
+      "time": "13:00",
       "group": "K",
       "jornada": 2,
       "venue": "Houston",
       "probHome": 71,
       "probDraw": 20,
-      "probAway": 9,
+      "probAway": 8,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2511,7 +2511,7 @@
       ],
       "confidence": 76,
       "favorito": "Portugal",
-      "sources": "ELO+Bookmakers(53)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1975,
@@ -2521,53 +2521,12 @@
       "kalshiHome": 11,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Portugal control del ritmo; Uzbekistán resistencia defensiva compacta"
-    },
-    {
-      "match": "RD Congo vs Colombia",
-      "date": "2026-06-23",
-      "time": "00:00",
-      "group": "K",
-      "jornada": 2,
-      "venue": "Guadalajara",
-      "probHome": 16,
-      "probDraw": 26,
-      "probAway": 58,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 11.5
-        },
-        {
-          "score": "0-2",
-          "prob": 10.4
-        },
-        {
-          "score": "1-2",
-          "prob": 9.5
-        }
-      ],
-      "confidence": 76,
-      "favorito": "Colombia",
-      "sources": "ELO+Kalshi",
-      "hasBookmakerOdds": false,
-      "hasKalshi": true,
-      "eloHome": 1638,
-      "eloAway": 1852,
-      "eloHomeAdj": 1638,
-      "eloAwayAdj": 1852,
-      "kalshiHome": 0,
-      "kalshiAway": 2,
-      "injuries": [],
-      "keyFactor": "Colombia velocidad en bandas; RD Congo bloquea centros"
+      "keyFactor": "Portugal control mediocampo; Uzbekistán requiere intensidad defensiva sostenida"
     },
     {
       "match": "Inglaterra vs Ghana",
       "date": "2026-06-23",
-      "time": "18:00",
+      "time": "16:00",
       "group": "L",
       "jornada": 2,
       "venue": "Boston",
@@ -2593,7 +2552,7 @@
       ],
       "confidence": 78,
       "favorito": "Inglaterra",
-      "sources": "ELO+Bookmakers(53)+Kalshi",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 2021,
@@ -2605,60 +2564,101 @@
       "injuries": [
         "Inglaterra: Grealish (pie)"
       ],
-      "keyFactor": "Grealish baja: Inglaterra menos amplitud; Ghana contraataca"
+      "keyFactor": "Inglaterra sin Grealish pierde creatividad lateral; Ghana juega directo"
     },
     {
-      "match": "Croacia vs Panamá",
+      "match": "Panamá vs Croacia",
       "date": "2026-06-23",
-      "time": "21:00",
+      "time": "19:00",
       "group": "L",
       "jornada": 2,
       "venue": "Toronto",
+      "probHome": 15,
+      "probDraw": 25,
+      "probAway": 60,
+      "predictedScore": "1-2",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 11.8
+        },
+        {
+          "score": "0-2",
+          "prob": 9
+        },
+        {
+          "score": "1-2",
+          "prob": 8.7
+        }
+      ],
+      "confidence": 78,
+      "favorito": "Croacia",
+      "sources": "ELO+Bookmakers(55)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1623,
+      "eloAway": 1882,
+      "eloHomeAdj": 1623,
+      "eloAwayAdj": 1857,
+      "kalshiHome": 0,
+      "kalshiAway": 1,
+      "injuries": [
+        "Croacia: Gvardiol (pierna)"
+      ],
+      "keyFactor": "Croacia gástado; Panamá presión alta en construcción croata"
+    },
+    {
+      "match": "Colombia vs RD Congo",
+      "date": "2026-06-23",
+      "time": "22:00",
+      "group": "K",
+      "jornada": 2,
+      "venue": "Guadalajara",
       "probHome": 63,
-      "probDraw": 26,
-      "probAway": 11,
+      "probDraw": 24,
+      "probAway": 13,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
       "top3Scores": [
         {
           "score": "1-0",
-          "prob": 12.2
+          "prob": 11.7
         },
         {
           "score": "2-0",
-          "prob": 9.8
+          "prob": 11.1
         },
         {
           "score": "2-1",
-          "prob": 8.9
+          "prob": 9.6
         }
       ],
       "confidence": 80,
-      "favorito": "Croacia",
-      "sources": "ELO+Kalshi",
-      "hasBookmakerOdds": false,
+      "favorito": "Colombia",
+      "sources": "ELO+Bookmakers(54)+Kalshi",
+      "hasBookmakerOdds": true,
       "hasKalshi": true,
-      "eloHome": 1882,
-      "eloAway": 1623,
-      "eloHomeAdj": 1857,
-      "eloAwayAdj": 1623,
-      "kalshiHome": 1,
+      "eloHome": 1852,
+      "eloAway": 1638,
+      "eloHomeAdj": 1852,
+      "eloAwayAdj": 1638,
+      "kalshiHome": 2,
       "kalshiAway": 0,
-      "injuries": [
-        "Croacia: Gvardiol (pierna)"
-      ],
-      "keyFactor": "Croacia sin Gvardiol: Panamá ataca banda derecha"
+      "injuries": [],
+      "keyFactor": "Colombia dominio físico; RD Congo contraataques por bandas"
     },
     {
       "match": "Suiza vs Canadá",
       "date": "2026-06-24",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "jornada": 3,
       "venue": "Vancouver",
-      "probHome": 48,
-      "probDraw": 28,
+      "probHome": 49,
+      "probDraw": 27,
       "probAway": 24,
       "predictedScore": "1-0",
       "homeGoals": 1,
@@ -2679,7 +2679,7 @@
       ],
       "confidence": 72,
       "favorito": "Suiza",
-      "sources": "ELO+Bookmakers(48)+Kalshi",
+      "sources": "ELO+Bookmakers(49)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1862,
@@ -2689,12 +2689,12 @@
       "kalshiHome": 1,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suiza domina posesión; Canadá vulnerable sin intensidad física"
+      "keyFactor": "Suiza dominio posesión; Canadá necesita transiciones rápidas efectivas"
     },
     {
       "match": "Bosnia y Herz. vs Catar",
       "date": "2026-06-24",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "jornada": 3,
       "venue": "Seattle",
@@ -2720,7 +2720,7 @@
       ],
       "confidence": 78,
       "favorito": "Bosnia y Herz.",
-      "sources": "ELO+Bookmakers(48)",
+      "sources": "ELO+Bookmakers(49)",
       "hasBookmakerOdds": true,
       "hasKalshi": false,
       "eloHome": 1698,
@@ -2730,12 +2730,12 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bosnia presiona alto; Catar necesita transiciones rápidas defensivas"
+      "keyFactor": "Bosnia presión alta; Catar busca espacios defensivos entre líneas"
     },
     {
       "match": "Brasil vs Escocia",
       "date": "2026-06-24",
-      "time": "20:00",
+      "time": "18:00",
       "group": "C",
       "jornada": 3,
       "venue": "Miami",
@@ -2774,12 +2774,12 @@
         "Brasil: Rodrygo (LCA)",
         "Brasil: Militão (muscular)"
       ],
-      "keyFactor": "Brasil sin Rodrygo-Militão: creatividad ofensiva comprometida, defensa frágil"
+      "keyFactor": "Brasil sin Rodrygo-Militão: defensa vulnerable ante pressing escocés"
     },
     {
       "match": "Marruecos vs Haití",
       "date": "2026-06-24",
-      "time": "20:00",
+      "time": "18:00",
       "group": "C",
       "jornada": 3,
       "venue": "Atlanta",
@@ -2805,7 +2805,7 @@
       ],
       "confidence": 79,
       "favorito": "Marruecos",
-      "sources": "ELO+Bookmakers(48)+Kalshi",
+      "sources": "ELO+Bookmakers(49)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1827,
@@ -2815,12 +2815,12 @@
       "kalshiHome": 2,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Marruecos controla ritmo; Haití depende contraataques con energía pura"
+      "keyFactor": "Marruecos control juego; Haití apunta contraataques desde atrás"
     },
     {
       "match": "México vs Rep. Checa",
       "date": "2026-06-24",
-      "time": "23:00",
+      "time": "21:00",
       "group": "A",
       "jornada": 3,
       "venue": "Azteca, CDMX",
@@ -2853,26 +2853,26 @@
       "eloAway": 1729,
       "eloHomeAdj": 1821,
       "eloAwayAdj": 1729,
-      "kalshiHome": 3,
+      "kalshiHome": 2,
       "kalshiAway": 0,
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "México sin Malagón: portería débil; República Checa aprovecha espacios"
+      "keyFactor": "México sin Malagón portería débil; Rep. Checa presión ofensiva"
     },
     {
       "match": "Sudáfrica vs Corea del Sur",
       "date": "2026-06-24",
-      "time": "23:00",
+      "time": "21:00",
       "group": "A",
       "jornada": 3,
       "venue": "Monterrey",
-      "probHome": 21,
+      "probHome": 19,
       "probDraw": 25,
-      "probAway": 55,
-      "predictedScore": "0-1",
-      "homeGoals": 0,
-      "awayGoals": 1,
+      "probAway": 56,
+      "predictedScore": "1-2",
+      "homeGoals": 1,
+      "awayGoals": 2,
       "top3Scores": [
         {
           "score": "0-1",
@@ -2887,149 +2887,24 @@
           "prob": 8.8
         }
       ],
-      "confidence": 77,
+      "confidence": 75,
       "favorito": "Corea del Sur",
-      "sources": "ELO+Bookmakers(43)",
+      "sources": "ELO+Bookmakers(48)+Kalshi",
       "hasBookmakerOdds": true,
-      "hasKalshi": false,
+      "hasKalshi": true,
       "eloHome": 1641,
       "eloAway": 1776,
       "eloHomeAdj": 1641,
       "eloAwayAdj": 1776,
       "kalshiHome": 0,
-      "kalshiAway": 0,
-      "injuries": [],
-      "keyFactor": "Corea presiona agresivamente; Sudáfrica juega largo, física directa"
-    },
-    {
-      "match": "EE.UU. vs Turquía",
-      "date": "2026-06-25",
-      "time": "00:00",
-      "group": "D",
-      "jornada": 3,
-      "venue": "Dallas",
-      "probHome": 44,
-      "probDraw": 26,
-      "probAway": 30,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "top3Scores": [
-        {
-          "score": "1-0",
-          "prob": 9
-        },
-        {
-          "score": "2-1",
-          "prob": 8.4
-        },
-        {
-          "score": "2-0",
-          "prob": 7.1
-        }
-      ],
-      "confidence": 77,
-      "favorito": "EE.UU.",
-      "sources": "ELO+Kalshi",
-      "hasBookmakerOdds": false,
-      "hasKalshi": true,
-      "eloHome": 1768,
-      "eloAway": 1782,
-      "eloHomeAdj": 1768,
-      "eloAwayAdj": 1782,
-      "kalshiHome": 2,
       "kalshiAway": 1,
       "injuries": [],
-      "keyFactor": "Turquía más ELO: Estados Unidos necesita intensidad constante defensiva"
-    },
-    {
-      "match": "Paraguay vs Australia",
-      "date": "2026-06-25",
-      "time": "00:00",
-      "group": "D",
-      "jornada": 3,
-      "venue": "San Francisco",
-      "probHome": 42,
-      "probDraw": 28,
-      "probAway": 30,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "top3Scores": [
-        {
-          "score": "1-0",
-          "prob": 9.4
-        },
-        {
-          "score": "2-1",
-          "prob": 7.9
-        },
-        {
-          "score": "2-0",
-          "prob": 6.7
-        }
-      ],
-      "confidence": 79,
-      "favorito": "Paraguay",
-      "sources": "ELO+Bookmakers(43)",
-      "hasBookmakerOdds": true,
-      "hasKalshi": false,
-      "eloHome": 1718,
-      "eloAway": 1737,
-      "eloHomeAdj": 1718,
-      "eloAwayAdj": 1737,
-      "kalshiHome": 0,
-      "kalshiAway": 0,
-      "injuries": [],
-      "keyFactor": "Australia presiona; Paraguay busca transiciones rápidas verticales aprovechando espacios"
-    },
-    {
-      "match": "Ecuador vs Alemania",
-      "date": "2026-06-25",
-      "time": "18:00",
-      "group": "E",
-      "jornada": 3,
-      "venue": "MetLife, NJ",
-      "probHome": 20,
-      "probDraw": 25,
-      "probAway": 55,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "1-2",
-          "prob": 9.3
-        },
-        {
-          "score": "0-1",
-          "prob": 8.5
-        },
-        {
-          "score": "0-2",
-          "prob": 7.8
-        }
-      ],
-      "confidence": 78,
-      "favorito": "Alemania",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1752,
-      "eloAway": 1956,
-      "eloHomeAdj": 1752,
-      "eloAwayAdj": 1946,
-      "kalshiHome": 1,
-      "kalshiAway": 6,
-      "injuries": [
-        "Alemania: Gnabry"
-      ],
-      "keyFactor": "Presión alta alemana contra transiciones ecuatorianas lentas sin Gnabry"
+      "keyFactor": "Corea defiende compacto; Sudáfrica necesita amplitud bandas laterales"
     },
     {
       "match": "Curazao vs C. Marfil",
       "date": "2026-06-25",
-      "time": "18:00",
+      "time": "16:00",
       "group": "E",
       "jornada": 3,
       "venue": "Philadelphia",
@@ -3065,15 +2940,99 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Velocidad de Curazao aprovechando espacios defensivos de Costa de Marfil"
+      "keyFactor": "Curazao marca presión; Costa Marfil regates individuales en transición"
+    },
+    {
+      "match": "Ecuador vs Alemania",
+      "date": "2026-06-25",
+      "time": "16:00",
+      "group": "E",
+      "jornada": 3,
+      "venue": "MetLife, NJ",
+      "probHome": 20,
+      "probDraw": 25,
+      "probAway": 54,
+      "predictedScore": "1-2",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "top3Scores": [
+        {
+          "score": "1-2",
+          "prob": 9.3
+        },
+        {
+          "score": "0-1",
+          "prob": 8.5
+        },
+        {
+          "score": "0-2",
+          "prob": 7.8
+        }
+      ],
+      "confidence": 79,
+      "favorito": "Alemania",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1752,
+      "eloAway": 1956,
+      "eloHomeAdj": 1752,
+      "eloAwayAdj": 1946,
+      "kalshiHome": 1,
+      "kalshiAway": 5,
+      "injuries": [
+        "Alemania: Gnabry"
+      ],
+      "keyFactor": "Alemania sin Gnabry creatividad; Ecuador presiona alto sin respiro"
+    },
+    {
+      "match": "Japón vs Suecia",
+      "date": "2026-06-25",
+      "time": "19:00",
+      "group": "F",
+      "jornada": 3,
+      "venue": "Dallas",
+      "probHome": 47,
+      "probDraw": 27,
+      "probAway": 25,
+      "predictedScore": "1-0",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 9.3
+        },
+        {
+          "score": "2-1",
+          "prob": 8.6
+        },
+        {
+          "score": "2-0",
+          "prob": 7.4
+        }
+      ],
+      "confidence": 72,
+      "favorito": "Japón",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1808,
+      "eloAway": 1759,
+      "eloHomeAdj": 1808,
+      "eloAwayAdj": 1759,
+      "kalshiHome": 2,
+      "kalshiAway": 0,
+      "injuries": [],
+      "keyFactor": "Japón presión alta vs defensa sueca compacta; ritmo decisivo."
     },
     {
       "match": "Túnez vs Países Bajos",
       "date": "2026-06-25",
-      "time": "21:00",
+      "time": "19:00",
       "group": "F",
       "jornada": 3,
-      "venue": "Dallas",
+      "venue": "Kansas City",
       "probHome": 13,
       "probDraw": 26,
       "probAway": 61,
@@ -3106,53 +3065,94 @@
       "kalshiHome": 0,
       "kalshiAway": 6,
       "injuries": [],
-      "keyFactor": "Resistencia holandesa controlando ritmo ante intensidad tunecina"
+      "keyFactor": "Países Bajos control posesión; Túnez contragolpe rápido letal."
     },
     {
-      "match": "Japón vs Suecia",
+      "match": "Turquía vs EE.UU.",
       "date": "2026-06-25",
-      "time": "21:00",
-      "group": "F",
+      "time": "22:00",
+      "group": "D",
       "jornada": 3,
-      "venue": "Kansas City",
-      "probHome": 47,
+      "venue": "Los Ángeles",
+      "probHome": 36,
       "probDraw": 27,
-      "probAway": 25,
+      "probAway": 37,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 8.5
+        },
+        {
+          "score": "1-2",
+          "prob": 8.1
+        },
+        {
+          "score": "0-2",
+          "prob": 6.4
+        }
+      ],
+      "confidence": 72,
+      "favorito": "Equilibrado",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
+      "hasBookmakerOdds": true,
+      "hasKalshi": true,
+      "eloHome": 1782,
+      "eloAway": 1768,
+      "eloHomeAdj": 1782,
+      "eloAwayAdj": 1768,
+      "kalshiHome": 1,
+      "kalshiAway": 3,
+      "injuries": [],
+      "keyFactor": "EE.UU. intensidad física; Turquía técnica en transiciones."
+    },
+    {
+      "match": "Paraguay vs Australia",
+      "date": "2026-06-25",
+      "time": "22:00",
+      "group": "D",
+      "jornada": 3,
+      "venue": "San Francisco",
+      "probHome": 42,
+      "probDraw": 28,
+      "probAway": 30,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
       "top3Scores": [
         {
           "score": "1-0",
-          "prob": 9.3
+          "prob": 9.4
         },
         {
           "score": "2-1",
-          "prob": 8.6
+          "prob": 7.9
         },
         {
           "score": "2-0",
-          "prob": 7.4
+          "prob": 6.7
         }
       ],
-      "confidence": 72,
-      "favorito": "Japón",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
+      "confidence": 79,
+      "favorito": "Paraguay",
+      "sources": "ELO+Bookmakers(44)",
       "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1808,
-      "eloAway": 1759,
-      "eloHomeAdj": 1808,
-      "eloAwayAdj": 1759,
-      "kalshiHome": 2,
+      "hasKalshi": false,
+      "eloHome": 1718,
+      "eloAway": 1737,
+      "eloHomeAdj": 1718,
+      "eloAwayAdj": 1737,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Capacidad física de Japón superando a Suecia en duelos"
+      "keyFactor": "Paraguay movilidad defensiva; Australia pressing constante agresivo."
     },
     {
       "match": "Noruega vs Francia",
       "date": "2026-06-26",
-      "time": "17:00",
+      "time": "15:00",
       "group": "I",
       "jornada": 3,
       "venue": "Boston",
@@ -3176,24 +3176,24 @@
           "prob": 6.1
         }
       ],
-      "confidence": 79,
+      "confidence": 78,
       "favorito": "Francia",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1825,
       "eloAway": 2083,
       "eloHomeAdj": 1825,
       "eloAwayAdj": 2083,
-      "kalshiHome": 3,
+      "kalshiHome": 2,
       "kalshiAway": 17,
       "injuries": [],
-      "keyFactor": "Defensa francesa sólida contra contraataques noruegos directos"
+      "keyFactor": "Francia superioridad técnica; Noruega resistencia defensiva compacta."
     },
     {
       "match": "Senegal vs Irak",
       "date": "2026-06-26",
-      "time": "17:00",
+      "time": "15:00",
       "group": "I",
       "jornada": 3,
       "venue": "Toronto",
@@ -3219,7 +3219,7 @@
       ],
       "confidence": 77,
       "favorito": "Senegal",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1782,
@@ -3229,55 +3229,12 @@
       "kalshiHome": 1,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Profundidad ofensiva senegalesa explotando defensa iraní vulnerable"
-    },
-    {
-      "match": "Uruguay vs España",
-      "date": "2026-06-26",
-      "time": "22:00",
-      "group": "H",
-      "jornada": 3,
-      "venue": "Guadalajara",
-      "probHome": 19,
-      "probDraw": 25,
-      "probAway": 56,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 12.7
-        },
-        {
-          "score": "0-2",
-          "prob": 9.5
-        },
-        {
-          "score": "1-2",
-          "prob": 8.5
-        }
-      ],
-      "confidence": 77,
-      "favorito": "España",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1870,
-      "eloAway": 2048,
-      "eloHomeAdj": 1870,
-      "eloAwayAdj": 2038,
-      "kalshiHome": 1,
-      "kalshiAway": 18,
-      "injuries": [
-        "España: Yamal (duda)"
-      ],
-      "keyFactor": "Ausencia de Yamal permitiendo Uruguay presionar lateral español débil"
+      "keyFactor": "Senegal velocidad extrema ataque; Irak defensa ordenada."
     },
     {
       "match": "Cabo Verde vs Arabia Saudita",
       "date": "2026-06-26",
-      "time": "22:00",
+      "time": "20:00",
       "group": "H",
       "jornada": 3,
       "venue": "Houston",
@@ -3303,7 +3260,7 @@
       ],
       "confidence": 80,
       "favorito": "Equilibrado",
-      "sources": "ELO+Bookmakers(43)",
+      "sources": "ELO+Bookmakers(44)",
       "hasBookmakerOdds": true,
       "hasKalshi": false,
       "eloHome": 1642,
@@ -3313,53 +3270,55 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Solidez defensiva saudí neutralizando amplitud de Cabo Verde"
+      "keyFactor": "Arabia Saudita robustez física; Cabo Verde velocidad."
     },
     {
-      "match": "Nueva Zelanda vs Bélgica",
-      "date": "2026-06-27",
-      "time": "00:00",
-      "group": "G",
+      "match": "Uruguay vs España",
+      "date": "2026-06-26",
+      "time": "20:00",
+      "group": "H",
       "jornada": 3,
-      "venue": "Vancouver",
-      "probHome": 10,
-      "probDraw": 21,
-      "probAway": 70,
-      "predictedScore": "0-2",
-      "homeGoals": 0,
+      "venue": "Guadalajara",
+      "probHome": 19,
+      "probDraw": 25,
+      "probAway": 56,
+      "predictedScore": "1-2",
+      "homeGoals": 1,
       "awayGoals": 2,
       "top3Scores": [
         {
-          "score": "0-2",
-          "prob": 11.9
+          "score": "0-1",
+          "prob": 12.7
         },
         {
-          "score": "0-1",
-          "prob": 11.5
+          "score": "0-2",
+          "prob": 9.5
         },
         {
           "score": "1-2",
-          "prob": 9.7
+          "prob": 8.5
         }
       ],
-      "confidence": 81,
-      "favorito": "Bélgica",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
+      "confidence": 77,
+      "favorito": "España",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
-      "eloHome": 1548,
-      "eloAway": 1928,
-      "eloHomeAdj": 1548,
-      "eloAwayAdj": 1928,
-      "kalshiHome": 0,
-      "kalshiAway": 2,
-      "injuries": [],
-      "keyFactor": "Defensa belga sin Gnabry debe contener velocidad neozelandesa"
+      "eloHome": 1870,
+      "eloAway": 2048,
+      "eloHomeAdj": 1870,
+      "eloAwayAdj": 2038,
+      "kalshiHome": 1,
+      "kalshiAway": 17,
+      "injuries": [
+        "España: Yamal (duda)"
+      ],
+      "keyFactor": "España posesión sin Yamal; Uruguay presión defensiva."
     },
     {
       "match": "Egipto vs Irán",
-      "date": "2026-06-27",
-      "time": "00:00",
+      "date": "2026-06-26",
+      "time": "23:00",
       "group": "G",
       "jornada": 3,
       "venue": "Seattle",
@@ -3385,7 +3344,7 @@
       ],
       "confidence": 79,
       "favorito": "Egipto",
-      "sources": "ELO+Bookmakers(43)",
+      "sources": "ELO+Bookmakers(44)",
       "hasBookmakerOdds": true,
       "hasKalshi": false,
       "eloHome": 1695,
@@ -3395,100 +3354,15 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Irán presión alta física ante Egipto defensivamente vulnerable"
+      "keyFactor": "Irán presiona alto; Egipto necesita transiciones rápidas defensivas."
     },
     {
-      "match": "Jordania vs Argentina",
-      "date": "2026-06-27",
-      "time": "00:00",
-      "group": "J",
+      "match": "Nueva Zelanda vs Bélgica",
+      "date": "2026-06-26",
+      "time": "23:00",
+      "group": "G",
       "jornada": 3,
-      "venue": "Dallas",
-      "probHome": 6,
-      "probDraw": 19,
-      "probAway": 75,
-      "predictedScore": "0-2",
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 11.1
-        },
-        {
-          "score": "0-2",
-          "prob": 10.2
-        },
-        {
-          "score": "1-2",
-          "prob": 9.5
-        }
-      ],
-      "confidence": 80,
-      "favorito": "Argentina",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
-      "eloHome": 1601,
-      "eloAway": 2142,
-      "eloHomeAdj": 1601,
-      "eloAwayAdj": 2122,
-      "kalshiHome": 0,
-      "kalshiAway": 9,
-      "injuries": [
-        "Argentina: Foyth (Aquiles)",
-        "Argentina: Panichelli (LCA)"
-      ],
-      "keyFactor": "Argentina dominio posicional pese ausencias; Jordania contraataque directo"
-    },
-    {
-      "match": "Argelia vs Austria",
-      "date": "2026-06-27",
-      "time": "00:00",
-      "group": "J",
-      "jornada": 3,
-      "venue": "Kansas City",
-      "probHome": 30,
-      "probDraw": 28,
-      "probAway": 42,
-      "predictedScore": "0-1",
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "top3Scores": [
-        {
-          "score": "0-1",
-          "prob": 9.5
-        },
-        {
-          "score": "1-2",
-          "prob": 8.8
-        },
-        {
-          "score": "0-2",
-          "prob": 7.8
-        }
-      ],
-      "confidence": 77,
-      "favorito": "Austria",
-      "sources": "ELO+Bookmakers(43)",
-      "hasBookmakerOdds": true,
-      "hasKalshi": false,
-      "eloHome": 1714,
-      "eloAway": 1766,
-      "eloHomeAdj": 1714,
-      "eloAwayAdj": 1766,
-      "kalshiHome": 0,
-      "kalshiAway": 0,
-      "injuries": [],
-      "keyFactor": "Austria control mediocampo técnico supera potencial físico Argelia"
-    },
-    {
-      "match": "Panamá vs Inglaterra",
-      "date": "2026-06-27",
-      "time": "19:00",
-      "group": "L",
-      "jornada": 3,
-      "venue": "MetLife, NJ",
+      "venue": "Vancouver",
       "probHome": 10,
       "probDraw": 21,
       "probAway": 70,
@@ -3497,38 +3371,79 @@
       "awayGoals": 2,
       "top3Scores": [
         {
-          "score": "0-1",
-          "prob": 12.8
-        },
-        {
           "score": "0-2",
           "prob": 11.9
         },
         {
+          "score": "0-1",
+          "prob": 11.5
+        },
+        {
           "score": "1-2",
-          "prob": 9.4
+          "prob": 9.7
         }
       ],
       "confidence": 81,
-      "favorito": "Inglaterra",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
+      "favorito": "Bélgica",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
-      "eloHome": 1623,
-      "eloAway": 2021,
-      "eloHomeAdj": 1623,
-      "eloAwayAdj": 2011,
+      "eloHome": 1548,
+      "eloAway": 1928,
+      "eloHomeAdj": 1548,
+      "eloAwayAdj": 1928,
       "kalshiHome": 0,
-      "kalshiAway": 11,
+      "kalshiAway": 2,
+      "injuries": [],
+      "keyFactor": "Bélgica domina; Nueva Zelanda debe defender compacta sin balón."
+    },
+    {
+      "match": "Inglaterra vs Panamá",
+      "date": "2026-06-27",
+      "time": "17:00",
+      "group": "L",
+      "jornada": 3,
+      "venue": "MetLife, NJ",
+      "probHome": 67,
+      "probDraw": 26,
+      "probAway": 7,
+      "predictedScore": "2-0",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 12.9
+        },
+        {
+          "score": "2-0",
+          "prob": 12.5
+        },
+        {
+          "score": "2-1",
+          "prob": 9.4
+        }
+      ],
+      "confidence": 80,
+      "favorito": "Inglaterra",
+      "sources": "ELO+Kalshi",
+      "hasBookmakerOdds": false,
+      "hasKalshi": true,
+      "eloHome": 2021,
+      "eloAway": 1623,
+      "eloHomeAdj": 2011,
+      "eloAwayAdj": 1623,
+      "kalshiHome": 11,
+      "kalshiAway": 0,
       "injuries": [
         "Inglaterra: Grealish (pie)"
       ],
-      "keyFactor": "Inglaterra intensidad sin Grealish; Panamá resistencia táctica defensiva"
+      "keyFactor": "Inglaterra sin Grealish: menos creatividad en banda izquierda."
     },
     {
       "match": "Croacia vs Ghana",
       "date": "2026-06-27",
-      "time": "19:00",
+      "time": "17:00",
       "group": "L",
       "jornada": 3,
       "venue": "Philadelphia",
@@ -3554,7 +3469,7 @@
       ],
       "confidence": 78,
       "favorito": "Croacia",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
+      "sources": "ELO+Bookmakers(44)+Kalshi",
       "hasBookmakerOdds": true,
       "hasKalshi": true,
       "eloHome": 1882,
@@ -3566,89 +3481,174 @@
       "injuries": [
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Croacia movilidad lateral reducida; Ghana presión constante ofensiva"
+      "keyFactor": "Gvardiol lesionado: Croacia vulnerable en defensa lateral derecha."
     },
     {
-      "match": "Colombia vs Portugal",
+      "match": "Portugal vs Colombia",
       "date": "2026-06-27",
-      "time": "21:30",
+      "time": "19:30",
       "group": "K",
       "jornada": 3,
       "venue": "Miami",
-      "probHome": 26,
-      "probDraw": 28,
-      "probAway": 46,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
+      "probHome": 55,
+      "probDraw": 26,
+      "probAway": 19,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
       "top3Scores": [
         {
-          "score": "1-2",
-          "prob": 8.7
+          "score": "2-1",
+          "prob": 9
         },
         {
-          "score": "0-1",
-          "prob": 6.1
+          "score": "1-0",
+          "prob": 6.4
         },
         {
-          "score": "0-2",
-          "prob": 5.9
+          "score": "2-0",
+          "prob": 6.4
         }
       ],
-      "confidence": 76,
+      "confidence": 79,
       "favorito": "Portugal",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
-      "hasBookmakerOdds": true,
+      "sources": "ELO+Kalshi",
+      "hasBookmakerOdds": false,
       "hasKalshi": true,
-      "eloHome": 1852,
-      "eloAway": 1975,
-      "eloHomeAdj": 1852,
-      "eloAwayAdj": 1975,
-      "kalshiHome": 2,
-      "kalshiAway": 11,
+      "eloHome": 1975,
+      "eloAway": 1852,
+      "eloHomeAdj": 1975,
+      "eloAwayAdj": 1852,
+      "kalshiHome": 11,
+      "kalshiAway": 2,
       "injuries": [],
-      "keyFactor": "Portugal posesión control ritmo ante Colombia contra-presión agresiva"
+      "keyFactor": "Portugal intensidad alta; Colombia contraataque rápido con espacios."
     },
     {
-      "match": "Uzbekistán vs RD Congo",
+      "match": "RD Congo vs Uzbekistán",
       "date": "2026-06-27",
-      "time": "21:30",
+      "time": "19:30",
       "group": "K",
       "jornada": 3,
       "venue": "Atlanta",
-      "probHome": 45,
-      "probDraw": 26,
-      "probAway": 29,
+      "probHome": 40,
+      "probDraw": 28,
+      "probAway": 32,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
       "top3Scores": [
         {
           "score": "1-0",
+          "prob": 8
+        },
+        {
+          "score": "2-1",
+          "prob": 6.9
+        },
+        {
+          "score": "2-0",
+          "prob": 5.1
+        }
+      ],
+      "confidence": 80,
+      "favorito": "RD Congo",
+      "sources": "ELO+Bookmakers(44)",
+      "hasBookmakerOdds": true,
+      "hasKalshi": false,
+      "eloHome": 1638,
+      "eloAway": 1672,
+      "eloHomeAdj": 1638,
+      "eloAwayAdj": 1672,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
+      "injuries": [],
+      "keyFactor": "Uzbekistán táctico; RD Congo necesita precisión pases largos."
+    },
+    {
+      "match": "Argentina vs Jordania",
+      "date": "2026-06-27",
+      "time": "22:00",
+      "group": "J",
+      "jornada": 3,
+      "venue": "Dallas",
+      "probHome": 69,
+      "probDraw": 26,
+      "probAway": 5,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "top3Scores": [
+        {
+          "score": "1-0",
+          "prob": 11.3
+        },
+        {
+          "score": "2-0",
           "prob": 10.9
         },
         {
           "score": "2-1",
-          "prob": 8.9
-        },
-        {
-          "score": "2-0",
-          "prob": 8.8
+          "prob": 9.6
         }
       ],
-      "confidence": 70,
-      "favorito": "Uzbekistán",
-      "sources": "ELO",
+      "confidence": 79,
+      "favorito": "Argentina",
+      "sources": "ELO+Kalshi",
       "hasBookmakerOdds": false,
+      "hasKalshi": true,
+      "eloHome": 2142,
+      "eloAway": 1601,
+      "eloHomeAdj": 2122,
+      "eloAwayAdj": 1601,
+      "kalshiHome": 9,
+      "kalshiAway": 0,
+      "injuries": [
+        "Argentina: Foyth (Aquiles)",
+        "Argentina: Panichelli (LCA)"
+      ],
+      "keyFactor": "Argentina abruma: Jordania cierra espacios, evita errores defensivos."
+    },
+    {
+      "match": "Argelia vs Austria",
+      "date": "2026-06-27",
+      "time": "22:00",
+      "group": "J",
+      "jornada": 3,
+      "venue": "Kansas City",
+      "probHome": 30,
+      "probDraw": 28,
+      "probAway": 42,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "top3Scores": [
+        {
+          "score": "0-1",
+          "prob": 9.5
+        },
+        {
+          "score": "1-2",
+          "prob": 8.8
+        },
+        {
+          "score": "0-2",
+          "prob": 7.8
+        }
+      ],
+      "confidence": 77,
+      "favorito": "Austria",
+      "sources": "ELO+Bookmakers(44)",
+      "hasBookmakerOdds": true,
       "hasKalshi": false,
-      "eloHome": 1672,
-      "eloAway": 1638,
-      "eloHomeAdj": 1672,
-      "eloAwayAdj": 1638,
+      "eloHome": 1714,
+      "eloAway": 1766,
+      "eloHomeAdj": 1714,
+      "eloAwayAdj": 1766,
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Uzbekistán transiciones rápidas técnica superior contra RD Congo físico"
+      "keyFactor": "Austria presiona; Argelia busca transiciones rápidas hacia adelante."
     }
   ],
   "fixtures": [
@@ -3662,8 +3662,8 @@
       "venue": "Azteca, CDMX"
     },
     {
-      "date": "2026-06-12",
-      "time": "00:00",
+      "date": "2026-06-11",
+      "time": "22:00",
       "group": "A",
       "home": "Corea del Sur",
       "away": "Rep. Checa",
@@ -3672,7 +3672,7 @@
     },
     {
       "date": "2026-06-12",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "home": "Canadá",
       "away": "Bosnia y Herz.",
@@ -3681,7 +3681,7 @@
     },
     {
       "date": "2026-06-12",
-      "time": "23:00",
+      "time": "21:00",
       "group": "D",
       "home": "EE.UU.",
       "away": "Paraguay",
@@ -3690,16 +3690,7 @@
     },
     {
       "date": "2026-06-13",
-      "time": "00:00",
-      "group": "D",
-      "home": "Australia",
-      "away": "Turquía",
-      "j": 1,
-      "venue": "Vancouver"
-    },
-    {
-      "date": "2026-06-13",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "home": "Catar",
       "away": "Suiza",
@@ -3708,7 +3699,7 @@
     },
     {
       "date": "2026-06-13",
-      "time": "20:00",
+      "time": "18:00",
       "group": "C",
       "home": "Brasil",
       "away": "Marruecos",
@@ -3717,7 +3708,7 @@
     },
     {
       "date": "2026-06-13",
-      "time": "23:00",
+      "time": "21:00",
       "group": "C",
       "home": "Haití",
       "away": "Escocia",
@@ -3727,15 +3718,15 @@
     {
       "date": "2026-06-14",
       "time": "00:00",
-      "group": "F",
-      "home": "Suecia",
-      "away": "Túnez",
+      "group": "D",
+      "home": "Australia",
+      "away": "Turquía",
       "j": 1,
-      "venue": "Monterrey"
+      "venue": "Vancouver"
     },
     {
       "date": "2026-06-14",
-      "time": "15:00",
+      "time": "13:00",
       "group": "E",
       "home": "Alemania",
       "away": "Curazao",
@@ -3744,7 +3735,7 @@
     },
     {
       "date": "2026-06-14",
-      "time": "18:00",
+      "time": "16:00",
       "group": "F",
       "home": "Países Bajos",
       "away": "Japón",
@@ -3753,7 +3744,7 @@
     },
     {
       "date": "2026-06-14",
-      "time": "21:00",
+      "time": "19:00",
       "group": "E",
       "home": "C. Marfil",
       "away": "Ecuador",
@@ -3761,8 +3752,17 @@
       "venue": "Philadelphia"
     },
     {
+      "date": "2026-06-14",
+      "time": "22:00",
+      "group": "F",
+      "home": "Suecia",
+      "away": "Túnez",
+      "j": 1,
+      "venue": "Monterrey"
+    },
+    {
       "date": "2026-06-15",
-      "time": "14:00",
+      "time": "12:00",
       "group": "H",
       "home": "España",
       "away": "Cabo Verde",
@@ -3771,7 +3771,7 @@
     },
     {
       "date": "2026-06-15",
-      "time": "17:00",
+      "time": "15:00",
       "group": "G",
       "home": "Bélgica",
       "away": "Egipto",
@@ -3780,7 +3780,7 @@
     },
     {
       "date": "2026-06-15",
-      "time": "20:00",
+      "time": "18:00",
       "group": "H",
       "home": "Arabia Saudita",
       "away": "Uruguay",
@@ -3789,7 +3789,7 @@
     },
     {
       "date": "2026-06-15",
-      "time": "23:00",
+      "time": "21:00",
       "group": "G",
       "home": "Irán",
       "away": "Nueva Zelanda",
@@ -3798,25 +3798,7 @@
     },
     {
       "date": "2026-06-16",
-      "time": "00:00",
-      "group": "J",
-      "home": "Argentina",
-      "away": "Argelia",
-      "j": 1,
-      "venue": "Kansas City"
-    },
-    {
-      "date": "2026-06-16",
-      "time": "02:00",
-      "group": "J",
-      "home": "Austria",
-      "away": "Jordania",
-      "j": 1,
-      "venue": "San Francisco"
-    },
-    {
-      "date": "2026-06-16",
-      "time": "17:00",
+      "time": "15:00",
       "group": "I",
       "home": "Francia",
       "away": "Senegal",
@@ -3825,7 +3807,7 @@
     },
     {
       "date": "2026-06-16",
-      "time": "19:00",
+      "time": "18:00",
       "group": "I",
       "home": "Irak",
       "away": "Noruega",
@@ -3833,17 +3815,26 @@
       "venue": "Boston"
     },
     {
-      "date": "2026-06-17",
-      "time": "00:00",
-      "group": "K",
-      "home": "Uzbekistán",
-      "away": "Colombia",
+      "date": "2026-06-16",
+      "time": "21:00",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Argelia",
       "j": 1,
-      "venue": "Azteca, CDMX"
+      "venue": "Kansas City"
     },
     {
       "date": "2026-06-17",
-      "time": "15:00",
+      "time": "00:00",
+      "group": "J",
+      "home": "Austria",
+      "away": "Jordania",
+      "j": 1,
+      "venue": "San Francisco"
+    },
+    {
+      "date": "2026-06-17",
+      "time": "13:00",
       "group": "K",
       "home": "Portugal",
       "away": "RD Congo",
@@ -3852,7 +3843,7 @@
     },
     {
       "date": "2026-06-17",
-      "time": "18:00",
+      "time": "16:00",
       "group": "L",
       "home": "Inglaterra",
       "away": "Croacia",
@@ -3861,7 +3852,7 @@
     },
     {
       "date": "2026-06-17",
-      "time": "21:00",
+      "time": "19:00",
       "group": "L",
       "home": "Ghana",
       "away": "Panamá",
@@ -3869,8 +3860,17 @@
       "venue": "Toronto"
     },
     {
+      "date": "2026-06-17",
+      "time": "22:00",
+      "group": "K",
+      "home": "Uzbekistán",
+      "away": "Colombia",
+      "j": 1,
+      "venue": "Azteca, CDMX"
+    },
+    {
       "date": "2026-06-18",
-      "time": "14:00",
+      "time": "12:00",
       "group": "A",
       "home": "Rep. Checa",
       "away": "Sudáfrica",
@@ -3879,7 +3879,7 @@
     },
     {
       "date": "2026-06-18",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "home": "Suiza",
       "away": "Bosnia y Herz.",
@@ -3888,7 +3888,7 @@
     },
     {
       "date": "2026-06-18",
-      "time": "20:00",
+      "time": "18:00",
       "group": "B",
       "home": "Canadá",
       "away": "Catar",
@@ -3897,7 +3897,7 @@
     },
     {
       "date": "2026-06-18",
-      "time": "23:00",
+      "time": "22:00",
       "group": "A",
       "home": "México",
       "away": "Corea del Sur",
@@ -3906,16 +3906,7 @@
     },
     {
       "date": "2026-06-19",
-      "time": "00:00",
-      "group": "D",
-      "home": "Turquía",
-      "away": "Paraguay",
-      "j": 2,
-      "venue": "San Francisco"
-    },
-    {
-      "date": "2026-06-19",
-      "time": "17:00",
+      "time": "15:00",
       "group": "D",
       "home": "EE.UU.",
       "away": "Australia",
@@ -3924,7 +3915,16 @@
     },
     {
       "date": "2026-06-19",
-      "time": "20:00",
+      "time": "18:00",
+      "group": "C",
+      "home": "Escocia",
+      "away": "Marruecos",
+      "j": 2,
+      "venue": "Boston"
+    },
+    {
+      "date": "2026-06-19",
+      "time": "21:00",
       "group": "C",
       "home": "Brasil",
       "away": "Haití",
@@ -3934,24 +3934,15 @@
     {
       "date": "2026-06-19",
       "time": "23:00",
-      "group": "C",
-      "home": "Escocia",
-      "away": "Marruecos",
+      "group": "D",
+      "home": "Turquía",
+      "away": "Paraguay",
       "j": 2,
-      "venue": "Boston"
+      "venue": "San Francisco"
     },
     {
       "date": "2026-06-20",
-      "time": "00:00",
-      "group": "F",
-      "home": "Japón",
-      "away": "Túnez",
-      "j": 2,
-      "venue": "Monterrey"
-    },
-    {
-      "date": "2026-06-20",
-      "time": "15:00",
+      "time": "13:00",
       "group": "F",
       "home": "Países Bajos",
       "away": "Suecia",
@@ -3960,7 +3951,7 @@
     },
     {
       "date": "2026-06-20",
-      "time": "18:00",
+      "time": "16:00",
       "group": "E",
       "home": "Alemania",
       "away": "C. Marfil",
@@ -3969,7 +3960,7 @@
     },
     {
       "date": "2026-06-20",
-      "time": "22:00",
+      "time": "20:00",
       "group": "E",
       "home": "Ecuador",
       "away": "Curazao",
@@ -3978,7 +3969,16 @@
     },
     {
       "date": "2026-06-21",
-      "time": "14:00",
+      "time": "00:00",
+      "group": "F",
+      "home": "Túnez",
+      "away": "Japón",
+      "j": 2,
+      "venue": "Monterrey"
+    },
+    {
+      "date": "2026-06-21",
+      "time": "12:00",
       "group": "H",
       "home": "España",
       "away": "Arabia Saudita",
@@ -3987,7 +3987,7 @@
     },
     {
       "date": "2026-06-21",
-      "time": "17:00",
+      "time": "15:00",
       "group": "G",
       "home": "Bélgica",
       "away": "Irán",
@@ -3996,34 +3996,25 @@
     },
     {
       "date": "2026-06-21",
-      "time": "20:00",
+      "time": "18:00",
       "group": "H",
-      "home": "Cabo Verde",
-      "away": "Uruguay",
+      "home": "Uruguay",
+      "away": "Cabo Verde",
       "j": 2,
       "venue": "Miami"
     },
     {
       "date": "2026-06-21",
-      "time": "23:00",
+      "time": "21:00",
       "group": "G",
-      "home": "Egipto",
-      "away": "Nueva Zelanda",
+      "home": "Nueva Zelanda",
+      "away": "Egipto",
       "j": 2,
       "venue": "Vancouver"
     },
     {
       "date": "2026-06-22",
-      "time": "01:00",
-      "group": "J",
-      "home": "Jordania",
-      "away": "Argelia",
-      "j": 2,
-      "venue": "San Francisco"
-    },
-    {
-      "date": "2026-06-22",
-      "time": "15:00",
+      "time": "13:00",
       "group": "J",
       "home": "Argentina",
       "away": "Austria",
@@ -4032,7 +4023,7 @@
     },
     {
       "date": "2026-06-22",
-      "time": "19:00",
+      "time": "17:00",
       "group": "I",
       "home": "Francia",
       "away": "Irak",
@@ -4041,7 +4032,7 @@
     },
     {
       "date": "2026-06-22",
-      "time": "22:00",
+      "time": "20:00",
       "group": "I",
       "home": "Noruega",
       "away": "Senegal",
@@ -4049,8 +4040,17 @@
       "venue": "MetLife, NJ"
     },
     {
+      "date": "2026-06-22",
+      "time": "23:00",
+      "group": "J",
+      "home": "Jordania",
+      "away": "Argelia",
+      "j": 2,
+      "venue": "San Francisco"
+    },
+    {
       "date": "2026-06-23",
-      "time": "00:00",
+      "time": "13:00",
       "group": "K",
       "home": "Portugal",
       "away": "Uzbekistán",
@@ -4059,16 +4059,7 @@
     },
     {
       "date": "2026-06-23",
-      "time": "00:00",
-      "group": "K",
-      "home": "RD Congo",
-      "away": "Colombia",
-      "j": 2,
-      "venue": "Guadalajara"
-    },
-    {
-      "date": "2026-06-23",
-      "time": "18:00",
+      "time": "16:00",
       "group": "L",
       "home": "Inglaterra",
       "away": "Ghana",
@@ -4077,16 +4068,25 @@
     },
     {
       "date": "2026-06-23",
-      "time": "21:00",
+      "time": "19:00",
       "group": "L",
-      "home": "Croacia",
-      "away": "Panamá",
+      "home": "Panamá",
+      "away": "Croacia",
       "j": 2,
       "venue": "Toronto"
     },
     {
+      "date": "2026-06-23",
+      "time": "22:00",
+      "group": "K",
+      "home": "Colombia",
+      "away": "RD Congo",
+      "j": 2,
+      "venue": "Guadalajara"
+    },
+    {
       "date": "2026-06-24",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "home": "Suiza",
       "away": "Canadá",
@@ -4095,7 +4095,7 @@
     },
     {
       "date": "2026-06-24",
-      "time": "17:00",
+      "time": "15:00",
       "group": "B",
       "home": "Bosnia y Herz.",
       "away": "Catar",
@@ -4104,7 +4104,7 @@
     },
     {
       "date": "2026-06-24",
-      "time": "20:00",
+      "time": "18:00",
       "group": "C",
       "home": "Brasil",
       "away": "Escocia",
@@ -4113,7 +4113,7 @@
     },
     {
       "date": "2026-06-24",
-      "time": "20:00",
+      "time": "18:00",
       "group": "C",
       "home": "Marruecos",
       "away": "Haití",
@@ -4122,7 +4122,7 @@
     },
     {
       "date": "2026-06-24",
-      "time": "23:00",
+      "time": "21:00",
       "group": "A",
       "home": "México",
       "away": "Rep. Checa",
@@ -4131,7 +4131,7 @@
     },
     {
       "date": "2026-06-24",
-      "time": "23:00",
+      "time": "21:00",
       "group": "A",
       "home": "Sudáfrica",
       "away": "Corea del Sur",
@@ -4140,34 +4140,7 @@
     },
     {
       "date": "2026-06-25",
-      "time": "00:00",
-      "group": "D",
-      "home": "EE.UU.",
-      "away": "Turquía",
-      "j": 3,
-      "venue": "Dallas"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "00:00",
-      "group": "D",
-      "home": "Paraguay",
-      "away": "Australia",
-      "j": 3,
-      "venue": "San Francisco"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "18:00",
-      "group": "E",
-      "home": "Ecuador",
-      "away": "Alemania",
-      "j": 3,
-      "venue": "MetLife, NJ"
-    },
-    {
-      "date": "2026-06-25",
-      "time": "18:00",
+      "time": "16:00",
       "group": "E",
       "home": "Curazao",
       "away": "C. Marfil",
@@ -4176,25 +4149,52 @@
     },
     {
       "date": "2026-06-25",
-      "time": "21:00",
+      "time": "16:00",
+      "group": "E",
+      "home": "Ecuador",
+      "away": "Alemania",
+      "j": 3,
+      "venue": "MetLife, NJ"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "19:00",
       "group": "F",
-      "home": "Túnez",
-      "away": "Países Bajos",
+      "home": "Japón",
+      "away": "Suecia",
       "j": 3,
       "venue": "Dallas"
     },
     {
       "date": "2026-06-25",
-      "time": "21:00",
+      "time": "19:00",
       "group": "F",
-      "home": "Japón",
-      "away": "Suecia",
+      "home": "Túnez",
+      "away": "Países Bajos",
       "j": 3,
       "venue": "Kansas City"
     },
     {
+      "date": "2026-06-25",
+      "time": "22:00",
+      "group": "D",
+      "home": "Turquía",
+      "away": "EE.UU.",
+      "j": 3,
+      "venue": "Los Ángeles"
+    },
+    {
+      "date": "2026-06-25",
+      "time": "22:00",
+      "group": "D",
+      "home": "Paraguay",
+      "away": "Australia",
+      "j": 3,
+      "venue": "San Francisco"
+    },
+    {
       "date": "2026-06-26",
-      "time": "17:00",
+      "time": "15:00",
       "group": "I",
       "home": "Noruega",
       "away": "Francia",
@@ -4203,7 +4203,7 @@
     },
     {
       "date": "2026-06-26",
-      "time": "17:00",
+      "time": "15:00",
       "group": "I",
       "home": "Senegal",
       "away": "Irak",
@@ -4212,7 +4212,16 @@
     },
     {
       "date": "2026-06-26",
-      "time": "22:00",
+      "time": "20:00",
+      "group": "H",
+      "home": "Cabo Verde",
+      "away": "Arabia Saudita",
+      "j": 3,
+      "venue": "Houston"
+    },
+    {
+      "date": "2026-06-26",
+      "time": "20:00",
       "group": "H",
       "home": "Uruguay",
       "away": "España",
@@ -4221,16 +4230,16 @@
     },
     {
       "date": "2026-06-26",
-      "time": "22:00",
-      "group": "H",
-      "home": "Cabo Verde",
-      "away": "Arabia Saudita",
+      "time": "23:00",
+      "group": "G",
+      "home": "Egipto",
+      "away": "Irán",
       "j": 3,
-      "venue": "Houston"
+      "venue": "Seattle"
     },
     {
-      "date": "2026-06-27",
-      "time": "00:00",
+      "date": "2026-06-26",
+      "time": "23:00",
       "group": "G",
       "home": "Nueva Zelanda",
       "away": "Bélgica",
@@ -4239,43 +4248,16 @@
     },
     {
       "date": "2026-06-27",
-      "time": "00:00",
-      "group": "G",
-      "home": "Egipto",
-      "away": "Irán",
-      "j": 3,
-      "venue": "Seattle"
-    },
-    {
-      "date": "2026-06-27",
-      "time": "00:00",
-      "group": "J",
-      "home": "Jordania",
-      "away": "Argentina",
-      "j": 3,
-      "venue": "Dallas"
-    },
-    {
-      "date": "2026-06-27",
-      "time": "00:00",
-      "group": "J",
-      "home": "Argelia",
-      "away": "Austria",
-      "j": 3,
-      "venue": "Kansas City"
-    },
-    {
-      "date": "2026-06-27",
-      "time": "19:00",
+      "time": "17:00",
       "group": "L",
-      "home": "Panamá",
-      "away": "Inglaterra",
+      "home": "Inglaterra",
+      "away": "Panamá",
       "j": 3,
       "venue": "MetLife, NJ"
     },
     {
       "date": "2026-06-27",
-      "time": "19:00",
+      "time": "17:00",
       "group": "L",
       "home": "Croacia",
       "away": "Ghana",
@@ -4284,21 +4266,39 @@
     },
     {
       "date": "2026-06-27",
-      "time": "21:30",
+      "time": "19:30",
       "group": "K",
-      "home": "Colombia",
-      "away": "Portugal",
+      "home": "Portugal",
+      "away": "Colombia",
       "j": 3,
       "venue": "Miami"
     },
     {
       "date": "2026-06-27",
-      "time": "21:30",
+      "time": "19:30",
       "group": "K",
-      "home": "Uzbekistán",
-      "away": "RD Congo",
+      "home": "RD Congo",
+      "away": "Uzbekistán",
       "j": 3,
       "venue": "Atlanta"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "22:00",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Jordania",
+      "j": 3,
+      "venue": "Dallas"
+    },
+    {
+      "date": "2026-06-27",
+      "time": "22:00",
+      "group": "J",
+      "home": "Argelia",
+      "away": "Austria",
+      "j": 3,
+      "venue": "Kansas City"
     }
   ],
   "eloRatings": {
@@ -4356,13 +4356,13 @@
     "Turquía": 1,
     "Escocia": 0,
     "Paraguay": 0,
-    "Corea del Sur": 0,
+    "Corea del Sur": 1,
     "Ghana": 0,
     "Australia": 0,
     "Senegal": 1,
     "Suecia": 0,
-    "Noruega": 3,
-    "México": 3,
+    "Noruega": 2,
+    "México": 2,
     "Marruecos": 2,
     "Japón": 2,
     "Ecuador": 1,
@@ -4371,16 +4371,16 @@
     "Canadá": 0,
     "Austria": 0,
     "Uruguay": 1,
-    "EE.UU.": 2,
+    "EE.UU.": 3,
     "Portugal": 11,
     "Países Bajos": 6,
     "Croacia": 1,
     "Inglaterra": 11,
-    "Alemania": 6,
+    "Alemania": 5,
     "Brasil": 9,
     "Bélgica": 2,
     "Argentina": 9,
     "Francia": 17,
-    "España": 18
+    "España": 17
   }
 }
