@@ -1,123 +1,123 @@
 {
-  "lastUpdated": "lunes, 15 de junio de 2026",
-  "lastUpdatedShort": "2026-06-15",
-  "headline": "Francia mantiene favoritismo en vísperas del Mundial 2026 pese a competencia cerrada en el top-3",
-  "globalFavorite": "Francia",
+  "lastUpdated": "martes, 16 de junio de 2026",
+  "lastUpdatedShort": "2026-06-16",
+  "headline": "Argentina mantiene favoritismo en Mundial 2026 pese a bajas defensivas",
+  "globalFavorite": "Argentina",
   "globalFavoriteChange": "estable",
-  "dataSources": "ELO+Lesiones + Kalshi(31) + Bookmakers(51 partidos) + Claude(contexto)",
+  "dataSources": "ELO+Lesiones + Bookmakers(0 partidos) + Claude(contexto)",
   "stats": {
     "predictions": 72,
-    "withBookmakers": 51,
-    "withKalshi": 54
+    "withBookmakers": 0,
+    "withKalshi": 0
   },
   "topNews": [
     {
-      "title": "Brasil pierde a Rodrygo y Militão: golpe ofensivo y defensivo antes de la fase de grupos",
+      "title": "Brasil sufre bajas críticas con Rodrygo y Militão fuera del torneo",
       "impact": "alto",
       "team": "Brasil",
       "type": "lesión",
-      "detail": "ELO ajustado cae de 2034 a 1999 (-35 puntos). Pérdida de profundidad en ataque y defensa central"
+      "detail": "ELO cae de 2034→1999 (-35). Pérdida de creatividad ofensiva y solidez defensiva"
     },
     {
-      "title": "España en alerta por estado de Yamal: dudoso para fase de grupos",
+      "title": "Yamal en duda para España: incertidumbre en ataque español",
       "impact": "alto",
       "team": "España",
       "type": "lesión",
-      "detail": "Incertidumbre sobre extremo clave. ELO ajustado a 2038, por debajo de Francia (2083)"
+      "detail": "ELO ajustado 2038. Joven estrella podría no estar 100% físicamente"
     },
     {
-      "title": "Argentina sufre bajas en defensa: Foyth y Panichelli fuera",
+      "title": "Argentina pierde a Foyth y Panichelli: déficit defensivo moderado",
       "impact": "medio",
       "team": "Argentina",
       "type": "lesión",
-      "detail": "ELO ajustado de 2142 a 2122. Sigue siendo favorito por ranking histórico pero vulnerabilidad defensiva"
+      "detail": "ELO ajustado 2122. Impacto menor en línea defensiva con alternativas disponibles"
     },
     {
-      "title": "Croacia debilitada: Gvardiol cae de 1882 a 1857 ELO",
+      "title": "Gvardiol fuera: Croacia debilitada en defensa",
       "impact": "medio",
       "team": "Croacia",
       "type": "lesión",
-      "detail": "Pérdida del defensa estrella reduce opciones ofensivas desde la zaga"
+      "detail": "ELO cae de 1882→1857 (-25). Pérdida de pilar defensivo clave"
     },
     {
-      "title": "Alemania pierde a Gnabry en fase crítica de preparación",
+      "title": "Francia mantiene plantel íntegro: segundo favorito sin sobresaltos",
       "impact": "medio",
+      "team": "Francia",
+      "type": "otro",
+      "detail": "ELO 2083 sin bajas confirmadas. Posición sólida en segundo lugar"
+    },
+    {
+      "title": "Alemania pierde a Gnabry: ataque renano comprometido",
+      "impact": "bajo",
       "team": "Alemania",
       "type": "lesión",
-      "detail": "ELO cae a 1946. Extremo derecho clave ausente en arranque"
-    },
-    {
-      "title": "Inglaterra sin Grealish: ajuste táctico necesario en banda izquierda",
-      "impact": "bajo",
-      "team": "Inglaterra",
-      "type": "lesión",
-      "detail": "Impacto moderado dado el elenco disponible"
+      "detail": "ELO ajustado 1946. Opciones alternativas en flancos disponibles"
     }
   ],
   "titleContenders": [
     {
-      "team": "Francia",
-      "odds": 18,
+      "team": "Argentina",
+      "odds": 22,
       "trend": "estable",
-      "reason": "ELO 2083 + Kalshi 18%. Favoritismo robusto pese a competencia. Plantilla sin lesiones críticas",
-      "kalshiPrice": 18,
+      "reason": "ELO ajustado 2122 mantiene liderazgo claro. Bajas defensivas (Foyth/Panichelli) absorbibles",
+      "kalshiPrice": 22,
+      "eloRating": 2122
+    },
+    {
+      "team": "Francia",
+      "odds": 20,
+      "trend": "subió",
+      "reason": "ELO 2083 sin lesiones críticas. Segundo favorito consolidado sin sobresaltos",
+      "kalshiPrice": 20,
       "eloRating": 2083
     },
     {
       "team": "España",
-      "odds": 15,
+      "odds": 18,
       "trend": "bajó",
-      "reason": "ELO ajustado a 2038 (de 2048). Incertidumbre Yamal reduce confianza. Kalshi: 15%",
-      "kalshiPrice": 15,
+      "reason": "ELO ajustado 2038 penalizado por incertidumbre Yamal. Tercer puesto cuestionado",
+      "kalshiPrice": 18,
       "eloRating": 2038
     },
     {
-      "team": "Portugal",
-      "odds": 11,
-      "trend": "estable",
-      "reason": "Sin lesiones confirmadas. ELO no aparece en top-8 pero históricamente competitivo. Kalshi: 11%",
-      "kalshiPrice": 11,
-      "eloRating": 1850
-    },
-    {
-      "team": "Argentina",
-      "odds": 9,
-      "trend": "bajó",
-      "reason": "ELO ajustado 2122 (de 2142). Bajas defensivas (Foyth, Panichelli) reducen probabilidad. Kalshi: 9%",
-      "kalshiPrice": 9,
-      "eloRating": 2122
-    },
-    {
-      "team": "Inglaterra",
-      "odds": 10,
-      "trend": "estable",
-      "reason": "Sin lesiones mayores más allá de Grealish. Plantilla profunda. Kalshi: 10%",
-      "kalshiPrice": 10,
-      "eloRating": 1920
-    },
-    {
       "team": "Brasil",
-      "odds": 7,
+      "odds": 16,
       "trend": "bajó",
-      "reason": "ELO colapsa a 1999 (de 2034). Pérdida de Rodrygo y Militão limita ofensiva y defensa. Kalshi: 7%",
-      "kalshiPrice": 7,
+      "reason": "ELO cae 2034→1999 por bajas Rodrygo/Militão. Pérdida de 35 puntos crítica",
+      "kalshiPrice": 16,
       "eloRating": 1999
     },
     {
       "team": "Países Bajos",
-      "odds": 5,
+      "odds": 12,
       "trend": "estable",
-      "reason": "ELO 1976. Sin lesiones críticas reportadas. Outsider sólido. Kalshi: 5%",
-      "kalshiPrice": 5,
+      "reason": "ELO 1976 sin lesiones confirmadas. Cuartofinalista potencial",
+      "kalshiPrice": 12,
       "eloRating": 1976
     },
     {
       "team": "Alemania",
-      "odds": 6,
+      "odds": 11,
       "trend": "bajó",
-      "reason": "ELO ajustado a 1946 (de 1956). Pérdida de Gnabry afecta opciones tácticas. Kalshi: 6%",
-      "kalshiPrice": 6,
+      "reason": "ELO ajustado 1946 tras pérdida Gnabry. Regeneración post-Qatar aún en progreso",
+      "kalshiPrice": 11,
       "eloRating": 1946
+    },
+    {
+      "team": "Croacia",
+      "odds": 8,
+      "trend": "bajó",
+      "reason": "ELO 1857 impactado por Gvardiol. Triatleta agotado tras final 2022",
+      "kalshiPrice": 8,
+      "eloRating": 1857
+    },
+    {
+      "team": "Suiza",
+      "odds": 7,
+      "trend": "estable",
+      "reason": "ELO 1862 sin lesiones confirmadas. Outsider europeo viable",
+      "kalshiPrice": 7,
+      "eloRating": 1862
     }
   ],
   "groups": {
@@ -131,7 +131,7 @@
       "favorite": "México",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "México lidera (ELO:1821, Kalshi:2%)",
+      "keyNews": "México lidera (ELO:1821)",
       "alert": "⚠️ México: Malagón (Aquiles)",
       "standings": [
         {
@@ -175,7 +175,7 @@
       "favorite": "Suiza",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Suiza lidera (ELO:1862, Kalshi:1%)",
+      "keyNews": "Suiza lidera (ELO:1862)",
       "alert": null,
       "standings": [
         {
@@ -219,7 +219,7 @@
       "favorite": "Brasil",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Brasil lidera (ELO:1999, Kalshi:7%)",
+      "keyNews": "Brasil lidera (ELO:1999)",
       "alert": "⚠️ Brasil: Rodrygo (LCA), Militão (muscular)",
       "standings": [
         {
@@ -263,7 +263,7 @@
       "favorite": "Turquía",
       "favoriteOdds": 61,
       "trend": "estable",
-      "keyNews": "Turquía lidera (ELO:1782, Kalshi:1%)",
+      "keyNews": "Turquía lidera (ELO:1782)",
       "alert": null,
       "standings": [
         {
@@ -307,7 +307,7 @@
       "favorite": "Alemania",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Alemania lidera (ELO:1946, Kalshi:6%)",
+      "keyNews": "Alemania lidera (ELO:1946)",
       "alert": "⚠️ Alemania: Gnabry",
       "standings": [
         {
@@ -351,7 +351,7 @@
       "favorite": "Países Bajos",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Países Bajos lidera (ELO:1976, Kalshi:5%)",
+      "keyNews": "Países Bajos lidera (ELO:1976)",
       "alert": null,
       "standings": [
         {
@@ -395,7 +395,7 @@
       "favorite": "Bélgica",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Bélgica lidera (ELO:1928, Kalshi:2%)",
+      "keyNews": "Bélgica lidera (ELO:1928)",
       "alert": null,
       "standings": [
         {
@@ -439,7 +439,7 @@
       "favorite": "España",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "España lidera (ELO:2038, Kalshi:15%)",
+      "keyNews": "España lidera (ELO:2038)",
       "alert": "⚠️ España: Yamal (duda)",
       "standings": [
         {
@@ -483,7 +483,7 @@
       "favorite": "Francia",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Francia lidera (ELO:2083, Kalshi:18%)",
+      "keyNews": "Francia lidera (ELO:2083)",
       "alert": null,
       "standings": [
         {
@@ -527,7 +527,7 @@
       "favorite": "Argentina",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Argentina lidera (ELO:2122, Kalshi:9%)",
+      "keyNews": "Argentina lidera (ELO:2122)",
       "alert": "⚠️ Argentina: Foyth (Aquiles), Panichelli (LCA)",
       "standings": [
         {
@@ -571,7 +571,7 @@
       "favorite": "Portugal",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Portugal lidera (ELO:1975, Kalshi:11%)",
+      "keyNews": "Portugal lidera (ELO:1975)",
       "alert": null,
       "standings": [
         {
@@ -615,7 +615,7 @@
       "favorite": "Inglaterra",
       "favoriteOdds": 88,
       "trend": "estable",
-      "keyNews": "Inglaterra lidera (ELO:2011, Kalshi:10%)",
+      "keyNews": "Inglaterra lidera (ELO:2011)",
       "alert": "⚠️ Inglaterra: Grealish (pie)",
       "standings": [
         {
@@ -658,12 +658,12 @@
       "group": "A",
       "jornada": 1,
       "venue": "Azteca, CDMX",
-      "probHome": 53,
-      "probDraw": 28,
-      "probAway": 19,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
+      "probHome": 58,
+      "probDraw": 26,
+      "probAway": 16,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "1-0",
@@ -678,21 +678,21 @@
           "prob": 8.3
         }
       ],
-      "confidence": 74,
+      "confidence": 70,
       "favorito": "México",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1836,
       "eloAway": 1641,
       "eloHomeAdj": 1821,
       "eloAwayAdj": 1641,
-      "kalshiHome": 2,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "Malagón ausente: defensa sudafricana vulnerable a ataques mexicanos rápidos."
+      "keyFactor": "Malagón baja: defensa mexicana vulnerable sin portero titular."
     },
     {
       "match": "Corea del Sur vs Rep. Checa",
@@ -701,9 +701,9 @@
       "group": "A",
       "jornada": 1,
       "venue": "Guadalajara",
-      "probHome": 54,
+      "probHome": 46,
       "probDraw": 26,
-      "probAway": 20,
+      "probAway": 28,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -721,19 +721,19 @@
           "prob": 7.1
         }
       ],
-      "confidence": 72,
+      "confidence": 70,
       "favorito": "Corea del Sur",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1776,
       "eloAway": 1729,
       "eloHomeAdj": 1776,
       "eloAwayAdj": 1729,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Corea presionará alto; República Checa debe controlar el ritmo."
+      "keyFactor": "Corea presiona alto; República Checa juega contra ritmo asiático."
     },
     {
       "match": "Canadá vs Bosnia y Herz.",
@@ -774,7 +774,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bosnia necesita solidez defensiva; Canadá explotará velocidad en bandas."
+      "keyFactor": "Bosnia física; Canadá necesita control del mediocampo."
     },
     {
       "match": "EE.UU. vs Paraguay",
@@ -783,9 +783,9 @@
       "group": "D",
       "jornada": 1,
       "venue": "SoFi, LA",
-      "probHome": 54,
+      "probHome": 46,
       "probDraw": 26,
-      "probAway": 20,
+      "probAway": 28,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -803,19 +803,19 @@
           "prob": 8.6
         }
       ],
-      "confidence": 72,
+      "confidence": 70,
       "favorito": "EE.UU.",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1768,
       "eloAway": 1718,
       "eloHomeAdj": 1768,
       "eloAwayAdj": 1718,
-      "kalshiHome": 4,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Paraguay sin presión; EE.UU. dominará posesión y espacios."
+      "keyFactor": "Paraguay defensivo; EE.UU. domina posesión y transiciones."
     },
     {
       "match": "Catar vs Suiza",
@@ -824,9 +824,9 @@
       "group": "B",
       "jornada": 1,
       "venue": "San Francisco",
-      "probHome": 14,
+      "probHome": 17,
       "probDraw": 26,
-      "probAway": 60,
+      "probAway": 57,
       "predictedScore": "0-2",
       "homeGoals": 0,
       "awayGoals": 2,
@@ -844,19 +844,19 @@
           "prob": 9.4
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Suiza",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1611,
       "eloAway": 1862,
       "eloHomeAdj": 1611,
       "eloAwayAdj": 1862,
       "kalshiHome": 0,
-      "kalshiAway": 1,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suiza superiormente clasificada; Catar debe defender compacto y contraatacar."
+      "keyFactor": "Suiza superioridad ELO; Catar sin recursos físicos."
     },
     {
       "match": "Brasil vs Marruecos",
@@ -885,22 +885,22 @@
           "prob": 4
         }
       ],
-      "confidence": 81,
+      "confidence": 70,
       "favorito": "Brasil",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 2034,
       "eloAway": 1827,
       "eloHomeAdj": 1999,
       "eloAwayAdj": 1827,
-      "kalshiHome": 7,
-      "kalshiAway": 2,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [
         "Brasil: Rodrygo (LCA)",
         "Brasil: Militão (muscular)"
       ],
-      "keyFactor": "Brasil sin Rodrygo y Militão: profundidad ofensiva pero fragilidad atrás."
+      "keyFactor": "Brasil sin Rodrygo y Militão: defensa frágil ante Marruecos."
     },
     {
       "match": "Haití vs Escocia",
@@ -941,7 +941,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Escocia luchará en mediocampo; Haití debe evitar desgaste físico."
+      "keyFactor": "Escocia técnica; Haití físicamente inferior en resistencia."
     },
     {
       "match": "Australia vs Turquía",
@@ -950,9 +950,9 @@
       "group": "D",
       "jornada": 1,
       "venue": "Vancouver",
-      "probHome": 25,
+      "probHome": 36,
       "probDraw": 26,
-      "probAway": 49,
+      "probAway": 38,
       "predictedScore": "0-1",
       "homeGoals": 0,
       "awayGoals": 1,
@@ -970,19 +970,19 @@
           "prob": 7.1
         }
       ],
-      "confidence": 68,
-      "favorito": "Turquía",
-      "sources": "ELO+Kalshi",
+      "confidence": 70,
+      "favorito": "Equilibrado",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1737,
       "eloAway": 1782,
       "eloHomeAdj": 1737,
       "eloAwayAdj": 1782,
       "kalshiHome": 0,
-      "kalshiAway": 1,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Turquía presiona; Australia requiere equilibrio entre defensa y transiciones."
+      "keyFactor": "Turquía presión defensiva; Australia contraataques rápidos decisivos."
     },
     {
       "match": "Alemania vs Curazao",
@@ -991,9 +991,9 @@
       "group": "E",
       "jornada": 1,
       "venue": "Houston",
-      "probHome": 68,
+      "probHome": 70,
       "probDraw": 26,
-      "probAway": 6,
+      "probAway": 4,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -1011,21 +1011,21 @@
           "prob": 9.3
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Alemania",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1956,
       "eloAway": 1489,
       "eloHomeAdj": 1946,
       "eloAwayAdj": 1489,
-      "kalshiHome": 6,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Alemania: Gnabry"
       ],
-      "keyFactor": "Ausencia Gnabry limita creatividad ofensiva alemana contra Curazao"
+      "keyFactor": "Alemania dominio posesión; Curazao contraataque rápido con espacios."
     },
     {
       "match": "Países Bajos vs Japón",
@@ -1034,12 +1034,12 @@
       "group": "F",
       "jornada": 1,
       "venue": "Dallas",
-      "probHome": 55,
+      "probHome": 57,
       "probDraw": 26,
-      "probAway": 19,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
+      "probAway": 17,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "2-1",
@@ -1054,19 +1054,19 @@
           "prob": 7.8
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Países Bajos",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1976,
       "eloAway": 1808,
       "eloHomeAdj": 1976,
       "eloAwayAdj": 1808,
-      "kalshiHome": 5,
-      "kalshiAway": 2,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Defensa nipona debe contener amplitud ofensiva holandesa sin ceder"
+      "keyFactor": "Países Bajos presión alta; Japón transiciones rápidas laterales."
     },
     {
       "match": "C. Marfil vs Ecuador",
@@ -1107,7 +1107,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Intensidad física ecuatoriana clave contra marfileños sin ritmo"
+      "keyFactor": "Costa Marfil intensidad física; Ecuador control mediocampo posicional."
     },
     {
       "match": "Suecia vs Túnez",
@@ -1116,9 +1116,9 @@
       "group": "F",
       "jornada": 1,
       "venue": "Monterrey",
-      "probHome": 54,
+      "probHome": 47,
       "probDraw": 26,
-      "probAway": 20,
+      "probAway": 27,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -1136,19 +1136,19 @@
           "prob": 9.3
         }
       ],
-      "confidence": 73,
+      "confidence": 70,
       "favorito": "Suecia",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1759,
       "eloAway": 1700,
       "eloHomeAdj": 1759,
       "eloAwayAdj": 1700,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Presión sueca temprana para evitar transiciones rápidas tunecinas"
+      "keyFactor": "Suecia defensa compacta; Túnez amplitud ataque por bandas."
     },
     {
       "match": "España vs Cabo Verde",
@@ -1157,9 +1157,9 @@
       "group": "H",
       "jornada": 1,
       "venue": "Atlanta",
-      "probHome": 67,
+      "probHome": 68,
       "probDraw": 26,
-      "probAway": 7,
+      "probAway": 6,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -1177,21 +1177,21 @@
           "prob": 9.1
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "España",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 2048,
       "eloAway": 1642,
       "eloHomeAdj": 2038,
       "eloAwayAdj": 1642,
-      "kalshiHome": 15,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "Yamal dudoso reduce dinamismo ala derecha española ofensivamente"
+      "keyFactor": "España posesión sin Yamal; Cabo Verde repliegue defensivo profundo."
     },
     {
       "match": "Bélgica vs Egipto",
@@ -1200,39 +1200,39 @@
       "group": "G",
       "jornada": 1,
       "venue": "Seattle",
-      "probHome": 38,
-      "probDraw": 29,
-      "probAway": 32,
-      "predictedScore": "1-1",
-      "homeGoals": 1,
+      "probHome": 61,
+      "probDraw": 26,
+      "probAway": 13,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
       "awayGoals": 1,
       "top3Scores": [
         {
-          "score": "1-1",
-          "prob": 14.2
+          "score": "1-0",
+          "prob": 11.1
         },
         {
-          "score": "0-0",
-          "prob": 10.5
+          "score": "2-0",
+          "prob": 9.2
         },
         {
-          "score": "2-2",
-          "prob": 4.4
+          "score": "2-1",
+          "prob": 9
         }
       ],
-      "confidence": 59,
+      "confidence": 70,
       "favorito": "Bélgica",
-      "sources": "ELO+Bookmakers(41)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1928,
       "eloAway": 1695,
       "eloHomeAdj": 1928,
       "eloAwayAdj": 1695,
-      "kalshiHome": 2,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Belgrado sin Gnabry busca control posicional contra Egipto defensivo"
+      "keyFactor": "Bélgica creatividad ofensiva; Egipto organización defensiva estructura cinco."
     },
     {
       "match": "Arabia Saudita vs Uruguay",
@@ -1241,12 +1241,12 @@
       "group": "H",
       "jornada": 1,
       "venue": "Miami",
-      "probHome": 15,
-      "probDraw": 24,
-      "probAway": 62,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
+      "probHome": 23,
+      "probDraw": 26,
+      "probAway": 51,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "0-1",
@@ -1261,19 +1261,19 @@
           "prob": 8.8
         }
       ],
-      "confidence": 76,
+      "confidence": 70,
       "favorito": "Uruguay",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1693,
       "eloAway": 1870,
       "eloHomeAdj": 1693,
       "eloAwayAdj": 1870,
       "kalshiHome": 0,
-      "kalshiAway": 1,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Uruguay explota velocidad para contrataque saudita desordenado defensivamente"
+      "keyFactor": "Arabia Saudita presión inicial; Uruguay combinación rápida vertical directa."
     },
     {
       "match": "Irán vs Nueva Zelanda",
@@ -1282,9 +1282,9 @@
       "group": "G",
       "jornada": 1,
       "venue": "Los Ángeles",
-      "probHome": 56,
-      "probDraw": 27,
-      "probAway": 18,
+      "probHome": 59,
+      "probDraw": 26,
+      "probAway": 15,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -1302,10 +1302,10 @@
           "prob": 9.3
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Irán",
-      "sources": "ELO+Bookmakers(58)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1741,
       "eloAway": 1548,
@@ -1314,7 +1314,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Transiciones rápidas iraníes contra Nueva Zelanda desorganizada tácticamente"
+      "keyFactor": "Irán pressing ofensivo; Nueva Zelanda eficiencia transición contraataque directo."
     },
     {
       "match": "Francia vs Senegal",
@@ -1324,8 +1324,8 @@
       "jornada": 1,
       "venue": "MetLife, NJ",
       "probHome": 65,
-      "probDraw": 24,
-      "probAway": 12,
+      "probDraw": 26,
+      "probAway": 9,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -1343,19 +1343,19 @@
           "prob": 8.9
         }
       ],
-      "confidence": 81,
+      "confidence": 70,
       "favorito": "Francia",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2083,
       "eloAway": 1782,
       "eloHomeAdj": 2083,
       "eloAwayAdj": 1782,
-      "kalshiHome": 18,
-      "kalshiAway": 1,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Francia domina posesión; Senegal contraataca rápido sin balón."
+      "keyFactor": "Control posesional francés versus presión senegalesa en transiciones"
     },
     {
       "match": "Irak vs Noruega",
@@ -1364,9 +1364,9 @@
       "group": "I",
       "jornada": 1,
       "venue": "Boston",
-      "probHome": 11,
-      "probDraw": 19,
-      "probAway": 70,
+      "probHome": 21,
+      "probDraw": 26,
+      "probAway": 53,
       "predictedScore": "1-2",
       "homeGoals": 1,
       "awayGoals": 2,
@@ -1384,19 +1384,19 @@
           "prob": 7.1
         }
       ],
-      "confidence": 75,
+      "confidence": 70,
       "favorito": "Noruega",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1629,
       "eloAway": 1825,
       "eloHomeAdj": 1629,
       "eloAwayAdj": 1825,
       "kalshiHome": 0,
-      "kalshiAway": 2,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Noruega presiona alto; Irak busca juego directo defensivo."
+      "keyFactor": "Defensa iraquí frágil ante velocidad noruega en bandas"
     },
     {
       "match": "Argentina vs Argelia",
@@ -1405,9 +1405,9 @@
       "group": "J",
       "jornada": 1,
       "venue": "Kansas City",
-      "probHome": 68,
-      "probDraw": 23,
-      "probAway": 9,
+      "probHome": 69,
+      "probDraw": 26,
+      "probAway": 5,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -1425,22 +1425,22 @@
           "prob": 8.7
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Argentina",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2142,
       "eloAway": 1714,
       "eloHomeAdj": 2122,
       "eloAwayAdj": 1714,
-      "kalshiHome": 9,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Argentina: Foyth (Aquiles)",
         "Argentina: Panichelli (LCA)"
       ],
-      "keyFactor": "Argentina controla ritmo; Argelia cierra espacios compacta sin Foyth."
+      "keyFactor": "Ausencia Militão debilita defensa argentina contra Argelia"
     },
     {
       "match": "Austria vs Jordania",
@@ -1449,9 +1449,9 @@
       "group": "J",
       "jornada": 1,
       "venue": "San Francisco",
-      "probHome": 66,
-      "probDraw": 21,
-      "probAway": 13,
+      "probHome": 57,
+      "probDraw": 26,
+      "probAway": 17,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -1469,10 +1469,10 @@
           "prob": 9.5
         }
       ],
-      "confidence": 75,
+      "confidence": 70,
       "favorito": "Austria",
-      "sources": "ELO+Bookmakers(58)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1766,
       "eloAway": 1601,
@@ -1481,7 +1481,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Austria ataca lateral; Jordania defiende bloque bajo compacto."
+      "keyFactor": "Dominio austriaco esperado ante Jordania sin presión defensiva"
     },
     {
       "match": "Portugal vs RD Congo",
@@ -1490,12 +1490,12 @@
       "group": "K",
       "jornada": 1,
       "venue": "Houston",
-      "probHome": 71,
-      "probDraw": 21,
-      "probAway": 9,
-      "predictedScore": "3-0",
-      "homeGoals": 3,
-      "awayGoals": 0,
+      "probHome": 66,
+      "probDraw": 26,
+      "probAway": 8,
+      "predictedScore": "2-1",
+      "homeGoals": 2,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "2-1",
@@ -1510,19 +1510,19 @@
           "prob": 7.7
         }
       ],
-      "confidence": 77,
+      "confidence": 70,
       "favorito": "Portugal",
-      "sources": "ELO+Bookmakers(56)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1975,
       "eloAway": 1638,
       "eloHomeAdj": 1975,
       "eloAwayAdj": 1638,
-      "kalshiHome": 11,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Portugal circula rápido; Congo cierra centro, vulnerables flancos."
+      "keyFactor": "Portugués aprovecha velocidad lateral sin Gvardiol croata"
     },
     {
       "match": "Inglaterra vs Croacia",
@@ -1551,22 +1551,22 @@
           "prob": 9
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Inglaterra",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2021,
       "eloAway": 1882,
       "eloHomeAdj": 2011,
       "eloAwayAdj": 1857,
-      "kalshiHome": 10,
-      "kalshiAway": 1,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [
         "Inglaterra: Grealish (pie)",
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Inglaterra amplitud con Grealish ausente; Croacia medular fuerte."
+      "keyFactor": "Grealish ausente: Inglaterra carece creatividad ante Croacia metódica"
     },
     {
       "match": "Ghana vs Panamá",
@@ -1575,9 +1575,9 @@
       "group": "L",
       "jornada": 1,
       "venue": "Toronto",
-      "probHome": 46,
-      "probDraw": 27,
-      "probAway": 27,
+      "probHome": 49,
+      "probDraw": 26,
+      "probAway": 25,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -1595,10 +1595,10 @@
           "prob": 8.2
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Ghana",
-      "sources": "ELO+Bookmakers(58)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1701,
       "eloAway": 1623,
@@ -1607,7 +1607,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Ghana presión media; Panamá transiciones rápidas contragolpe ofensivo."
+      "keyFactor": "Panamá contraataque versus Ghana posesión lenta y predecible"
     },
     {
       "match": "Uzbekistán vs Colombia",
@@ -1616,12 +1616,12 @@
       "group": "K",
       "jornada": 1,
       "venue": "Azteca, CDMX",
-      "probHome": 15,
-      "probDraw": 23,
-      "probAway": 63,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
+      "probHome": 23,
+      "probDraw": 26,
+      "probAway": 51,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "0-1",
@@ -1636,19 +1636,19 @@
           "prob": 8.5
         }
       ],
-      "confidence": 76,
+      "confidence": 70,
       "favorito": "Colombia",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1672,
       "eloAway": 1852,
       "eloHomeAdj": 1672,
       "eloAwayAdj": 1852,
       "kalshiHome": 0,
-      "kalshiAway": 2,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Colombia intensidad física; Uzbekistán organización táctica compacta defensiva."
+      "keyFactor": "Colombia velocidad transición compensa defensa uzbeka desorganizada"
     },
     {
       "match": "Rep. Checa vs Sudáfrica",
@@ -1657,9 +1657,9 @@
       "group": "A",
       "jornada": 2,
       "venue": "Atlanta",
-      "probHome": 53,
+      "probHome": 50,
       "probDraw": 26,
-      "probAway": 21,
+      "probAway": 24,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -1677,10 +1677,10 @@
           "prob": 8.9
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Rep. Checa",
-      "sources": "ELO+Bookmakers(58)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1729,
       "eloAway": 1641,
@@ -1689,7 +1689,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Dominio posicional de Rep. Checa ante rival físicamente inferior"
+      "keyFactor": "Rep. Checa dominará posesión; Sudáfrica buscará contragolpes rápidos."
     },
     {
       "match": "Suiza vs Bosnia y Herz.",
@@ -1698,9 +1698,9 @@
       "group": "B",
       "jornada": 2,
       "venue": "Los Ángeles",
-      "probHome": 61,
-      "probDraw": 24,
-      "probAway": 15,
+      "probHome": 57,
+      "probDraw": 26,
+      "probAway": 17,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -1718,19 +1718,19 @@
           "prob": 9.4
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Suiza",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1862,
       "eloAway": 1698,
       "eloHomeAdj": 1862,
       "eloAwayAdj": 1698,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Superioridad técnica suiza; Bosnia busca transiciones rápidas"
+      "keyFactor": "Suiza superior técnicamente; Bosnia resistirá con defensa compacta."
     },
     {
       "match": "Canadá vs Catar",
@@ -1739,9 +1739,9 @@
       "group": "B",
       "jornada": 2,
       "venue": "Vancouver",
-      "probHome": 68,
-      "probDraw": 20,
-      "probAway": 12,
+      "probHome": 56,
+      "probDraw": 26,
+      "probAway": 18,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -1759,10 +1759,10 @@
           "prob": 9.6
         }
       ],
-      "confidence": 72,
+      "confidence": 70,
       "favorito": "Canadá",
-      "sources": "ELO+Bookmakers(58)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1773,
       "eloAway": 1611,
@@ -1771,7 +1771,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Canadá debe contener a Catar; presión alta defensiva"
+      "keyFactor": "Canadá sin Malagón debe reforzar defensa; Catar aprovechará espacios."
     },
     {
       "match": "México vs Corea del Sur",
@@ -1780,9 +1780,9 @@
       "group": "A",
       "jornada": 2,
       "venue": "Guadalajara",
-      "probHome": 47,
-      "probDraw": 28,
-      "probAway": 25,
+      "probHome": 46,
+      "probDraw": 26,
+      "probAway": 28,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -1800,21 +1800,21 @@
           "prob": 5.7
         }
       ],
-      "confidence": 81,
+      "confidence": 70,
       "favorito": "México",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1836,
       "eloAway": 1776,
       "eloHomeAdj": 1821,
       "eloAwayAdj": 1776,
-      "kalshiHome": 2,
-      "kalshiAway": 1,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "México sin Malagón; Corea explota velocidad en bandas"
+      "keyFactor": "México peligroso al ataque; Corea del Sur presionará intensamente."
     },
     {
       "match": "EE.UU. vs Australia",
@@ -1823,9 +1823,9 @@
       "group": "D",
       "jornada": 2,
       "venue": "Seattle",
-      "probHome": 55,
-      "probDraw": 24,
-      "probAway": 21,
+      "probHome": 44,
+      "probDraw": 26,
+      "probAway": 30,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -1843,19 +1843,19 @@
           "prob": 8.7
         }
       ],
-      "confidence": 73,
+      "confidence": 70,
       "favorito": "EE.UU.",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1768,
       "eloAway": 1737,
       "eloHomeAdj": 1768,
       "eloAwayAdj": 1737,
-      "kalshiHome": 4,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "EE.UU. presión alta; Australia contraataque con amplitud"
+      "keyFactor": "EE.UU. intensidad física; Australia contraatacará tras recuperación de balón."
     },
     {
       "match": "Escocia vs Marruecos",
@@ -1864,9 +1864,9 @@
       "group": "C",
       "jornada": 2,
       "venue": "Boston",
-      "probHome": 22,
+      "probHome": 31,
       "probDraw": 26,
-      "probAway": 52,
+      "probAway": 43,
       "predictedScore": "0-1",
       "homeGoals": 0,
       "awayGoals": 1,
@@ -1884,19 +1884,19 @@
           "prob": 7.9
         }
       ],
-      "confidence": 73,
+      "confidence": 70,
       "favorito": "Marruecos",
-      "sources": "ELO+Bookmakers(58)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1733,
       "eloAway": 1827,
       "eloHomeAdj": 1733,
       "eloAwayAdj": 1827,
       "kalshiHome": 0,
-      "kalshiAway": 2,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Marruecos favorito; Escocia cierra espacios defensivos centrales"
+      "keyFactor": "Marruecos presión alta; Escocia necesita transiciones rápidas y precisas."
     },
     {
       "match": "Brasil vs Haití",
@@ -1905,9 +1905,9 @@
       "group": "C",
       "jornada": 2,
       "venue": "Philadelphia",
-      "probHome": 79,
-      "probDraw": 16,
-      "probAway": 5,
+      "probHome": 70,
+      "probDraw": 26,
+      "probAway": 4,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -1925,22 +1925,22 @@
           "prob": 9.6
         }
       ],
-      "confidence": 72,
+      "confidence": 70,
       "favorito": "Brasil",
-      "sources": "ELO+Bookmakers(57)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2034,
       "eloAway": 1541,
       "eloHomeAdj": 1999,
       "eloAwayAdj": 1541,
-      "kalshiHome": 7,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Brasil: Rodrygo (LCA)",
         "Brasil: Militão (muscular)"
       ],
-      "keyFactor": "Brasil domina sin Rodrygo; Haití repliegue profundo defensivo"
+      "keyFactor": "Brasil abrumará; Haití sin defensa central sólida sufrirá."
     },
     {
       "match": "Turquía vs Paraguay",
@@ -1949,9 +1949,9 @@
       "group": "D",
       "jornada": 2,
       "venue": "San Francisco",
-      "probHome": 49,
-      "probDraw": 27,
-      "probAway": 24,
+      "probHome": 48,
+      "probDraw": 26,
+      "probAway": 26,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -1969,19 +1969,19 @@
           "prob": 8.2
         }
       ],
-      "confidence": 73,
+      "confidence": 70,
       "favorito": "Turquía",
-      "sources": "ELO+Bookmakers(57)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1782,
       "eloAway": 1718,
       "eloHomeAdj": 1782,
       "eloAwayAdj": 1718,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Turquía control; Paraguay espera espacios; física determinante"
+      "keyFactor": "Turquía control; Paraguay aprovechará espacios con Rodallega en ataque."
     },
     {
       "match": "Países Bajos vs Suecia",
@@ -1990,9 +1990,9 @@
       "group": "F",
       "jornada": 2,
       "venue": "Houston",
-      "probHome": 58,
-      "probDraw": 25,
-      "probAway": 17,
+      "probHome": 60,
+      "probDraw": 26,
+      "probAway": 14,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2010,19 +2010,19 @@
           "prob": 8.5
         }
       ],
-      "confidence": 81,
+      "confidence": 70,
       "favorito": "Países Bajos",
-      "sources": "ELO+Bookmakers(56)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1976,
       "eloAway": 1759,
       "eloHomeAdj": 1976,
       "eloAwayAdj": 1759,
-      "kalshiHome": 5,
-      "kalshiAway": 1,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Presión holandesa ante defensa sueca compacta y contraataque"
+      "keyFactor": "Presión holandesa al inicio ante Suecia vulnerable físicamente"
     },
     {
       "match": "Alemania vs C. Marfil",
@@ -2031,8 +2031,8 @@
       "group": "E",
       "jornada": 2,
       "venue": "Toronto",
-      "probHome": 61,
-      "probDraw": 24,
+      "probHome": 59,
+      "probDraw": 26,
       "probAway": 15,
       "predictedScore": "2-1",
       "homeGoals": 2,
@@ -2051,21 +2051,21 @@
           "prob": 7.8
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Alemania",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1956,
       "eloAway": 1745,
       "eloHomeAdj": 1946,
       "eloAwayAdj": 1745,
-      "kalshiHome": 6,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Alemania: Gnabry"
       ],
-      "keyFactor": "Control de Alemania sin Gnabry ante Costa de Marfil física"
+      "keyFactor": "Gnabry ausente: Alemania debe adaptar flanco derecho ofensivo"
     },
     {
       "match": "Ecuador vs Curazao",
@@ -2106,7 +2106,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Superioridad técnica ecuatoriana contra equipo inferior Curazao"
+      "keyFactor": "Ecuador controla posesión contra Curazao inferior en calidad"
     },
     {
       "match": "Túnez vs Japón",
@@ -2115,9 +2115,9 @@
       "group": "F",
       "jornada": 2,
       "venue": "Monterrey",
-      "probHome": 22,
+      "probHome": 30,
       "probDraw": 26,
-      "probAway": 52,
+      "probAway": 44,
       "predictedScore": "1-2",
       "homeGoals": 1,
       "awayGoals": 2,
@@ -2135,19 +2135,19 @@
           "prob": 9.4
         }
       ],
-      "confidence": 71,
+      "confidence": 70,
       "favorito": "Japón",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1700,
       "eloAway": 1808,
       "eloHomeAdj": 1700,
       "eloAwayAdj": 1808,
       "kalshiHome": 0,
-      "kalshiAway": 2,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Velocidad ofensiva japonesa vs defensa tunecina desgastada"
+      "keyFactor": "Japón aprovecha velocidad superior sobre Túnez lento defensivamente"
     },
     {
       "match": "España vs Arabia Saudita",
@@ -2156,9 +2156,9 @@
       "group": "H",
       "jornada": 2,
       "venue": "Atlanta",
-      "probHome": 78,
-      "probDraw": 16,
-      "probAway": 5,
+      "probHome": 67,
+      "probDraw": 26,
+      "probAway": 7,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2176,21 +2176,21 @@
           "prob": 9.3
         }
       ],
-      "confidence": 71,
+      "confidence": 70,
       "favorito": "España",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2048,
       "eloAway": 1693,
       "eloHomeAdj": 2038,
       "eloAwayAdj": 1693,
-      "kalshiHome": 15,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "Dominio español sin Yamal ante defensa saudita pasiva"
+      "keyFactor": "Yamal duda: España busca dominio sin su joven talento"
     },
     {
       "match": "Bélgica vs Irán",
@@ -2199,9 +2199,9 @@
       "group": "G",
       "jornada": 2,
       "venue": "Los Ángeles",
-      "probHome": 65,
-      "probDraw": 23,
-      "probAway": 12,
+      "probHome": 58,
+      "probDraw": 26,
+      "probAway": 16,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2219,19 +2219,19 @@
           "prob": 8.5
         }
       ],
-      "confidence": 77,
+      "confidence": 70,
       "favorito": "Bélgica",
-      "sources": "ELO+Bookmakers(43)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1928,
       "eloAway": 1741,
       "eloHomeAdj": 1928,
       "eloAwayAdj": 1741,
-      "kalshiHome": 2,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Transiciones belgas rápidas contra Irán defensivo y ordenado"
+      "keyFactor": "Bélgica impone ritmo físico para contener creatividad iraní"
     },
     {
       "match": "Uruguay vs Cabo Verde",
@@ -2240,8 +2240,8 @@
       "group": "H",
       "jornada": 2,
       "venue": "Miami",
-      "probHome": 64,
-      "probDraw": 24,
+      "probHome": 61,
+      "probDraw": 26,
       "probAway": 13,
       "predictedScore": "2-0",
       "homeGoals": 2,
@@ -2260,19 +2260,19 @@
           "prob": 8.7
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Uruguay",
-      "sources": "ELO+Bookmakers(53)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1870,
       "eloAway": 1642,
       "eloHomeAdj": 1870,
       "eloAwayAdj": 1642,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Ataque uruguayo directo contra Cabo Verde vulnerable defensivamente"
+      "keyFactor": "Uruguay domina aéreo y físico contra Cabo Verde frágil"
     },
     {
       "match": "Nueva Zelanda vs Egipto",
@@ -2281,9 +2281,9 @@
       "group": "G",
       "jornada": 2,
       "venue": "Vancouver",
-      "probHome": 21,
+      "probHome": 26,
       "probDraw": 26,
-      "probAway": 53,
+      "probAway": 48,
       "predictedScore": "0-1",
       "homeGoals": 0,
       "awayGoals": 1,
@@ -2301,10 +2301,10 @@
           "prob": 8.8
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Egipto",
-      "sources": "ELO+Bookmakers(43)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1548,
       "eloAway": 1695,
@@ -2313,7 +2313,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Recuperación balón Nueva Zelanda ante Egipto de posesión"
+      "keyFactor": "Egipto explosividad ofensiva vs Nueva Zelanda defensa compacta"
     },
     {
       "match": "Argentina vs Austria",
@@ -2322,9 +2322,9 @@
       "group": "J",
       "jornada": 2,
       "venue": "Dallas",
-      "probHome": 62,
-      "probDraw": 25,
-      "probAway": 13,
+      "probHome": 67,
+      "probDraw": 26,
+      "probAway": 7,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2342,22 +2342,22 @@
           "prob": 6.6
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Argentina",
-      "sources": "ELO+Bookmakers(55)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2142,
       "eloAway": 1766,
       "eloHomeAdj": 2122,
       "eloAwayAdj": 1766,
-      "kalshiHome": 9,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Argentina: Foyth (Aquiles)",
         "Argentina: Panichelli (LCA)"
       ],
-      "keyFactor": "Argentina sin Foyth: defensa vulnerable a contraataques rápidos austriacos"
+      "keyFactor": "Superioridad ofensiva argentina sin Foyth; presión defensiva continua."
     },
     {
       "match": "Francia vs Irak",
@@ -2366,9 +2366,9 @@
       "group": "I",
       "jornada": 2,
       "venue": "Philadelphia",
-      "probHome": 78,
-      "probDraw": 17,
-      "probAway": 5,
+      "probHome": 70,
+      "probDraw": 26,
+      "probAway": 4,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -2386,19 +2386,19 @@
           "prob": 9.6
         }
       ],
-      "confidence": 72,
+      "confidence": 70,
       "favorito": "Francia",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2083,
       "eloAway": 1629,
       "eloHomeAdj": 2083,
       "eloAwayAdj": 1629,
-      "kalshiHome": 18,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Francia dominará posesión; Irak debe contragolpear con disciplina táctica"
+      "keyFactor": "Control posesional francés en mediocampo contra defensa iraquí débil."
     },
     {
       "match": "Noruega vs Senegal",
@@ -2408,7 +2408,7 @@
       "jornada": 2,
       "venue": "MetLife, NJ",
       "probHome": 46,
-      "probDraw": 27,
+      "probDraw": 26,
       "probAway": 28,
       "predictedScore": "2-1",
       "homeGoals": 2,
@@ -2427,19 +2427,19 @@
           "prob": 7
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Noruega",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1825,
       "eloAway": 1782,
       "eloHomeAdj": 1825,
       "eloAwayAdj": 1782,
-      "kalshiHome": 2,
-      "kalshiAway": 1,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Senegal presionará alto; Noruega necesita transiciones rápidas y directas"
+      "keyFactor": "Intensidad física senegalesa contra ritmo noruego; transiciones rápidas decisivas."
     },
     {
       "match": "Jordania vs Argelia",
@@ -2448,12 +2448,12 @@
       "group": "J",
       "jornada": 2,
       "venue": "San Francisco",
-      "probHome": 19,
-      "probDraw": 24,
-      "probAway": 57,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
+      "probHome": 29,
+      "probDraw": 26,
+      "probAway": 45,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "0-1",
@@ -2468,10 +2468,10 @@
           "prob": 8.2
         }
       ],
-      "confidence": 74,
+      "confidence": 70,
       "favorito": "Argelia",
-      "sources": "ELO+Bookmakers(54)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1601,
       "eloAway": 1714,
@@ -2480,7 +2480,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Argelia favorita ELO; Jordania requiere defensa compacta y organizada"
+      "keyFactor": "Compactación defensiva argelina; contraataques directos contra Jordania."
     },
     {
       "match": "Portugal vs Uzbekistán",
@@ -2489,12 +2489,12 @@
       "group": "K",
       "jornada": 2,
       "venue": "Houston",
-      "probHome": 71,
-      "probDraw": 20,
-      "probAway": 8,
-      "predictedScore": "2-0",
+      "probHome": 65,
+      "probDraw": 26,
+      "probAway": 9,
+      "predictedScore": "2-1",
       "homeGoals": 2,
-      "awayGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "2-1",
@@ -2509,19 +2509,19 @@
           "prob": 7.4
         }
       ],
-      "confidence": 76,
+      "confidence": 70,
       "favorito": "Portugal",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1975,
       "eloAway": 1672,
       "eloHomeAdj": 1975,
       "eloAwayAdj": 1672,
-      "kalshiHome": 11,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Portugal ataque fluido; Uzbekistán debe cerrar espacios interiores defensivos"
+      "keyFactor": "Dominio portugués sin balón; presión alta sobre Uzbekistán."
     },
     {
       "match": "Inglaterra vs Ghana",
@@ -2530,9 +2530,9 @@
       "group": "L",
       "jornada": 2,
       "venue": "Boston",
-      "probHome": 69,
-      "probDraw": 21,
-      "probAway": 10,
+      "probHome": 65,
+      "probDraw": 26,
+      "probAway": 9,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2550,21 +2550,21 @@
           "prob": 9.6
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Inglaterra",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 2021,
       "eloAway": 1701,
       "eloHomeAdj": 2011,
       "eloAwayAdj": 1701,
-      "kalshiHome": 10,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Inglaterra: Grealish (pie)"
       ],
-      "keyFactor": "Grealish ausente: Inglaterra pierde creatividad lateral; Ghana aprovecha flancos"
+      "keyFactor": "Movilidad inglesa sin Grealish; amplitud táctica contra Ghana."
     },
     {
       "match": "Panamá vs Croacia",
@@ -2573,9 +2573,9 @@
       "group": "L",
       "jornada": 2,
       "venue": "Toronto",
-      "probHome": 15,
-      "probDraw": 25,
-      "probAway": 60,
+      "probHome": 18,
+      "probDraw": 26,
+      "probAway": 56,
       "predictedScore": "1-2",
       "homeGoals": 1,
       "awayGoals": 2,
@@ -2593,21 +2593,21 @@
           "prob": 8.7
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Croacia",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1623,
       "eloAway": 1882,
       "eloHomeAdj": 1623,
       "eloAwayAdj": 1857,
       "kalshiHome": 0,
-      "kalshiAway": 1,
+      "kalshiAway": 0,
       "injuries": [
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Croacia experiencia mundial; Panamá debe mantener bloque bajo defensivo"
+      "keyFactor": "Defensa croata sólida pese Gvardiol; contraataque letal panameño."
     },
     {
       "match": "Colombia vs RD Congo",
@@ -2616,9 +2616,9 @@
       "group": "K",
       "jornada": 2,
       "venue": "Guadalajara",
-      "probHome": 63,
-      "probDraw": 24,
-      "probAway": 12,
+      "probHome": 60,
+      "probDraw": 26,
+      "probAway": 14,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2636,19 +2636,19 @@
           "prob": 9.6
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Colombia",
-      "sources": "ELO+Bookmakers(54)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1852,
       "eloAway": 1638,
       "eloHomeAdj": 1852,
       "eloAwayAdj": 1638,
-      "kalshiHome": 2,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Colombia técnica superior; RD Congo necesita intensidad física y presión"
+      "keyFactor": "Técnica colombiana mediocampo; resistencia física ante RD Congo."
     },
     {
       "match": "Suiza vs Canadá",
@@ -2657,8 +2657,8 @@
       "group": "B",
       "jornada": 3,
       "venue": "Vancouver",
-      "probHome": 49,
-      "probDraw": 27,
+      "probHome": 50,
+      "probDraw": 26,
       "probAway": 24,
       "predictedScore": "1-0",
       "homeGoals": 1,
@@ -2677,19 +2677,19 @@
           "prob": 8.7
         }
       ],
-      "confidence": 72,
+      "confidence": 70,
       "favorito": "Suiza",
-      "sources": "ELO+Bookmakers(49)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1862,
       "eloAway": 1773,
       "eloHomeAdj": 1862,
       "eloAwayAdj": 1773,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suiza controlará posesión; Canadá busca contragolpes rápidos y directo."
+      "keyFactor": "Presión alta suiza contra transiciones lentas canadienses."
     },
     {
       "match": "Bosnia y Herz. vs Catar",
@@ -2698,9 +2698,9 @@
       "group": "B",
       "jornada": 3,
       "venue": "Seattle",
-      "probHome": 57,
-      "probDraw": 25,
-      "probAway": 18,
+      "probHome": 50,
+      "probDraw": 26,
+      "probAway": 24,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2718,10 +2718,10 @@
           "prob": 9.7
         }
       ],
-      "confidence": 76,
+      "confidence": 70,
       "favorito": "Bosnia y Herz.",
-      "sources": "ELO+Bookmakers(49)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1698,
       "eloAway": 1611,
@@ -2730,7 +2730,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bosnia presionará alto; Catar dependerá de transiciones defensivas rápidas."
+      "keyFactor": "Control posicional bosnia ante defensa frágil qatarí."
     },
     {
       "match": "Brasil vs Escocia",
@@ -2739,9 +2739,9 @@
       "group": "C",
       "jornada": 3,
       "venue": "Miami",
-      "probHome": 64,
+      "probHome": 63,
       "probDraw": 26,
-      "probAway": 10,
+      "probAway": 11,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -2759,22 +2759,22 @@
           "prob": 6.1
         }
       ],
-      "confidence": 81,
+      "confidence": 70,
       "favorito": "Brasil",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 2034,
       "eloAway": 1733,
       "eloHomeAdj": 1999,
       "eloAwayAdj": 1733,
-      "kalshiHome": 7,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Brasil: Rodrygo (LCA)",
         "Brasil: Militão (muscular)"
       ],
-      "keyFactor": "Brasil sin Rodrygo: lateral izquierdo vulnerable ante presión escocesa constante."
+      "keyFactor": "Velocidad brasileña sin Rodrygo; profundidad escocesa."
     },
     {
       "match": "Marruecos vs Haití",
@@ -2783,8 +2783,8 @@
       "group": "C",
       "jornada": 3,
       "venue": "Atlanta",
-      "probHome": 69,
-      "probDraw": 21,
+      "probHome": 64,
+      "probDraw": 26,
       "probAway": 10,
       "predictedScore": "2-0",
       "homeGoals": 2,
@@ -2803,19 +2803,19 @@
           "prob": 10.3
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Marruecos",
-      "sources": "ELO+Bookmakers(49)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1827,
       "eloAway": 1541,
       "eloHomeAdj": 1827,
       "eloAwayAdj": 1541,
-      "kalshiHome": 2,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Marruecos dominará; Haití necesita bloque bajo y salidas veloces."
+      "keyFactor": "Dominio marroquí físico contra presupuesto limitado haitiano."
     },
     {
       "match": "México vs Rep. Checa",
@@ -2824,12 +2824,12 @@
       "group": "A",
       "jornada": 3,
       "venue": "Azteca, CDMX",
-      "probHome": 56,
+      "probHome": 50,
       "probDraw": 26,
-      "probAway": 18,
-      "predictedScore": "2-1",
-      "homeGoals": 2,
-      "awayGoals": 1,
+      "probAway": 24,
+      "predictedScore": "1-0",
+      "homeGoals": 1,
+      "awayGoals": 0,
       "top3Scores": [
         {
           "score": "1-0",
@@ -2844,21 +2844,21 @@
           "prob": 6.1
         }
       ],
-      "confidence": 74,
+      "confidence": 70,
       "favorito": "México",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1836,
       "eloAway": 1729,
       "eloHomeAdj": 1821,
       "eloAwayAdj": 1729,
-      "kalshiHome": 2,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "México sin Malagón: defensa inestable; República Checa explotará banda derecha."
+      "keyFactor": "Defensa mexicana sin Malagón; pressing checo intenso."
     },
     {
       "match": "Sudáfrica vs Corea del Sur",
@@ -2867,12 +2867,12 @@
       "group": "A",
       "jornada": 3,
       "venue": "Monterrey",
-      "probHome": 19,
-      "probDraw": 25,
-      "probAway": 56,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
+      "probHome": 27,
+      "probDraw": 26,
+      "probAway": 47,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "0-1",
@@ -2887,19 +2887,19 @@
           "prob": 8.8
         }
       ],
-      "confidence": 75,
+      "confidence": 70,
       "favorito": "Corea del Sur",
-      "sources": "ELO+Bookmakers(48)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1641,
       "eloAway": 1776,
       "eloHomeAdj": 1641,
       "eloAwayAdj": 1776,
       "kalshiHome": 0,
-      "kalshiAway": 1,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Corea presionará; Sudáfrica controlará ritmo con posesión inteligente y espacios."
+      "keyFactor": "Transiciones rápidas surafricanas vs estructura defensiva coreana."
     },
     {
       "match": "Curazao vs C. Marfil",
@@ -2940,7 +2940,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Costa Marfil dominará físicamente; Curazao jugará defensivo y contraataques."
+      "keyFactor": "Intensidad marfileña contra desorganización táctica de Curazao."
     },
     {
       "match": "Ecuador vs Alemania",
@@ -2949,9 +2949,9 @@
       "group": "E",
       "jornada": 3,
       "venue": "MetLife, NJ",
-      "probHome": 19,
-      "probDraw": 25,
-      "probAway": 55,
+      "probHome": 22,
+      "probDraw": 26,
+      "probAway": 52,
       "predictedScore": "1-2",
       "homeGoals": 1,
       "awayGoals": 2,
@@ -2969,21 +2969,21 @@
           "prob": 7.8
         }
       ],
-      "confidence": 76,
+      "confidence": 70,
       "favorito": "Alemania",
-      "sources": "ELO+Bookmakers(49)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1752,
       "eloAway": 1956,
       "eloHomeAdj": 1752,
       "eloAwayAdj": 1946,
       "kalshiHome": 0,
-      "kalshiAway": 6,
+      "kalshiAway": 0,
       "injuries": [
         "Alemania: Gnabry"
       ],
-      "keyFactor": "Alemania sin Gnabry presiona intenso; Ecuador juega posesión de control."
+      "keyFactor": "Presión alemana temprana sin Gnabry; contraataques ecuatorianos."
     },
     {
       "match": "Japón vs Suecia",
@@ -2993,8 +2993,8 @@
       "jornada": 3,
       "venue": "Dallas",
       "probHome": 46,
-      "probDraw": 27,
-      "probAway": 27,
+      "probDraw": 26,
+      "probAway": 28,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -3012,19 +3012,19 @@
           "prob": 7.4
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Japón",
-      "sources": "ELO+Bookmakers(49)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1808,
       "eloAway": 1759,
       "eloHomeAdj": 1808,
       "eloAwayAdj": 1759,
-      "kalshiHome": 2,
-      "kalshiAway": 1,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Intensidad física sostenida: Japón debe presionar alto sin desgastarse prematuramente."
+      "keyFactor": "Suecia domina físicamente; Japón necesita precisión táctica en transiciones rápidas."
     },
     {
       "match": "Túnez vs Países Bajos",
@@ -3033,9 +3033,9 @@
       "group": "F",
       "jornada": 3,
       "venue": "Kansas City",
-      "probHome": 13,
+      "probHome": 15,
       "probDraw": 26,
-      "probAway": 61,
+      "probAway": 59,
       "predictedScore": "1-2",
       "homeGoals": 1,
       "awayGoals": 2,
@@ -3053,19 +3053,19 @@
           "prob": 9.8
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Países Bajos",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1700,
       "eloAway": 1976,
       "eloHomeAdj": 1700,
       "eloAwayAdj": 1976,
       "kalshiHome": 0,
-      "kalshiAway": 5,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Control posesional: Países Bajos impone ritmo, Túnez contraataca con energía."
+      "keyFactor": "Países Bajos presiona alto; Túnez debe contragolpe directo y compacto."
     },
     {
       "match": "Turquía vs EE.UU.",
@@ -3074,39 +3074,39 @@
       "group": "D",
       "jornada": 3,
       "venue": "Los Ángeles",
-      "probHome": 35,
-      "probDraw": 27,
-      "probAway": 38,
-      "predictedScore": "0-1",
-      "homeGoals": 0,
-      "awayGoals": 1,
+      "probHome": 43,
+      "probDraw": 26,
+      "probAway": 31,
+      "predictedScore": "1-0",
+      "homeGoals": 1,
+      "awayGoals": 0,
       "top3Scores": [
         {
-          "score": "0-1",
+          "score": "1-0",
           "prob": 8.5
         },
         {
-          "score": "1-2",
-          "prob": 8.1
+          "score": "2-1",
+          "prob": 8
         },
         {
-          "score": "0-2",
+          "score": "2-0",
           "prob": 6.4
         }
       ],
-      "confidence": 71,
-      "favorito": "Equilibrado",
-      "sources": "ELO+Bookmakers(48)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "confidence": 70,
+      "favorito": "Turquía",
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1782,
       "eloAway": 1768,
       "eloHomeAdj": 1782,
       "eloAwayAdj": 1768,
-      "kalshiHome": 1,
-      "kalshiAway": 4,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Transiciones rápidas: Turquía explota espacios en defensa estadounidense desorganizada."
+      "keyFactor": "EE.UU. intensidad atlética constante; Turquía requiere solidez defensiva estructurada."
     },
     {
       "match": "Paraguay vs Australia",
@@ -3115,9 +3115,9 @@
       "group": "D",
       "jornada": 3,
       "venue": "San Francisco",
-      "probHome": 42,
-      "probDraw": 28,
-      "probAway": 30,
+      "probHome": 39,
+      "probDraw": 26,
+      "probAway": 35,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -3135,10 +3135,10 @@
           "prob": 6.7
         }
       ],
-      "confidence": 79,
-      "favorito": "Paraguay",
-      "sources": "ELO+Bookmakers(49)",
-      "hasBookmakerOdds": true,
+      "confidence": 70,
+      "favorito": "Equilibrado",
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1718,
       "eloAway": 1737,
@@ -3147,7 +3147,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Dinámica física: Australia aguanta ritmo, Paraguay necesita control táctico."
+      "keyFactor": "Paraguay movilidad ofensiva; Australia debe contención física y disciplina táctica."
     },
     {
       "match": "Noruega vs Francia",
@@ -3156,9 +3156,9 @@
       "group": "I",
       "jornada": 3,
       "venue": "Boston",
-      "probHome": 19,
+      "probHome": 16,
       "probDraw": 26,
-      "probAway": 55,
+      "probAway": 58,
       "predictedScore": "1-2",
       "homeGoals": 1,
       "awayGoals": 2,
@@ -3176,19 +3176,19 @@
           "prob": 6.1
         }
       ],
-      "confidence": 77,
+      "confidence": 70,
       "favorito": "Francia",
-      "sources": "ELO+Bookmakers(48)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1825,
       "eloAway": 2083,
       "eloHomeAdj": 1825,
       "eloAwayAdj": 2083,
-      "kalshiHome": 2,
-      "kalshiAway": 18,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Superioridad técnica: Francia domina con amplitud, Noruega cierra líneas defensivas."
+      "keyFactor": "Francia control posesión absoluto; Noruega presión defensiva sin balón."
     },
     {
       "match": "Senegal vs Irak",
@@ -3197,9 +3197,9 @@
       "group": "I",
       "jornada": 3,
       "venue": "Toronto",
-      "probHome": 63,
-      "probDraw": 23,
-      "probAway": 14,
+      "probHome": 56,
+      "probDraw": 26,
+      "probAway": 18,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -3217,19 +3217,19 @@
           "prob": 8.9
         }
       ],
-      "confidence": 77,
+      "confidence": 70,
       "favorito": "Senegal",
-      "sources": "ELO+Bookmakers(48)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1782,
       "eloAway": 1629,
       "eloHomeAdj": 1782,
       "eloAwayAdj": 1629,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Presión alta: Senegal cierra espacios; Irak busca profundidad y sorpresas."
+      "keyFactor": "Senegal intensidad defensiva; Irak necesita organización táctica defensiva compacta."
     },
     {
       "match": "Cabo Verde vs Arabia Saudita",
@@ -3238,30 +3238,30 @@
       "group": "H",
       "jornada": 3,
       "venue": "Houston",
-      "probHome": 38,
+      "probHome": 36,
       "probDraw": 26,
-      "probAway": 36,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
+      "probAway": 38,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
-          "score": "1-0",
-          "prob": 10.9
+          "score": "0-1",
+          "prob": 10.3
         },
         {
-          "score": "2-1",
-          "prob": 7.5
-        },
-        {
-          "score": "2-0",
+          "score": "1-2",
           "prob": 7.1
+        },
+        {
+          "score": "0-2",
+          "prob": 6.4
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Equilibrado",
-      "sources": "ELO+Bookmakers(48)",
-      "hasBookmakerOdds": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1642,
       "eloAway": 1693,
@@ -3270,7 +3270,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Rivalidad territorial: Arabia Saudita domina amplitud; Cabo Verde compacta defensiva."
+      "keyFactor": "Arabia Saudita amplitud defensiva; Cabo Verde velocidad contraataque y transiciones."
     },
     {
       "match": "Uruguay vs España",
@@ -3279,12 +3279,12 @@
       "group": "H",
       "jornada": 3,
       "venue": "Guadalajara",
-      "probHome": 18,
-      "probDraw": 24,
-      "probAway": 58,
-      "predictedScore": "1-2",
-      "homeGoals": 1,
-      "awayGoals": 2,
+      "probHome": 24,
+      "probDraw": 26,
+      "probAway": 50,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
           "score": "0-1",
@@ -3299,21 +3299,21 @@
           "prob": 8.5
         }
       ],
-      "confidence": 77,
+      "confidence": 70,
       "favorito": "España",
-      "sources": "ELO+Bookmakers(44)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1870,
       "eloAway": 2048,
       "eloHomeAdj": 1870,
       "eloAwayAdj": 2038,
-      "kalshiHome": 1,
-      "kalshiAway": 15,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "Yamal duda: España necesita ajustar alas; Uruguay presiona tránsito defensivo."
+      "keyFactor": "España posesión; Uruguay presión alta sin balón y dureza física."
     },
     {
       "match": "Egipto vs Irán",
@@ -3322,30 +3322,30 @@
       "group": "G",
       "jornada": 3,
       "venue": "Seattle",
-      "probHome": 40,
-      "probDraw": 29,
-      "probAway": 31,
-      "predictedScore": "1-0",
-      "homeGoals": 1,
-      "awayGoals": 0,
+      "probHome": 36,
+      "probDraw": 26,
+      "probAway": 38,
+      "predictedScore": "0-1",
+      "homeGoals": 0,
+      "awayGoals": 1,
       "top3Scores": [
         {
-          "score": "1-0",
-          "prob": 10.3
+          "score": "0-1",
+          "prob": 10.6
         },
         {
-          "score": "2-1",
-          "prob": 7.3
+          "score": "1-2",
+          "prob": 7.4
         },
         {
-          "score": "2-0",
-          "prob": 6.6
+          "score": "0-2",
+          "prob": 6.8
         }
       ],
-      "confidence": 78,
-      "favorito": "Egipto",
-      "sources": "ELO+Bookmakers(37)",
-      "hasBookmakerOdds": true,
+      "confidence": 70,
+      "favorito": "Equilibrado",
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1695,
       "eloAway": 1741,
@@ -3354,7 +3354,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Irán presión alta contra posesión egipcia lenta y previsible."
+      "keyFactor": "Irán presiona alto; Egipto debe jugar directo y rápido"
     },
     {
       "match": "Nueva Zelanda vs Bélgica",
@@ -3363,9 +3363,9 @@
       "group": "G",
       "jornada": 3,
       "venue": "Vancouver",
-      "probHome": 10,
-      "probDraw": 21,
-      "probAway": 70,
+      "probHome": 9,
+      "probDraw": 26,
+      "probAway": 65,
       "predictedScore": "0-2",
       "homeGoals": 0,
       "awayGoals": 2,
@@ -3383,19 +3383,19 @@
           "prob": 9.7
         }
       ],
-      "confidence": 81,
+      "confidence": 70,
       "favorito": "Bélgica",
-      "sources": "ELO+Bookmakers(37)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1548,
       "eloAway": 1928,
       "eloHomeAdj": 1548,
       "eloAwayAdj": 1928,
       "kalshiHome": 0,
-      "kalshiAway": 2,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bélgica control mediocampo ante Nueva Zelanda física pero limitada."
+      "keyFactor": "Bélgica domina; Nueva Zelanda contraataca desde atrás defensiva"
     },
     {
       "match": "Inglaterra vs Panamá",
@@ -3404,9 +3404,9 @@
       "group": "L",
       "jornada": 3,
       "venue": "MetLife, NJ",
-      "probHome": 67,
+      "probHome": 68,
       "probDraw": 26,
-      "probAway": 7,
+      "probAway": 6,
       "predictedScore": "2-0",
       "homeGoals": 2,
       "awayGoals": 0,
@@ -3424,21 +3424,21 @@
           "prob": 9.4
         }
       ],
-      "confidence": 80,
+      "confidence": 70,
       "favorito": "Inglaterra",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 2021,
       "eloAway": 1623,
       "eloHomeAdj": 2011,
       "eloAwayAdj": 1623,
-      "kalshiHome": 10,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Inglaterra: Grealish (pie)"
       ],
-      "keyFactor": "Inglaterra velocidad de Saka-Sterling sin Grealish compensa desajuste."
+      "keyFactor": "Inglaterra sin Grealish: más directo por bandas exteriores"
     },
     {
       "match": "Croacia vs Ghana",
@@ -3447,9 +3447,9 @@
       "group": "L",
       "jornada": 3,
       "venue": "Philadelphia",
-      "probHome": 58,
-      "probDraw": 25,
-      "probAway": 16,
+      "probHome": 56,
+      "probDraw": 26,
+      "probAway": 18,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -3467,21 +3467,21 @@
           "prob": 8.2
         }
       ],
-      "confidence": 78,
+      "confidence": 70,
       "favorito": "Croacia",
-      "sources": "ELO+Bookmakers(44)+Kalshi",
-      "hasBookmakerOdds": true,
-      "hasKalshi": true,
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
+      "hasKalshi": false,
       "eloHome": 1882,
       "eloAway": 1701,
       "eloHomeAdj": 1857,
       "eloAwayAdj": 1701,
-      "kalshiHome": 1,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Croacia sin Gvardiol: Ghana explota banda izquierda débil."
+      "keyFactor": "Gvardiol lesionado: Croacia vulnerable en defensa lateral derecha"
     },
     {
       "match": "Portugal vs Colombia",
@@ -3490,9 +3490,9 @@
       "group": "K",
       "jornada": 3,
       "venue": "Miami",
-      "probHome": 55,
+      "probHome": 53,
       "probDraw": 26,
-      "probAway": 19,
+      "probAway": 21,
       "predictedScore": "2-1",
       "homeGoals": 2,
       "awayGoals": 1,
@@ -3510,19 +3510,19 @@
           "prob": 6.4
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Portugal",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 1975,
       "eloAway": 1852,
       "eloHomeAdj": 1975,
       "eloAwayAdj": 1852,
-      "kalshiHome": 11,
-      "kalshiAway": 2,
+      "kalshiHome": 0,
+      "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Portugal transiciones rápidas contra Colombia desorganizada defensivamente."
+      "keyFactor": "Portugal intensidad física; Colombia desgasta con pressing continuo"
     },
     {
       "match": "RD Congo vs Uzbekistán",
@@ -3531,9 +3531,9 @@
       "group": "K",
       "jornada": 3,
       "venue": "Atlanta",
-      "probHome": 40,
-      "probDraw": 28,
-      "probAway": 32,
+      "probHome": 38,
+      "probDraw": 26,
+      "probAway": 36,
       "predictedScore": "1-0",
       "homeGoals": 1,
       "awayGoals": 0,
@@ -3551,10 +3551,10 @@
           "prob": 5.1
         }
       ],
-      "confidence": 80,
-      "favorito": "RD Congo",
-      "sources": "ELO+Bookmakers(43)",
-      "hasBookmakerOdds": true,
+      "confidence": 70,
+      "favorito": "Equilibrado",
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1638,
       "eloAway": 1672,
@@ -3563,7 +3563,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Uzbekistán posesión directa ante RD Congo vulnerables atrás."
+      "keyFactor": "Uzbekistán técnica superior; RD Congo lucha física directa"
     },
     {
       "match": "Argentina vs Jordania",
@@ -3572,12 +3572,12 @@
       "group": "J",
       "jornada": 3,
       "venue": "Dallas",
-      "probHome": 69,
+      "probHome": 71,
       "probDraw": 26,
-      "probAway": 5,
-      "predictedScore": "2-1",
+      "probAway": 3,
+      "predictedScore": "2-0",
       "homeGoals": 2,
-      "awayGoals": 1,
+      "awayGoals": 0,
       "top3Scores": [
         {
           "score": "1-0",
@@ -3592,22 +3592,22 @@
           "prob": 9.6
         }
       ],
-      "confidence": 79,
+      "confidence": 70,
       "favorito": "Argentina",
-      "sources": "ELO+Kalshi",
+      "sources": "ELO",
       "hasBookmakerOdds": false,
-      "hasKalshi": true,
+      "hasKalshi": false,
       "eloHome": 2142,
       "eloAway": 1601,
       "eloHomeAdj": 2122,
       "eloAwayAdj": 1601,
-      "kalshiHome": 9,
+      "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [
         "Argentina: Foyth (Aquiles)",
         "Argentina: Panichelli (LCA)"
       ],
-      "keyFactor": "Argentina dominio total: Jordania sin recursos para contener."
+      "keyFactor": "Argentina goleadora; Jordania solo contiene y busca robo"
     },
     {
       "match": "Argelia vs Austria",
@@ -3616,9 +3616,9 @@
       "group": "J",
       "jornada": 3,
       "venue": "Kansas City",
-      "probHome": 30,
-      "probDraw": 29,
-      "probAway": 41,
+      "probHome": 36,
+      "probDraw": 26,
+      "probAway": 38,
       "predictedScore": "0-1",
       "homeGoals": 0,
       "awayGoals": 1,
@@ -3636,10 +3636,10 @@
           "prob": 7.8
         }
       ],
-      "confidence": 77,
-      "favorito": "Austria",
-      "sources": "ELO+Bookmakers(43)",
-      "hasBookmakerOdds": true,
+      "confidence": 70,
+      "favorito": "Equilibrado",
+      "sources": "ELO",
+      "hasBookmakerOdds": false,
       "hasKalshi": false,
       "eloHome": 1714,
       "eloAway": 1766,
@@ -3648,7 +3648,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Austria presión media para frenar Algerian ritmo ofensivo."
+      "keyFactor": "Austria control posesión; Argelia contraataque velocidad y transición"
     }
   ],
   "fixtures": [
@@ -4350,37 +4350,5 @@
     "Catar": 1611,
     "Irak": 1629
   },
-  "kalshiOdds": {
-    "Arabia Saudita": 0,
-    "Irán": 0,
-    "Turquía": 1,
-    "Escocia": 0,
-    "Paraguay": 0,
-    "Corea del Sur": 1,
-    "Ghana": 0,
-    "Australia": 0,
-    "Senegal": 1,
-    "Suecia": 1,
-    "Noruega": 2,
-    "México": 2,
-    "Marruecos": 2,
-    "Japón": 2,
-    "Ecuador": 0,
-    "Colombia": 2,
-    "Suiza": 1,
-    "Canadá": 0,
-    "Austria": 0,
-    "Uruguay": 1,
-    "EE.UU.": 4,
-    "Portugal": 11,
-    "Países Bajos": 5,
-    "Croacia": 1,
-    "Inglaterra": 10,
-    "Alemania": 6,
-    "Brasil": 7,
-    "Bélgica": 2,
-    "Argentina": 9,
-    "Francia": 18,
-    "España": 15
-  }
+  "kalshiOdds": {}
 }
