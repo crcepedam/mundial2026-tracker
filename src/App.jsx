@@ -60,25 +60,53 @@ function MatchCard({ m, pred, showDate=false }) {
       <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:10 }}>
         <div style={{ flex:1, textAlign:"right" }}>
           <div style={{ fontSize:14, fontWeight:700,
-            color: p.favorito===home?"#c8a84b":"#e2e8f0" }}>{home}</div>
+            color: p.status==="FT" ? "#e2e8f0" : p.favorito===home?"#c8a84b":"#e2e8f0" }}>{home}</div>
         </div>
-        <div style={{ textAlign:"center", minWidth:64 }}>
-          <div style={{ fontSize:20, fontWeight:900, color:"#c8a84b",
-            background:"rgba(200,168,75,0.1)", padding:"3px 10px", borderRadius:7,
-            border:"1px solid rgba(200,168,75,0.25)" }}>
-            {p.predictedScore||"?-?"}
-          </div>
-          <div style={{ fontSize:9, color:"#475569", marginTop:2, letterSpacing:1 }}>PRONÓSTICO</div>
-          {p.top3Scores && p.top3Scores.length > 0 && (
-            <div style={{ display:"flex", gap:3, marginTop:3, justifyContent:"center" }}>
-              {p.top3Scores.map((s, i) => (
-                <span key={i} style={{
-                  fontSize:8, color: i===0 ? "#c8a84b" : "#475569",
-                  padding:"1px 4px", borderRadius:4,
-                  background: i===0 ? "rgba(200,168,75,0.1)" : "transparent",
-                }}>{s.score} {s.prob}%</span>
-              ))}
-            </div>
+        <div style={{ textAlign:"center", minWidth:80 }}>
+          {p.status === "FT" ? (
+            <>
+              <div style={{ fontSize:20, fontWeight:900,
+                color: p.scoreCorrect ? "#22c55e" : "#e2e8f0",
+                background: p.scoreCorrect ? "rgba(34,197,94,0.15)" : "rgba(255,255,255,0.06)",
+                padding:"3px 10px", borderRadius:7,
+                border: p.scoreCorrect ? "1px solid rgba(34,197,94,0.4)" : "1px solid rgba(255,255,255,0.1)" }}>
+                {p.realScore}
+              </div>
+              <div style={{ fontSize:9, marginTop:2, letterSpacing:1,
+                color: p.resultCorrect ? "#22c55e" : "#ef4444" }}>
+                {p.resultCorrect ? "✅ RESULTADO" : "❌ RESULTADO"}
+              </div>
+              <div style={{ fontSize:8, color:"#475569", marginTop:1 }}>
+                Pronóstico: {p.predictedScore} {p.scoreCorrect ? "🎯" : ""}
+              </div>
+              {p.realGoals && p.realGoals.length > 0 && (
+                <div style={{ fontSize:8, color:"#64748b", marginTop:2 }}>
+                  {p.realGoals.map((g, i) => (
+                    <span key={i}>{g.player} {g.min}'{i < p.realGoals.length-1 ? " · " : ""}</span>
+                  ))}
+                </div>
+              )}
+            </>
+          ) : (
+            <>
+              <div style={{ fontSize:20, fontWeight:900, color:"#c8a84b",
+                background:"rgba(200,168,75,0.1)", padding:"3px 10px", borderRadius:7,
+                border:"1px solid rgba(200,168,75,0.25)" }}>
+                {p.predictedScore||"?-?"}
+              </div>
+              <div style={{ fontSize:9, color:"#475569", marginTop:2, letterSpacing:1 }}>PRONÓSTICO</div>
+              {p.top3Scores && p.top3Scores.length > 0 && (
+                <div style={{ display:"flex", gap:3, marginTop:3, justifyContent:"center" }}>
+                  {p.top3Scores.map((s, i) => (
+                    <span key={i} style={{
+                      fontSize:8, color: i===0 ? "#c8a84b" : "#475569",
+                      padding:"1px 4px", borderRadius:4,
+                      background: i===0 ? "rgba(200,168,75,0.1)" : "transparent",
+                    }}>{s.score} {s.prob}%</span>
+                  ))}
+                </div>
+              )}
+            </>
           )}
         </div>
         <div style={{ flex:1 }}>
