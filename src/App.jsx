@@ -65,24 +65,52 @@ function MatchCard({ m, pred, showDate=false }) {
         <div style={{ textAlign:"center", minWidth:80 }}>
           {p.status === "FT" ? (
             <>
-              <div style={{ fontSize:20, fontWeight:900,
-                color: p.scoreCorrect ? "#22c55e" : "#e2e8f0",
-                background: p.scoreCorrect ? "rgba(34,197,94,0.15)" : "rgba(255,255,255,0.06)",
-                padding:"3px 10px", borderRadius:7,
-                border: p.scoreCorrect ? "1px solid rgba(34,197,94,0.4)" : "1px solid rgba(255,255,255,0.1)" }}>
-                {p.realScore}
+              {/* Resultado real + pronóstico lado a lado */}
+              <div style={{ display:"flex", gap:8, alignItems:"center", justifyContent:"center" }}>
+                {/* Resultado real */}
+                <div style={{ textAlign:"center" }}>
+                  <div style={{ fontSize:22, fontWeight:900,
+                    color: p.scoreCorrect ? "#22c55e" : "#e2e8f0",
+                    background: p.scoreCorrect ? "rgba(34,197,94,0.15)" : "rgba(255,255,255,0.06)",
+                    padding:"4px 12px", borderRadius:7,
+                    border: p.scoreCorrect ? "1px solid rgba(34,197,94,0.4)" : "1px solid rgba(255,255,255,0.1)" }}>
+                    {p.realScore}
+                  </div>
+                  <div style={{ fontSize:8, color:"#94a3b8", marginTop:2, letterSpacing:1 }}>FINAL</div>
+                </div>
+                {/* Separador */}
+                <div style={{ fontSize:10, color:"#334155" }}>vs</div>
+                {/* Pronóstico */}
+                <div style={{ textAlign:"center" }}>
+                  <div style={{ fontSize:14, fontWeight:700,
+                    color: p.scoreCorrect ? "#22c55e" : "#c8a84b",
+                    background: p.scoreCorrect ? "rgba(34,197,94,0.08)" : "rgba(200,168,75,0.08)",
+                    padding:"4px 10px", borderRadius:7,
+                    border: p.scoreCorrect ? "1px solid rgba(34,197,94,0.2)" : "1px solid rgba(200,168,75,0.15)" }}>
+                    {p.predictedScore}
+                  </div>
+                  <div style={{ fontSize:8, color:"#475569", marginTop:2, letterSpacing:1 }}>PRONÓSTICO</div>
+                </div>
               </div>
-              <div style={{ fontSize:9, marginTop:2, letterSpacing:1,
-                color: p.resultCorrect ? "#22c55e" : "#ef4444" }}>
-                {p.resultCorrect ? "✅ RESULTADO" : "❌ RESULTADO"}
+              {/* Badge de acierto */}
+              <div style={{ display:"flex", gap:6, justifyContent:"center", marginTop:4 }}>
+                <span style={{ fontSize:9, padding:"1px 6px", borderRadius:6,
+                  background: p.resultCorrect ? "rgba(34,197,94,0.12)" : "rgba(239,68,68,0.12)",
+                  color: p.resultCorrect ? "#22c55e" : "#ef4444", fontWeight:700 }}>
+                  {p.resultCorrect ? "✅ Resultado" : "❌ Resultado"}
+                </span>
+                {p.scoreCorrect && (
+                  <span style={{ fontSize:9, padding:"1px 6px", borderRadius:6,
+                    background:"rgba(34,197,94,0.12)", color:"#22c55e", fontWeight:700 }}>
+                    🎯 Exacto
+                  </span>
+                )}
               </div>
-              <div style={{ fontSize:8, color:"#475569", marginTop:1 }}>
-                Pronóstico: {p.predictedScore} {p.scoreCorrect ? "🎯" : ""}
-              </div>
+              {/* Goleadores */}
               {p.realGoals && p.realGoals.length > 0 && (
-                <div style={{ fontSize:8, color:"#64748b", marginTop:2 }}>
+                <div style={{ fontSize:8, color:"#64748b", marginTop:3, lineHeight:1.5 }}>
                   {p.realGoals.map((g, i) => (
-                    <span key={i}>{g.player} {g.min}'{i < p.realGoals.length-1 ? " · " : ""}</span>
+                    <span key={i}>⚽ {g.player} {g.min}'{i < p.realGoals.length-1 ? " · " : ""}</span>
                   ))}
                 </div>
               )}
