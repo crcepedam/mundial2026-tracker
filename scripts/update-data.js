@@ -751,37 +751,44 @@ Max 6 noticias, 8 candidatos. Solo JSON.`, 1800);
   // Resultados reales de partidos ya jugados
   // Se actualizan manualmente o via API-Football cuando esté disponible
   const REAL_RESULTS = {
-    // J1 — Día 1 (11 jun)
-    "México vs Sudáfrica": { score:"2-0", status:"FT", date:"2026-06-11", goals:[{player:"Quiñones",min:9},{player:"Jiménez",min:65}] },
-    "Corea del Sur vs Rep. Checa": { score:"2-1", status:"FT", date:"2026-06-11", goals:[{player:"Krejčí",min:52},{player:"Hwang In-beom",min:64},{player:"Oh Se-hun",min:89}] },
-    // J1 — Día 2 (12 jun)
-    "Canadá vs Bosnia y Herz.": { score:"1-1", status:"FT", date:"2026-06-12", goals:[{player:"Lukić",min:34},{player:"Larin",min:78}] },
-    "EE.UU. vs Paraguay": { score:"4-1", status:"FT", date:"2026-06-12", goals:[{player:"Bobadilla OG",min:8},{player:"Balogun",min:30},{player:"Balogun",min:55},{player:"Maurício",min:72},{player:"Reyna",min:81}] },
-    // J1 — Día 3 (13 jun)
-    "Catar vs Suiza": { score:"1-1", status:"FT", date:"2026-06-13", goals:[{player:"Embolo",min:42},{player:"Muheim OG",min:85}] },
-    "Brasil vs Marruecos": { score:"1-1", status:"FT", date:"2026-06-13", goals:[{player:"Saibari",min:28},{player:"Vinícius Jr",min:39}] },
-    "Haití vs Escocia": { score:"0-1", status:"FT", date:"2026-06-13", goals:[{player:"McGinn",min:33}] },
-    "Australia vs Turquía": { score:"2-0", status:"FT", date:"2026-06-13", goals:[{player:"Souttar",min:17},{player:"Kuol",min:72}] },
-    // J1 — Día 4 (14 jun)
-    "Alemania vs Curazao": { score:"7-1", status:"FT", date:"2026-06-14", goals:[{player:"Musiala",min:4},{player:"Gnabry",min:15},{player:"Havertz",min:27},{player:"Musiala",min:39},{player:"Wirtz",min:52},{player:"Thodé",min:68},{player:"Sané",min:74},{player:"Fullkrug",min:82}] },
-    "Países Bajos vs Japón": { score:"2-2", status:"FT", date:"2026-06-14", goals:[{player:"Gakpo",min:22},{player:"Mitoma",min:38},{player:"de Jong",min:55},{player:"Kamada",min:78}] },
-    "C. Marfil vs Ecuador": { score:"1-0", status:"FT", date:"2026-06-14", goals:[{player:"Diallo",min:87}] },
-    "Suecia vs Túnez": { score:"5-1", status:"FT", date:"2026-06-14", goals:[{player:"Isak",min:12},{player:"Gyökeres",min:33},{player:"Khazri",min:45},{player:"Ayari",min:58},{player:"Gyökeres",min:70},{player:"Svanberg",min:81}] },
-    // J1 — Día 5 (15 jun)
-    "España vs Cabo Verde": { score:"0-0", status:"FT", date:"2026-06-15", goals:[] },
-    "Bélgica vs Egipto": { score:"1-1", status:"FT", date:"2026-06-15", goals:[{player:"Lukaku",min:35},{player:"Salah",min:67}] },
-    "Arabia Saudita vs Uruguay": { score:"1-1", status:"FT", date:"2026-06-15", goals:[{player:"Núñez",min:22},{player:"Al-Dawsari",min:79}] },
-    "Irán vs Nueva Zelanda": { score:"2-2", status:"FT", date:"2026-06-15", goals:[{player:"Taremi",min:18},{player:"Singh",min:34},{player:"Azmoun",min:62},{player:"Wood",min:88}] },
-    // J1 — Día 6 (16 jun)
-    "Francia vs Senegal": { score:"3-1", status:"FT", date:"2026-06-16", goals:[{player:"Mbappé",min:15},{player:"Dia",min:38},{player:"Griezmann",min:55},{player:"Mbappé",min:72}] },
-    "Irak vs Noruega": { score:"1-4", status:"FT", date:"2026-06-16", goals:[{player:"Haaland",min:11},{player:"Ali",min:25},{player:"Haaland",min:45},{player:"Ødegaard",min:67},{player:"Sörloth",min:80}] },
-    "Argentina vs Argelia": { score:"3-0", status:"FT", date:"2026-06-16", goals:[{player:"Messi",min:23},{player:"Álvarez",min:51},{player:"Messi",min:78}] },
-    // J1 — Día 7 (17 jun)
-    "Austria vs Jordania": { score:"3-1", status:"FT", date:"2026-06-17", goals:[{player:"Sabitzer",min:20},{player:"Al-Tamari",min:35},{player:"Laimer",min:58},{player:"Arnautović",min:75}] },
-    "Portugal vs RD Congo": { score:"1-1", status:"FT", date:"2026-06-17", goals:[{player:"Ronaldo",min:44},{player:"Mbemba",min:71}] },
-    "Uzbekistán vs Colombia": { score:"1-3", status:"FT", date:"2026-06-17", goals:[{player:"Arias",min:18},{player:"Shomurodov",min:32},{player:"Díaz",min:55},{player:"Arias",min:80}] },
-    "Inglaterra vs Croacia": { score:"4-2", status:"FT", date:"2026-06-17", goals:[{player:"Kane",min:12},{player:"Kramarić",min:28},{player:"Bellingham",min:40},{player:"Kane",min:55},{player:"Sosa",min:65},{player:"Saka",min:78}] },
-    "Ghana vs Panamá": { score:"1-0", status:"FT", date:"2026-06-17", goals:[{player:"Semenyo",min:62}] },
+    // ═══ JORNADA 1 ═══
+    "México vs Sudáfrica":{score:"2-0",status:"FT",date:"2026-06-11",goals:[{player:"Quiñones",min:9},{player:"Jiménez",min:65}]},
+    "Corea del Sur vs Rep. Checa":{score:"2-1",status:"FT",date:"2026-06-11",goals:[{player:"Krejčí",min:52},{player:"Hwang In-beom",min:64},{player:"Oh Se-hun",min:89}]},
+    "Canadá vs Bosnia y Herz.":{score:"1-1",status:"FT",date:"2026-06-12",goals:[{player:"Lukić",min:34},{player:"Larin",min:78}]},
+    "EE.UU. vs Paraguay":{score:"4-1",status:"FT",date:"2026-06-12",goals:[{player:"Bobadilla OG",min:8},{player:"Balogun",min:30},{player:"Balogun",min:55},{player:"Maurício",min:72},{player:"Reyna",min:81}]},
+    "Catar vs Suiza":{score:"1-1",status:"FT",date:"2026-06-13",goals:[{player:"Embolo",min:42},{player:"Muheim OG",min:85}]},
+    "Brasil vs Marruecos":{score:"1-1",status:"FT",date:"2026-06-13",goals:[{player:"Saibari",min:28},{player:"Vinícius Jr",min:39}]},
+    "Haití vs Escocia":{score:"0-1",status:"FT",date:"2026-06-13",goals:[{player:"McGinn",min:33}]},
+    "Australia vs Turquía":{score:"2-0",status:"FT",date:"2026-06-13",goals:[{player:"Souttar",min:17},{player:"Kuol",min:72}]},
+    "Alemania vs Curazao":{score:"7-1",status:"FT",date:"2026-06-14",goals:[{player:"Musiala",min:4},{player:"Gnabry",min:15},{player:"Havertz",min:27},{player:"Musiala",min:39},{player:"Wirtz",min:52},{player:"Thodé",min:68},{player:"Sané",min:74},{player:"Fullkrug",min:82}]},
+    "Países Bajos vs Japón":{score:"2-2",status:"FT",date:"2026-06-14",goals:[{player:"Gakpo",min:22},{player:"Mitoma",min:38},{player:"de Jong",min:55},{player:"Kamada",min:78}]},
+    "C. Marfil vs Ecuador":{score:"1-0",status:"FT",date:"2026-06-14",goals:[{player:"Diallo",min:87}]},
+    "Suecia vs Túnez":{score:"5-1",status:"FT",date:"2026-06-14",goals:[{player:"Isak",min:12},{player:"Gyökeres",min:33},{player:"Khazri",min:45},{player:"Ayari",min:58},{player:"Gyökeres",min:70},{player:"Svanberg",min:81}]},
+    "España vs Cabo Verde":{score:"0-0",status:"FT",date:"2026-06-15",goals:[]},
+    "Bélgica vs Egipto":{score:"1-1",status:"FT",date:"2026-06-15",goals:[{player:"Lukaku",min:35},{player:"Salah",min:67}]},
+    "Arabia Saudita vs Uruguay":{score:"1-1",status:"FT",date:"2026-06-15",goals:[{player:"Núñez",min:22},{player:"Al-Dawsari",min:79}]},
+    "Irán vs Nueva Zelanda":{score:"2-2",status:"FT",date:"2026-06-15",goals:[{player:"Taremi",min:18},{player:"Singh",min:34},{player:"Azmoun",min:62},{player:"Wood",min:88}]},
+    "Francia vs Senegal":{score:"3-1",status:"FT",date:"2026-06-16",goals:[{player:"Mbappé",min:15},{player:"Dia",min:38},{player:"Griezmann",min:55},{player:"Mbappé",min:72}]},
+    "Irak vs Noruega":{score:"1-4",status:"FT",date:"2026-06-16",goals:[{player:"Haaland",min:11},{player:"Ali",min:25},{player:"Haaland",min:45},{player:"Ødegaard",min:67},{player:"Sörloth",min:80}]},
+    "Argentina vs Argelia":{score:"3-0",status:"FT",date:"2026-06-16",goals:[{player:"Messi",min:23},{player:"Álvarez",min:51},{player:"Messi",min:78}]},
+    "Austria vs Jordania":{score:"3-1",status:"FT",date:"2026-06-17",goals:[{player:"Sabitzer",min:20},{player:"Al-Tamari",min:35},{player:"Laimer",min:58},{player:"Arnautović",min:75}]},
+    "Portugal vs RD Congo":{score:"1-1",status:"FT",date:"2026-06-17",goals:[{player:"Ronaldo",min:44},{player:"Mbemba",min:71}]},
+    "Uzbekistán vs Colombia":{score:"1-3",status:"FT",date:"2026-06-17",goals:[{player:"Arias",min:18},{player:"Shomurodov",min:32},{player:"Díaz",min:55},{player:"Arias",min:80}]},
+    "Inglaterra vs Croacia":{score:"4-2",status:"FT",date:"2026-06-17",goals:[{player:"Kane",min:12},{player:"Kramarić",min:28},{player:"Bellingham",min:40},{player:"Kane",min:55},{player:"Sosa",min:65},{player:"Saka",min:78}]},
+    "Ghana vs Panamá":{score:"1-0",status:"FT",date:"2026-06-17",goals:[{player:"Semenyo",min:62}]},
+    // ═══ JORNADA 2 ═══
+    "Rep. Checa vs Sudáfrica":{score:"1-1",status:"FT",date:"2026-06-18",goals:[]},
+    "Suiza vs Bosnia y Herz.":{score:"4-1",status:"FT",date:"2026-06-18",goals:[]},
+    "Canadá vs Catar":{score:"6-0",status:"FT",date:"2026-06-18",goals:[]},
+    "México vs Corea del Sur":{score:"1-0",status:"FT",date:"2026-06-18",goals:[]},
+    "EE.UU. vs Australia":{score:"2-0",status:"FT",date:"2026-06-19",goals:[]},
+    "Escocia vs Marruecos":{score:"0-1",status:"FT",date:"2026-06-19",goals:[]},
+    "Brasil vs Haití":{score:"3-0",status:"FT",date:"2026-06-19",goals:[]},
+    "Turquía vs Paraguay":{score:"0-1",status:"FT",date:"2026-06-19",goals:[]},
+    "Países Bajos vs Suecia":{score:"5-1",status:"FT",date:"2026-06-20",goals:[]},
+    "Alemania vs C. Marfil":{score:"2-1",status:"FT",date:"2026-06-20",goals:[]},
+    "Ecuador vs Curazao":{score:"0-0",status:"FT",date:"2026-06-20",goals:[]},
+    "Túnez vs Japón":{score:"0-4",status:"FT",date:"2026-06-20",goals:[]},
   };
 
   // Agregar resultados reales a las predicciones
