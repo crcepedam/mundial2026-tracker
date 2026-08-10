@@ -1,9 +1,9 @@
 {
   "lastUpdated": "domingo, 9 de agosto de 2026",
   "lastUpdatedShort": "2026-08-09",
-  "headline": "Argentina mantiene favoritismo pese a bajas defensivas; Francia acecha con solidez táctica",
+  "headline": "Argentina mantiene favoritismo en Mundial 2026 a pesar de bajas defensivas críticas",
   "globalFavorite": "Argentina",
-  "globalFavoriteChange": "bajó",
+  "globalFavoriteChange": "estable",
   "dataSources": "ELO+Lesiones + Kalshi(0) + Claude(contexto)",
   "stats": {
     "predictions": 72,
@@ -12,54 +12,54 @@
   },
   "topNews": [
     {
-      "title": "Brasil sufre doble baja ofensiva: Rodrygo y Militão fuera del Mundial",
+      "title": "Brasil sufre doble baja: Rodrygo y Militão fuera del Mundial 2026",
       "impact": "alto",
       "team": "Brasil",
       "type": "lesión",
-      "detail": "ELO cae de 2034→1999 (-35pts). Pérdida de creatividad ofensiva y solidez defensiva crítica"
+      "detail": "Pérdida de extremo ofensivo y defensa central de nivel mundial. ELO ajustado: 2034→1999 (-35 puntos)"
     },
     {
-      "title": "España lucha por Yamal; Gnabry descartado para Alemania",
-      "impact": "alto",
-      "team": "España",
-      "type": "lesión",
-      "detail": "Yamal en duda (ELO: 2038*). Gnabry baja confirma vulnerabilidad alemana (1946*)"
-    },
-    {
-      "title": "Argentina con problemas defensivos: Foyth y Panichelli lesionados",
+      "title": "Argentina pierde profundidad defensiva con bajas de Foyth y Panichelli",
       "impact": "medio",
       "team": "Argentina",
       "type": "lesión",
-      "detail": "ELO ajustado a 2122* (-20pts). Defensa debilitada antes de knockouts"
+      "detail": "Afecta opciones en banda derecha defensiva. ELO ajustado: 2142→2122 (-20 puntos)"
     },
     {
-      "title": "Francia mantiene estabilidad: sin lesiones confirmadas en top players",
-      "impact": "medio",
-      "team": "Francia",
-      "type": "otro",
-      "detail": "ELO 2083 sin ajustes. Potencial ascenso si Argentina y España se debilitan"
-    },
-    {
-      "title": "Croacia impactada: Gvardiol fuera reduce opciones defensivas",
+      "title": "Croacia enfrenta crisis defensiva con ausencia de Gvardiol",
       "impact": "medio",
       "team": "Croacia",
       "type": "lesión",
-      "detail": "ELO cae significativamente 1882→1857* (-25pts). Perfil defensivo comprometido"
+      "detail": "Lateral izquierdo titular comprometido. ELO ajustado: 1882→1857 (-25 puntos)"
     },
     {
-      "title": "Países Bajos busca sorpresa con ELO 1976 sin bajas confirmadas",
+      "title": "España estudia estado de Lamine Yamal para confirmación final",
+      "impact": "medio",
+      "team": "España",
+      "type": "lesión",
+      "detail": "Extremo joven en duda. ELO ajustado preliminar: 2048→2038 (-10 puntos)"
+    },
+    {
+      "title": "Francia mantiene grupo completo sin lesiones de impacto reportadas",
       "impact": "bajo",
-      "team": "Países Bajos",
-      "type": "otro",
-      "detail": "Tercera potencia europea sin lesiones. Outsider con solidez"
+      "team": "Francia",
+      "type": "resultado",
+      "detail": "Segundo favorito con estabilidad en plantilla (ELO: 2083)"
+    },
+    {
+      "title": "Alemania pierde a Gnabry; defensa reconocida con Gvardiol ausente",
+      "impact": "bajo",
+      "team": "Alemania",
+      "type": "lesión",
+      "detail": "Impacto moderado en amplitud. ELO ajustado: 1956→1946 (-10 puntos)"
     }
   ],
   "titleContenders": [
     {
       "team": "Argentina",
-      "odds": 28,
-      "trend": "bajó",
-      "reason": "ELO 2122* (ajustado). Favorito pese a bajas defensivas (Foyth/Panichelli). Kalshi no disponible; estimado por ELO",
+      "odds": 32,
+      "trend": "estable",
+      "reason": "ELO ajustado 2122 mantiene liderazgo. Lesiones defensivas menores (Foyth/Panichelli) impacto limitado en defensa central. Kalshi no disponible, extrapolado de ELO ranking",
       "kalshiPrice": null,
       "eloRating": 2122
     },
@@ -67,47 +67,47 @@
       "team": "Francia",
       "odds": 22,
       "trend": "subió",
-      "reason": "ELO 2083 sin ajustes. Ascenso relativo por solidez defensiva mientras competidores se debilitan",
+      "reason": "ELO 2083 sin lesiones críticas reportadas. Posición mejora relativamente ante bajas de competidores (Brasil -35 ELO, Croacia -25 ELO)",
       "kalshiPrice": null,
       "eloRating": 2083
     },
     {
       "team": "España",
-      "odds": 20,
+      "odds": 18,
       "trend": "bajó",
-      "reason": "ELO 2038* (ajustado por Yamal en duda). Tercera potencia pero con incertidumbre en ataque",
+      "reason": "ELO ajustado 2038 tras preocupación Yamal. Incertidumbre en extremo ofensivo crítico. Kalshi no disponible",
       "kalshiPrice": null,
       "eloRating": 2038
     },
     {
       "team": "Brasil",
-      "odds": 16,
+      "odds": 14,
       "trend": "bajó",
-      "reason": "ELO 1999* (caída -35pts por Rodrygo/Militão). Debilitamiento ofensivo y defensivo crítico",
+      "reason": "ELO ajustado 1999 (-35). Doble baja Rodrygo+Militão impacto significativo en ataque y defensa. Caída más pronunciada del torneo",
       "kalshiPrice": null,
       "eloRating": 1999
     },
     {
       "team": "Países Bajos",
-      "odds": 7,
+      "odds": 8,
       "trend": "estable",
-      "reason": "ELO 1976. Outsider sin lesiones confirmadas. Potencial si favoritos fallan",
+      "reason": "ELO 1976 sin lesiones reportadas. Tercera línea defensiva tradicional mantenida",
       "kalshiPrice": null,
       "eloRating": 1976
     },
     {
       "team": "Alemania",
-      "odds": 6,
+      "odds": 7,
       "trend": "bajó",
-      "reason": "ELO 1946* (ajustado por Gnabry). Baja ofensiva complica opciones tácticas",
+      "reason": "ELO ajustado 1946 tras baja Gnabry. Impacto menor pero acumulativo con contexto regional",
       "kalshiPrice": null,
       "eloRating": 1946
     },
     {
       "team": "Croacia",
-      "odds": 4,
+      "odds": 5,
       "trend": "bajó",
-      "reason": "ELO 1857* (caída -25pts por Gvardiol). Defensa debilitada limita proyecciones",
+      "reason": "ELO ajustado 1857 (-25). Ausencia Gvardiol debilita estructura defensiva sin reemplazo de nivel equivalente",
       "kalshiPrice": null,
       "eloRating": 1857
     },
@@ -115,7 +115,7 @@
       "team": "Suiza",
       "odds": 2,
       "trend": "estable",
-      "reason": "ELO 1862. Outsider lejano sin data de lesiones críticas",
+      "reason": "ELO 1862 al margen de crisis lesivas principales. Outsider confirmado",
       "kalshiPrice": null,
       "eloRating": 1862
     }
@@ -692,7 +692,7 @@
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "Ausencia Malagón obliga rotación portería ante favorito México",
+      "keyFactor": "Malagón lesionado; México debe contener transiciones rápidas Sudáfrica",
       "realScore": "2-0",
       "status": "FT",
       "realGoals": [
@@ -747,7 +747,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Corea presión alta contra República Checa sin desgaste",
+      "keyFactor": "Rep. Checa presión alta; Corea del Sur juego directo",
       "realScore": "2-1",
       "status": "FT",
       "realGoals": [
@@ -806,7 +806,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Canadá intensidad física temprana contra Bosnia menor ELO",
+      "keyFactor": "Bosnia intensidad física; Canadá control posesión y ritmo",
       "realScore": "1-1",
       "status": "FT",
       "realGoals": [
@@ -861,7 +861,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Paraguay resistencia defensiva ante superioridad técnica estadounidense",
+      "keyFactor": "Paraguay contraataque; EE.UU. dominio medio campo y transiciones",
       "realScore": "4-1",
       "status": "FT",
       "realGoals": [
@@ -928,7 +928,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suiza control posesión explotando debilidad defensiva catarí",
+      "keyFactor": "Suiza superioridad ELO; Catar intensidad defensiva y compacidad",
       "realScore": "1-1",
       "status": "FT",
       "realGoals": [
@@ -986,7 +986,7 @@
         "Brasil: Rodrygo (LCA)",
         "Brasil: Militão (muscular)"
       ],
-      "keyFactor": "Brasil sin Rodrygo y Militão busca eficiencia ofensiva",
+      "keyFactor": "Rodrygo y Militão ausentes; Brasil adaptación defensa lateral",
       "realScore": "1-1",
       "status": "FT",
       "realGoals": [
@@ -1041,7 +1041,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Escocia presión colectiva contra Haití vulnerable defensivamente",
+      "keyFactor": "Haití intensidad defensiva; Escocia precisión técnica y circulación",
       "realScore": "0-1",
       "status": "FT",
       "realGoals": [
@@ -1092,7 +1092,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Turquía velocidad táctica contra Australia en transiciones rápidas",
+      "keyFactor": "Turquía ritmo elevado; Australia solidez defensiva posicional",
       "realScore": "2-0",
       "status": "FT",
       "realGoals": [
@@ -1149,7 +1149,7 @@
       "injuries": [
         "Alemania: Gnabry"
       ],
-      "keyFactor": "Alemania domina físicamente; Gnabry ausente limita amplitud ofensiva.",
+      "keyFactor": "Alemania presiona alto; Curazao defiende compacto sin Gnabry.",
       "realScore": "7-1",
       "status": "FT",
       "realGoals": [
@@ -1228,7 +1228,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Países Bajos presión alta; Japón contraataque rápido sin balón.",
+      "keyFactor": "Países Bajos controla posesión; Japón contraataca rápido.",
       "realScore": "2-2",
       "status": "FT",
       "realGoals": [
@@ -1291,7 +1291,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Ecuador mejor ELO; C. Marfil intensidad defensiva marca diferencia.",
+      "keyFactor": "Marfil intensidad física vs Ecuador creatividad ofensiva.",
       "realScore": "1-0",
       "status": "FT",
       "realGoals": [
@@ -1342,7 +1342,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suecia posesión controlada; Túnez transiciones rápidas aprovechar espacios.",
+      "keyFactor": "Suecia defensa sólida vs Túnez velocidad en bandas.",
       "realScore": "5-1",
       "status": "FT",
       "realGoals": [
@@ -1415,7 +1415,7 @@
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "España control posesión sin Yamal; Cabo Verde bloque defensivo.",
+      "keyFactor": "España dominio posicional sin Yamal; Cabo Verde resiste.",
       "realScore": "0-0",
       "status": "FT",
       "realGoals": [],
@@ -1461,7 +1461,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bélgica superioridad física; Egipto compacidad defensiva contiene ataques.",
+      "keyFactor": "Bélgica amplitud ofensiva vs Egipto compacidad defensiva.",
       "realScore": "1-1",
       "status": "FT",
       "realGoals": [
@@ -1516,7 +1516,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Uruguay técnica defensiva; Arabia Saudita intensidad presión desgasta.",
+      "keyFactor": "Uruguay presión sin descanso vs Arabia Saudita lenta.",
       "realScore": "1-1",
       "status": "FT",
       "realGoals": [
@@ -1571,7 +1571,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Irán experiencia táctica; Nueva Zelanda baja densidad ofensiva.",
+      "keyFactor": "Irán organización defensiva vs Nueva Zelanda transiciones rápidas.",
       "realScore": "2-2",
       "status": "FT",
       "realGoals": [
@@ -1634,7 +1634,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Francia controla posesión; Senegal contraataque rápido en transición.",
+      "keyFactor": "Francia domina físicamente; Senegal apuesta contraataques rápidos con espacios",
       "realScore": "3-1",
       "status": "FT",
       "realGoals": [
@@ -1697,7 +1697,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Noruega presión alta; Irak busca juego directo y vertical.",
+      "keyFactor": "Noruega superior ELO; Irak necesita defensa compacta y transiciones",
       "realScore": "1-4",
       "status": "FT",
       "realGoals": [
@@ -1767,7 +1767,7 @@
         "Argentina: Foyth (Aquiles)",
         "Argentina: Panichelli (LCA)"
       ],
-      "keyFactor": "Argentina sin Foyth atrás; Argelia presiona sin balón intensamente.",
+      "keyFactor": "Argentina sin Foyth; Argelia presión alta para explotar vulnerabilidad defensiva",
       "realScore": "3-0",
       "status": "FT",
       "realGoals": [
@@ -1826,7 +1826,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Austria domina; Jordania defiende compacto y espera oportunidades.",
+      "keyFactor": "Austria control posesión; Jordania resistencia defensiva contra superioridad técnica",
       "realScore": "3-1",
       "status": "FT",
       "realGoals": [
@@ -1889,7 +1889,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Portugal posesión; Congo Congo contraataque por bandas sin Malagón.",
+      "keyFactor": "Portugal transiciones rápidas; RD Congo cierre espacios centrales defensivos",
       "realScore": "1-1",
       "status": "FT",
       "realGoals": [
@@ -1947,7 +1947,7 @@
         "Inglaterra: Grealish (pie)",
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Inglaterra sin Grealish; Croacia sin Gvardiol limita creatividad lateral.",
+      "keyFactor": "Inglaterra sin Grealish flancos; Croacia organización defensiva media cancha",
       "realScore": "4-2",
       "status": "FT",
       "realGoals": [
@@ -2018,7 +2018,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Ghana intensidad física; Panamá compacidad defensiva sin balón.",
+      "keyFactor": "Ghana intensidad pressing; Panamá compacidad defensiva contra superioridad atlética",
       "realScore": "1-0",
       "status": "FT",
       "realGoals": [
@@ -2069,7 +2069,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Colombia ataque dinámico; Uzbekistán presión media y transiciones rápidas.",
+      "keyFactor": "Colombia control ritmo; Uzbekistán contraataques directos aprovechando espacios amplios",
       "realScore": "1-3",
       "status": "FT",
       "realGoals": [
@@ -2132,7 +2132,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Rep. Checa debe controlar el mediocampo y evitar transiciones rápidas de Sudáfrica.",
+      "keyFactor": "Rep. Checa: Presión alta para aprovechar ventaja ELO clara.",
       "realScore": "1-1",
       "status": "FT",
       "realGoals": [],
@@ -2178,7 +2178,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suiza presiona alto; Bosnia necesita paciencia en construcción desde defensa.",
+      "keyFactor": "Suiza: Superioridad física y técnica en mediocampo decisiva.",
       "realScore": "4-1",
       "status": "FT",
       "realGoals": [],
@@ -2224,7 +2224,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Canadá carece de creatividad ofensiva; Catar juega pragmático y directo.",
+      "keyFactor": "Canadá: Intensidad defensiva contra calidad ofensiva qatarí limitada.",
       "realScore": "6-0",
       "status": "FT",
       "realGoals": [],
@@ -2272,7 +2272,7 @@
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "México sin Malagón vulnerable en salidas; Corea explota espacios laterales.",
+      "keyFactor": "México: Malagón ausente; defensa vulnerable sin portero titular.",
       "realScore": "1-0",
       "status": "FT",
       "realGoals": [],
@@ -2318,7 +2318,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "EE.UU. domina posesión; Australia contraataca y presiona defensivamente.",
+      "keyFactor": "EE.UU.: Desgaste físico acumulado en ritmo partido decisivo.",
       "realScore": "2-0",
       "status": "FT",
       "realGoals": [],
@@ -2364,7 +2364,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Escocia frena ímpetu ofensivo marroquí con línea defensiva compacta.",
+      "keyFactor": "Escocia: Contención defensiva contra velocidad ofensiva marroquí superior.",
       "realScore": "0-1",
       "status": "FT",
       "realGoals": [],
@@ -2413,7 +2413,7 @@
         "Brasil: Rodrygo (LCA)",
         "Brasil: Militão (muscular)"
       ],
-      "keyFactor": "Brasil abruma físicamente sin Rodrygo; Haití sobrevive con orden defensivo.",
+      "keyFactor": "Brasil: Rodrygo y Militão bajas; creatividad y solidez comprometidas.",
       "realScore": "3-0",
       "status": "FT",
       "realGoals": [],
@@ -2459,7 +2459,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Turquía intensidad media; Paraguay aguanta defensivamente buscando contragolpes.",
+      "keyFactor": "Turquía: Control físico y posesional en mediocampo clave.",
       "realScore": "0-1",
       "status": "FT",
       "realGoals": [],
@@ -2505,7 +2505,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Amplitud holandesa vs defensa sueca compacta y contraataques rápidos.",
+      "keyFactor": "Superioridad física holandesa en transiciones rápidas contra defensa sueca",
       "realScore": "5-1",
       "status": "FT",
       "realGoals": [],
@@ -2553,7 +2553,7 @@
       "injuries": [
         "Alemania: Gnabry"
       ],
-      "keyFactor": "Ausencia Gnabry reduce creatividad alemana; C. Marfil presiona arriba.",
+      "keyFactor": "Gnabry ausente: Alemania busca amplitud sin su velocidad habitual",
       "realScore": "2-1",
       "status": "FT",
       "realGoals": [],
@@ -2599,7 +2599,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Ecuador domina posesión; Curazao busca transiciones rápidas defensivas.",
+      "keyFactor": "Ecuador domina posesión; Curazao defiende compacto en bloque bajo",
       "realScore": "0-0",
       "status": "FT",
       "realGoals": [],
@@ -2645,7 +2645,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Japón superior físicamente; Túnez necesita control medio campo.",
+      "keyFactor": "Japón aprovecha velocidad defensiva ante Túnez más lento físicamente",
       "realScore": "0-4",
       "status": "FT",
       "realGoals": [],
@@ -2693,7 +2693,7 @@
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "Yamal duda limita creatividad; Arabia Saudita defiende profundo."
+      "keyFactor": "Yamal dudoso: España controla juego con amplitud alternativa ofensiva"
     },
     {
       "match": "Bélgica vs Irán",
@@ -2734,7 +2734,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bélgica amplitud ofensiva; Irán bloquea centros con densidad."
+      "keyFactor": "Bélgica presiona alto; Irán contraataca en espacios defensivos amplios"
     },
     {
       "match": "Uruguay vs Cabo Verde",
@@ -2775,7 +2775,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Uruguay presión alta; Cabo Verde contraataca en espacios."
+      "keyFactor": "Uruguay impone ritmo físico alto contra Cabo Verde menos rodado"
     },
     {
       "match": "Nueva Zelanda vs Egipto",
@@ -2816,7 +2816,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Egipto experiencia defensiva; Nueva Zelanda busca intensidad física."
+      "keyFactor": "Egipto intensidad defensiva media contra Nueva Zelanda técnicamente limitada"
     },
     {
       "match": "Argentina vs Austria",
@@ -2860,7 +2860,7 @@
         "Argentina: Foyth (Aquiles)",
         "Argentina: Panichelli (LCA)"
       ],
-      "keyFactor": "Superioridad ofensiva argentina sin Foyth defensivamente comprometido"
+      "keyFactor": "Superioridad ofensiva Argentina sin Foyth defensivo; Austria debe contener"
     },
     {
       "match": "Francia vs Irak",
@@ -2901,7 +2901,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Dominio físico francés contra inferior capacidad técnica iraquí"
+      "keyFactor": "Francia domina posesión; Irak necesita transiciones rápidas contraataques"
     },
     {
       "match": "Noruega vs Senegal",
@@ -2942,7 +2942,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Equilibrio atlético con Senegal compensando menor experiencia internacional"
+      "keyFactor": "Senegal velocidad lateral vs. Noruega; físico decide partido"
     },
     {
       "match": "Jordania vs Argelia",
@@ -2983,7 +2983,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Defensa argelina sólida contra ataque limitado jordano"
+      "keyFactor": "Argelia técnica superior; Jordania requiere intensidad defensiva sostenida"
     },
     {
       "match": "Portugal vs Uzbekistán",
@@ -3024,7 +3024,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Control portugués del ritmo sin presión defensiva uzbeka"
+      "keyFactor": "Portugal control mediocampo; Uzbekistán apunta contragolpes velocidad directa"
     },
     {
       "match": "Inglaterra vs Ghana",
@@ -3067,7 +3067,7 @@
       "injuries": [
         "Inglaterra: Grealish (pie)"
       ],
-      "keyFactor": "Grealish ausente: Inglaterra necesita amplitud por bandas alternativas"
+      "keyFactor": "Inglaterra amplitud ataques; Ghana presión alta sin Grealish ofensivo"
     },
     {
       "match": "Panamá vs Croacia",
@@ -3110,7 +3110,7 @@
       "injuries": [
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Croacia superior técnicamente; Gvardiol lesionado debilita defensa"
+      "keyFactor": "Croacia experiencia táctica; Panamá intensidad primera media hora decisiva"
     },
     {
       "match": "Colombia vs RD Congo",
@@ -3151,7 +3151,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Velocidad colombiana en transiciones contra defensa congoleña vulnerable"
+      "keyFactor": "Colombia transiciones rápidas ataque; Congo físico defensivo agresivo necesario"
     },
     {
       "match": "Suiza vs Canadá",
@@ -3192,7 +3192,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Suiza domina posesión; Canadá vulnerable defensivamente en transiciones rápidas."
+      "keyFactor": "Suiza domina posesión; Canadá necesita transiciones rápidas efectivas"
     },
     {
       "match": "Bosnia y Herz. vs Catar",
@@ -3233,7 +3233,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bosnia presiona alto; Catar depende contraataque con amplitud lateral."
+      "keyFactor": "Bosnia controla medio; Catar busca juego directo contragolpes"
     },
     {
       "match": "Brasil vs Escocia",
@@ -3277,7 +3277,7 @@
         "Brasil: Rodrygo (LCA)",
         "Brasil: Militão (muscular)"
       ],
-      "keyFactor": "Brasil sin Rodrygo-Militão; Escocia aprovecha fragilidad defensiva brasileña."
+      "keyFactor": "Brasil sin Rodrygo: ampliar juego por bandas alternativas"
     },
     {
       "match": "Marruecos vs Haití",
@@ -3318,7 +3318,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Marruecos control territorial; Haití sin recursos físicos para resistir."
+      "keyFactor": "Marruecos presión alta; Haití depende contraataques espacios"
     },
     {
       "match": "México vs Rep. Checa",
@@ -3361,7 +3361,7 @@
       "injuries": [
         "México: Malagón (Aquiles)"
       ],
-      "keyFactor": "México sin Malagón; Rep. Checa ataca flancos desprotegidos mexicanos."
+      "keyFactor": "México sin Malagón: portería vulnerable ante Rep. Checa"
     },
     {
       "match": "Sudáfrica vs Corea del Sur",
@@ -3402,7 +3402,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Sudáfrica presión física; Corea explotar espacios con velocidad contraataque."
+      "keyFactor": "Corea presión intensa; Sudáfrica necesita solidez defensiva"
     },
     {
       "match": "Curazao vs C. Marfil",
@@ -3443,7 +3443,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Marfil superioridad técnica; Curazao cansancio acumulado tercera jornada."
+      "keyFactor": "Marfil control técnico; Curazao resistencia física segunda mitad"
     },
     {
       "match": "Ecuador vs Alemania",
@@ -3486,7 +3486,7 @@
       "injuries": [
         "Alemania: Gnabry"
       ],
-      "keyFactor": "Alemania sin Gnabry; Ecuador intensidad presión compensar inferioridad táctica."
+      "keyFactor": "Alemania intensidad sin Gnabry; Ecuador circulación rápida lateral"
     },
     {
       "match": "Japón vs Suecia",
@@ -3527,7 +3527,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Japón presión alta vs defensa sueca pasiva en transiciones."
+      "keyFactor": "Japón presión alta vs defensa sueca vulnerable en transiciones"
     },
     {
       "match": "Túnez vs Países Bajos",
@@ -3568,7 +3568,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Países Bajos control posesional ante Túnez defensiva y compacta."
+      "keyFactor": "Países Bajos dominio posesión; Túnez contraataque directo efectivo"
     },
     {
       "match": "Turquía vs EE.UU.",
@@ -3609,7 +3609,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "EE.UU. intensidad física vs técnica turca en mediocampo."
+      "keyFactor": "EE.UU. intensidad física; Turquía técnica y paciencia táctica"
     },
     {
       "match": "Paraguay vs Australia",
@@ -3650,7 +3650,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Paraguay compacidad defensiva vs amplitud australiana en bandas."
+      "keyFactor": "Paraguay movilidad; Australia ritmo físico en segunda línea"
     },
     {
       "match": "Noruega vs Francia",
@@ -3691,7 +3691,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Francia superioridad ofensiva vs Noruega contragolpe rápido directo."
+      "keyFactor": "Francia control territorial; Noruega cierre rápido sin balón"
     },
     {
       "match": "Senegal vs Irak",
@@ -3732,7 +3732,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Senegal intensidad defensiva presionante ante Irak lento."
+      "keyFactor": "Senegal defensa compacta; Irak espacios laterales desprotegidos"
     },
     {
       "match": "Cabo Verde vs Arabia Saudita",
@@ -3773,7 +3773,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Arabia Saudita velocidad contraataque vs Cabo Verde posesión."
+      "keyFactor": "Arabia Saudita posesión; Cabo Verde presión directa corta"
     },
     {
       "match": "Uruguay vs España",
@@ -3816,7 +3816,7 @@
       "injuries": [
         "España: Yamal (duda)"
       ],
-      "keyFactor": "Uruguay defensa física sólida vs España posesión Yamal ausencia."
+      "keyFactor": "Uruguay intensidad defensiva; España Yamal disponibilidad crucial"
     },
     {
       "match": "Egipto vs Irán",
@@ -3857,7 +3857,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Irán presión alta vs Egipto transiciones lentas sin ritmo"
+      "keyFactor": "Irán presión alta contra defensa egipcia desorganizada sin ritmo."
     },
     {
       "match": "Nueva Zelanda vs Bélgica",
@@ -3898,7 +3898,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Bélgica control posesión ante Nueva Zelanda físicamente inferior"
+      "keyFactor": "Bélgica dominio posesión y transiciones rápidas ante Nueva Zelanda."
     },
     {
       "match": "Inglaterra vs Panamá",
@@ -3941,7 +3941,7 @@
       "injuries": [
         "Inglaterra: Grealish (pie)"
       ],
-      "keyFactor": "Inglaterra sin Grealish: lateralidad derecha menos dinámica ofensiva"
+      "keyFactor": "Inglaterra amplitud ofensiva sin Grealish, Panamá repliegue defensivo."
     },
     {
       "match": "Croacia vs Ghana",
@@ -3984,7 +3984,7 @@
       "injuries": [
         "Croacia: Gvardiol (pierna)"
       ],
-      "keyFactor": "Croacia Gvardiol lesionado: defensa vulnerable ante Ghana ataques"
+      "keyFactor": "Croacia control mediocampo, Gvardiol lesionado vulnera defensa lateral."
     },
     {
       "match": "Portugal vs Colombia",
@@ -4025,7 +4025,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Portugal intensidad presión vs Colombia medio campo desbordado"
+      "keyFactor": "Portugal intensidad presión, Colombia contraataque espacios transiciones rápidas."
     },
     {
       "match": "RD Congo vs Uzbekistán",
@@ -4066,7 +4066,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Uzbekistán ritmo frenético contra RD Congo baja intensidad"
+      "keyFactor": "Uzbekistán ritmo físico alto, RD Congo resistencia defensiva."
     },
     {
       "match": "Argentina vs Jordania",
@@ -4110,7 +4110,7 @@
         "Argentina: Foyth (Aquiles)",
         "Argentina: Panichelli (LCA)"
       ],
-      "keyFactor": "Argentina dominio absoluto: Jordania resistencia pasiva sin opciones"
+      "keyFactor": "Argentina superioridad técnica y física, Jordania defensa profunda."
     },
     {
       "match": "Argelia vs Austria",
@@ -4151,7 +4151,7 @@
       "kalshiHome": 0,
       "kalshiAway": 0,
       "injuries": [],
-      "keyFactor": "Austria presión organizada ante Argelia transiciones ofensivas lentas"
+      "keyFactor": "Austria solidez defensiva, Argelia velocidad ataque lateral y transiciones."
     }
   ],
   "fixtures": [
